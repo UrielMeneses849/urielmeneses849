@@ -83,6 +83,7 @@
     padding: 70px 0 30px 100px;
 }
 
+
 @media screen and (max-width: 1440px){
     .Titulo-trabajo{
         font-family: var(--poppins);
@@ -128,6 +129,11 @@
     }
 }
 
+@media screen and (max-width: 1280px) {
+    .progra{
+        margin: 0 auto;
+    }
+}
 
 @media screen and (max-width: 834px){
     .Titulo-trabajo{

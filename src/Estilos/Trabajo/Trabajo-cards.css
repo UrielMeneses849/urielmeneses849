@@ -99,23 +99,57 @@ filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 1440px){
     .maquetas-ui{
-        width: 65%;
-        height: 560px;
+        width: 52%;
+        height: 510px;
     }
     .proyectos-ux{
-        width: 65%;
-        height: 560px;
+        width: 52%;
+        height: 510px;
     }
     .daily-design{
-        width: 65%;
-        height: 560px;
+        width: 52%;
+        height: 510px;
     }
     .challenges-programacion{
-        width: 65%;
-        height: 560px;
+        width: 52%;
+        height: 510px;
     }
 }
+@media screen and (max-width: 1280px){
+    .maquetas-ui{
+        width: 55%;
+        height: 500px;
+        margin: 50px auto 0;
+    }
+    .fondo1{
+    display: none;
+}
+.proyectos-ux{
+    width: 55%;
+    height: 500px;
+    margin: 50px auto 0;
+}
+.fondo2{
+display: none;
+}
+.daily-design{
+    width: 50%;
+    height: 500px;
+    margin: 50px auto 0;
+}
+.fondo3{
+    display: none;
+}
+.challenges-programacion{
+    width: 50%;
+    height: 500px;
+    margin: 50px auto 0;
+}
+.fondo4{
+    display: none;
+}
 
+}
 @media screen and (max-width: 1024px){
     
     .Titulo_trabajo{
