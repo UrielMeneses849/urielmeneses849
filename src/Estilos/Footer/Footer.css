@@ -1,0 +1,198 @@
+.container_footer_formulario{
+    display: flex;
+}
+.contacto{
+    width: 50%;
+    padding-left: 180px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.formulario{
+    width: 50%;
+    padding-right: 180px;
+
+}
+
+/* Card 1 */
+.contacto1{
+    border-radius: 20px;
+border: 3px solid #121212;
+width: 324px;
+height: 476px;
+flex-shrink: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color: transparent;
+margin-right: 30px;
+margin-bottom: 30px;
+}
+
+.contacto1:hover{
+    background-image: url("./images/iconos/fondofooter.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-y: center;
+}
+.texto_abajo{
+    padding: 30px;
+    font-size: var(--h3-font-size);
+    cursor: pointer;
+}
+.arrow{
+    width: 20px;
+    height: 20px;
+}
+.linkdn{
+    padding: 25px;
+    width: 55px;
+    height: 55px;
+}
+.enlace{
+    text-decoration: none;
+}
+
+/* Formulario */
+.boton-form{
+    border-radius: 20px;
+border: 3px solid #FAFAFA;
+background: #121212;
+width: 310px;
+height: 65px;
+flex-shrink: 0;
+color: #FAFAFA;
+font-family: var(--poppins);
+font-size: 21px;
+margin:20px auto 0;
+}
+
+.contact-form-div{
+margin: 50px auto;
+}
+
+.contact_form-tag{
+    position: relative;
+    top: 1rem;
+    left: 1.2rem;
+    padding: 0.25rem;
+    font-family: var(--poppins);
+    font-size: 20px;
+    z-index: 10;
+    background-color: #FAFAFA;
+}
+
+.contact_form-input{
+width: 100%;
+top: 0;
+left: 0;
+background: none;
+outline: none;
+border-radius: 1rem;
+padding: 1.5rem;
+}
+
+.contact_form-area textarea{
+    height: 7rem;
+    resize: none;
+}
+@media screen and (max-width: 1024px){
+
+    .contacto{
+        padding-left: 70px;
+    }
+
+    .contacto1{
+    width: 270px;
+    height: 376px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    }
+    .formulario{
+        padding-left: 30px;
+        width: 100%;
+        margin-top: 150px;
+        padding-right: 150px;
+    }
+    .boton-form{
+    width: 270px;
+    height: 55px;
+    }
+}
+@media screen and (max-width: 768px){
+    .formulario{
+        padding-left: 0;
+    }
+    .contact_form-input{
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: none;
+        outline: none;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        }
+.contact-form{
+    width: 500px;
+}
+    .formulario{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .contacto{
+        padding-left: 60px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 600px){
+
+    .contacto{
+        width: 100%;
+        padding-left: 0;
+        margin: 30px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contacto1{
+    margin: 8px auto;
+    }
+    .enlace{
+        margin: 8px auto;
+    }
+.container_footer_formulario{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.formulario{
+    width: 48%;
+    padding-left: 50px;
+    margin-top: 0;
+}
+.boton-form{
+    width: 280px;
+    height: 55px;
+
+    margin: 20px auto;
+    }
+    .contact-form-div{
+        margin: 30px auto;
+        width: 100%;
+        }
+.contact_form-input{
+    width: 125%;
+}
+        
+}
+
+@media screen and (max-width: 375px){
+    .formulario{
+        width: 45%;
+        padding-left: 50px;
+        margin-top: 0;
+    }
+}

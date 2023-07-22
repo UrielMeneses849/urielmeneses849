@@ -1,0 +1,81 @@
+
+.iconos{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    margin: 5px 3rem;
+    width: 4.5rem;
+}
+.icon-figma{
+    margin: 5px 3rem;
+    width: 3.5rem;
+}
+
+@media screen and (max-width: 1440px){
+    .iconos{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1280px){
+    .iconos{
+        padding: 4rem 0 0;
+    }
+    .icon{
+        margin: 5px 3rem;
+        width: 4rem;
+    }
+    .icon-figma{
+        margin: 5px 3rem;
+        width: 3.4rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    .iconos{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .icon{
+        margin: 0 0.5rem;
+        width: 4.1rem;
+    }
+    .icon-figma{
+        margin: 5px 0.5rem;
+        width: 3.8rem;
+    }
+}
+
+
+    @media screen and (max-width: 834px){
+        .iconos{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 80%;
+            padding: 50px 10px 0;
+            justify-content: space-between;
+            align-items: center;            
+        }
+        .icon{
+            margin: 0 0.5rem;
+            width: 3rem;
+        }
+        .icon-figma{
+            margin: 5px 0.5rem;
+            width: 2.7rem;
+        }
+    }

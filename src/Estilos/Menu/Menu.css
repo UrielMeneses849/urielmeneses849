@@ -1,0 +1,104 @@
+.nav_menu {
+    background-color: transparent;
+    border: #888888 0.5px solid;
+backdrop-filter: blur(20px);
+    height: 85px;
+    padding: 0 10px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    font-family: var(--poppins);
+  font-weight: 500;
+    font-size: 21px;
+    border-radius: 8px;
+    z-index: var(--z-modal);   
+    margin-top: 50px;
+}
+
+.nav_menu a {
+    flex: 1;
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fbfbfb;
+    transition: .5s ease-in-out all;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav_menu a:hover {
+    font-size: 18px;
+}
+.nav_icon{
+    margin-right: 7px;
+}
+.nav_toggle, .nav_close{
+    font-weight: var(--font-medium);
+    display: none;
+}
+
+.nav_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    transition: .3s;
+}
+@media screen and (max-width: 600px){
+    .nav_link{
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+    }
+
+    .nav_menu {
+    top: initial;
+    bottom: -100%;
+    position: fixed;
+    width: 87.3%;
+    padding: 2rem 1.5rem 4rem;
+    transition: .4s;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    height: var(--header-height);
+    border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .show-menu{
+        bottom: 0;
+    }
+
+    .nav_icon{
+        font-size: 1.2rem;
+    }
+    .nav_close{
+        position: absolute;
+        right: 1.2rem;
+        bottom: 0.6rem;
+        font-size: 2.4rem;
+        cursor: pointer;
+    }
+    .nav_toggle{
+        top: initial;
+        bottom: 0;
+        position: fixed;
+        font-size: 2.2rem;
+        right: 0;
+        padding: 0 20px 20px 0;
+        z-index: var(--z-fixed);
+        cursor: pointer;
+    }
+    .nav_toggle, .nav_close{
+        font-weight: var(--font-medium);
+        display: block;
+        /* height: var(--header-height); */
+        
+    }
+    .logo-menu, .logo-menu{
+        display: none;
+    }
+}

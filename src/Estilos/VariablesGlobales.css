@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+button{
+    cursor: pointer;
+}
+/* Cursor personalizado */
+.cursor{
+    
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1001;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cursorText{
+font-family: var(--poppins);
+}
+
+
+/* Variables */
+:root{
+--center: 20px auto;
+--header-height: 9.6rem;
+
+--hue: 0;
+--sat: 0%;
+--darkMode: #121212;
+--lightMode: #F9F5F6;
+
+/* Tamaños */
+--big-font-size: 3.5rem;
+--h1-font-size: 2.25rem;
+--h2-font-size: 1.5rem;
+--h3-font-size: 1.25rem;
+--normal-font-size: 1rem;
+--small-font-size: 0.875rem;
+--smaller-font-size: 0.813rem;
+--tiny-font-size: 0.625rem;
+
+/* Fuentes tamaños */
+--normal: 300;
+--font-medium: 500;
+--font-semi-bold: 600;
+
+/* Margenes Bottom */
+--mb-0-25: 0.25rem;
+--mb-0-5: 0.5rem;
+--mb-0-75: 0.75rem;
+--mb-1: 1rem;
+--mb-1-5: 1.5rem;
+--mb-2: 2rem;
+--mb-2-5: 2.5rem;
+--mb-3: 3rem;
+
+
+/* z index */
+--z-tooltip:10;
+--z-fixed:100;
+--z-modal:1000;
+
+/* tipografia */
+
+--poppins: 'Poppins', sans-serif;
+}
+
+.section{
+    padding: 2rem 0 0;
+}
+
+.seccion_subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: 4rem;
+
+}
+ul{
+    list-style: none;
+    font-family: var(--poppins);
+}
+span,
+p,
+h3{
+    font-family: var(--poppins); 
+}
+
+
+.container{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.button{
+    display: inline-block;
+    background-color: aqua;
+    padding: 1.25rem 2rem;
+    border-radius: 1rem;
+    font-weight: var(--font-medium);
+}
+
+/* hover */
+
+
+.button_icon{
+    margin-left: var(--mb-0-5);
+}
+
+.button-flex{
+    display: inline-flex;
+    align-items: center;
+    
+}
+/* Tipografia responsiva */
+
+@media screen and (max-width: 1024px){
+    .cursor{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 834px){
+    .cursor{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    .cursor{
+        display: none;
+    }
+    :root{
+        --big-font-size: 2.75rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.813rem;
+        --smaller-font-size: 0.75rem;
+    }
+    @media screen and (max-width: 360px){
+        
+    }
+/* Base */
+
+
+
+/* Clases re usables */
+
+
+/* layouts */
+
+/* Botones */
+
+/* Puntos de quiebre */
+
+
+}

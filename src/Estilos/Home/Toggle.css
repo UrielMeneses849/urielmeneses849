@@ -1,0 +1,89 @@
+/* Nav con el toggle */
+
+/* Contenedor del logo y el toggle */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 30px 80px;
+    height: 65px;
+    z-index: 1;
+    transition: 0.6s;
+    justify-content: space-between;
+  }
+  
+  /* Contenedor del toggle */
+  .toggler {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Barra que contiene el circulo del toggle con un fondo oscuro para contrastar con el claro */
+  .toggler--slider {
+    width: 44px;
+    height: 28px;
+    background-color: #121212;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    /* Cuando esta en modo light se alinea al principio del toggle */
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+    transition: 0.9s;
+  }
+  
+  /* Cuando se activa el nav dark tambien el toggler slider cambia de estilo al fondo blanco */
+  nav.dark .toggler--slider {
+    border-color: white;
+    background-color: var(--lightMode);;
+  }
+  
+  /* Circulo que esta dentro del toggle */
+  .toggler--slider--circle {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  /* Cambio de color del circulo */
+  nav.dark .toggler--slider--circle {
+    background-color: black;
+  }
+  /* Fondo por defecto */
+  .toggler--light {
+    color: var(--darkMode);
+  }
+  /* Fondo cuando se cambia */
+  nav.dark .toggler--light {
+    color: var(--lightMode);
+  }
+  
+  .toggler--dark {
+    color: #D5D4D8;
+  }
+  
+  nav.dark .toggler-dark {
+    color: #FFFFFF;
+  }
+  /* Cambio de direccion del circulo */
+  nav.dark .toggler--slider {
+    justify-content: flex-end;
+    transition: 0.9s;
+  }
+
+  @media screen and (max-width: 600px){
+    nav{
+      padding: 30px 10px;
+    }
+    .toggler--slider {
+      width: 40px;
+      height: 24px;
+    }
+    .toggler--slider--circle {
+      height: 18px;
+      width: 18px;
+    }
+  }

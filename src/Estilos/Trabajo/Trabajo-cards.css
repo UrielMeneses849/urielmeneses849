@@ -1,0 +1,202 @@
+
+.Titulo_trabajo{
+color: #121212;
+margin-left: 170px;
+padding-top: 85px;
+text-shadow: 2px 4px 4px 0px rgba(5, 13, 29, 0.50);
+font-family: Poppins;
+font-size: 68px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/* Contenedor 1 */
+.container-maquetas{
+display: flex;
+justify-content: space-between;
+align-items: end;
+}
+.maquetas-ui{
+width: 45%;
+height: 500px;
+flex-shrink: 0;
+border-radius: 40px;
+background: #98EECC;
+margin: 70px 0 0 185px;
+z-index: var(--z-tooltip);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+cursor: pointer;
+filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Contenedor 2 */
+.container-ux{
+    display: flex;
+    justify-content: space-between;
+}
+
+.proyectos-ux{
+    width: 45%;
+    height: 500px;
+flex-shrink: 0;
+border-radius: 40px;
+background: #FAAB78;
+position: relative; 
+margin: 70px 185px 0 0;
+display: flex;
+cursor: pointer;
+filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.fondo2{
+    margin-left: 160px;
+}
+/* Contenedor 3 */
+.container-dd{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.daily-design{
+    width: 45%;
+    height: 500px;
+flex-shrink: 0;
+border-radius: 40px;
+background: #CBFFA9;
+position: relative; 
+margin: 70px 0 0 185px;
+left: 0;
+cursor: pointer;
+filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.fondo1{    
+    height: 500px;
+}
+.fondo3{
+    margin-right: 160px;
+}
+/* Contenedor 4 */
+.container-challenge{
+    display: flex;
+    justify-content: space-between;
+    }
+.challenges-programacion{
+    width: 45%;
+    height: 500px;
+flex-shrink: 0;
+border-radius: 40px;
+background: #B9F3E4;
+position: relative; 
+margin: 70px 185px 0 0;
+left: 0;
+cursor: pointer;
+filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.fondo4{
+    margin-left: 170px;
+}
+@media screen and (max-width: 1440px){
+    .maquetas-ui{
+        width: 65%;
+        height: 560px;
+    }
+    .proyectos-ux{
+        width: 65%;
+        height: 560px;
+    }
+    .daily-design{
+        width: 65%;
+        height: 560px;
+    }
+    .challenges-programacion{
+        width: 65%;
+        height: 560px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    
+    .Titulo_trabajo{
+        font-size: 60px;
+        width: 85%;
+        margin: 0 auto;
+        
+    }
+
+    /* Card 1 */
+    .maquetas-ui{
+        width: 85%;
+        height: 560px;
+        margin: 30px auto;
+    }
+    .fondo1{
+        display: none;
+    }
+
+    /* Card 2 */
+    .proyectos-ux{
+        width: 85%;
+        height: 560px;
+        margin: 30px auto;
+    }
+    .fondo2{
+        display: none;
+    }
+
+    /* Card 3 */
+    .daily-design{
+        width: 85%;
+        height: 560px;
+        margin: 30px auto;
+    }
+    .fondo3{
+        display: none;
+    }
+
+    /* Card 4 */
+    .challenges-programacion{
+        width: 85%;
+        height: 560px;
+        margin: 30px auto;
+    }
+    .fondo4{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 600px){
+
+.Titulo_trabajo{
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.maquetas-ui{
+width: 85%;
+height: 300px;
+margin: var(--center);
+}
+
+.proyectos-ux{
+width: 85%;
+height: 300px;
+margin: var(--center);
+flex-direction: column;
+justify-content: space-between;
+}
+
+.daily-design{
+width: 85%;
+height: 300px;
+margin: var(--center)
+}
+.challenges-programacion{
+    width: 85%;
+    height: 300px;
+margin: var(--center)
+}
+}

@@ -1,0 +1,246 @@
+.Trabajo{
+    background-image: url("./images/linea.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 5px 95%;
+    /* padding-bottom: 90px; */
+}
+
+/* Titulos de las card */
+.Titulo-trabajo{
+    font-family: var(--poppins);
+    font-size: 3rem;
+    font-weight: var(--font-semi-bold);
+    padding: 70px 0 0 100px;
+}
+
+/* Sub titulos de las card */
+.Sub{
+    font-family: var(--poppins);
+    font-size: 1.3rem;
+    padding: 0 0 40px 100px;
+    font-weight: var(--normal); 
+}
+/* Sub de la card UX */
+.Sub-ux{
+    font-family: var(--poppins);
+    font-size: 1.3rem;
+    padding: 0 0 40px 100px;
+    font-weight: var(--normal); 
+}
+
+/* Sub de la card DD */
+.Sub-dd{
+    font-family: var(--poppins);
+    font-size: 1.3rem;
+    padding: 10px 0 5px 100px;
+    font-weight: var(--normal); 
+}
+
+/* Sub de la card CP */
+.Sub-cp{
+    font-family: var(--poppins);
+    font-size: 1.3rem;
+    padding: 25px 0 40px 100px;
+    font-weight: var(--normal); 
+}
+
+/* Contenedor de la imagen */
+.container-img{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+/* Imagen UI */
+.UI{
+    width: 730px ;
+    max-width: 80%;  
+}
+
+/* Imagen UX */
+.UX{
+   margin-right: 20px; 
+   filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Imagen DD */
+.DD{
+    width: 43%;
+    max-width: 50%;  
+    margin: 0 auto;
+}
+.progra{
+    margin: 0 auto;
+    width: 40%;
+    max-width: 50%;  
+}
+
+.Titulo-ux{
+    font-family: var(--poppins);
+    font-size: 3rem;
+    font-weight: var(--font-semi-bold);
+    padding: 70px 0 30px 100px;
+}
+
+@media screen and (max-width: 1440px){
+    .Titulo-trabajo{
+        font-family: var(--poppins);
+        font-size: 3rem;
+        font-weight: var(--font-semi-bold);
+        padding: 70px 0 0 40px;
+    }
+    
+    /* Sub titulos de las card */
+    .Sub{
+        font-family: var(--poppins);
+        font-size: 1.3rem;
+        padding: 0 0 40px 40px;
+        font-weight: var(--normal); 
+    }
+    /* Sub de la card UX */
+    .Titulo-ux{
+        font-family: var(--poppins);
+        font-size: 3rem;
+        font-weight: var(--font-semi-bold);
+        padding: 70px 0 30px 40px;
+    }
+    .Sub-ux{
+        font-family: var(--poppins);
+        font-size: 1.3rem;
+        padding: 0 0 40px 40px;
+        font-weight: var(--normal); 
+    }
+    .Sub-dd{
+        font-family: var(--poppins);
+        font-size: 1.3rem;
+        padding: 0 0 40px 40px;
+        font-weight: var(--normal); 
+    }
+    .Sub-cp{
+        font-family: var(--poppins);
+        font-size: 1.3rem;
+        padding: 0 0 40px 40px;
+        font-weight: var(--normal); 
+    }
+    .progra{
+        margin: 50px auto 0;
+    }
+}
+
+
+@media screen and (max-width: 834px){
+    .Titulo-trabajo{
+        font-family: var(--poppins);
+        font-size: 3rem;
+        font-weight: var(--font-semi-bold);
+        padding: 70px 0 0 40px;
+    }
+    
+    /* Sub titulos de las card */
+    .Sub{
+        font-family: var(--poppins);
+        font-size: 1.3rem;
+        padding: 0 10px 40px 40px;
+        font-weight: var(--normal); 
+    }
+    /* Sub de la card UX */
+    .Titulo-ux{
+        font-family: var(--poppins);
+        font-size: 3rem;
+        font-weight: var(--font-semi-bold);
+        padding: 70px 0 30px 40px;
+    }
+    .Sub-ux{
+        font-family: var(--poppins);
+        font-size: 1.3rem;
+        padding: 0 0 40px 40px;
+        font-weight: var(--normal); 
+    }
+    .Sub-dd{
+        font-family: var(--poppins);
+        font-size: 1.3rem;
+        padding: 0 10px 40px 40px;
+        font-weight: var(--normal); 
+    }
+    .Sub-cp{
+        font-family: var(--poppins);
+        font-size: 1.3rem;
+        padding: 0 10px 40px 40px;
+        font-weight: var(--normal); 
+    }
+    .UX{
+        margin-right: 20px; 
+        
+     }
+}
+@media screen and (max-width: 600px){
+    .Titulo-trabajo{
+        font-family: var(--poppins);
+        font-size: 1.5rem;
+        font-weight: var(--font-semi-bold);
+        padding: 20px 0 0 10px;
+    }
+    .Trabajo{
+        background-size: 5px 92%;
+    }
+    .Titulo-ux{
+        font-family: var(--poppins);
+        font-size: 1.5rem;
+        font-weight: var(--font-semi-bold);
+        padding: 30px 0 20px 10px;
+    }
+    .Sub{
+        font-family: var(--poppins);
+        font-size: 1.2rem;
+        padding: 0 0 20px 10px;
+        font-weight: var(--normal); 
+    }
+    
+    .container-img .UI{
+        width: 730px ;
+        max-width: 90%;  
+    }
+
+    .Sub-ux{
+        display: none;
+    }
+
+    .Sub-dd{
+        font-family: var(--poppins);
+        font-size: 1rem;
+        padding: 20px 0 30px 10px;
+        font-weight: var(--normal); 
+    }
+
+    .Sub-cp{
+        font-family: var(--poppins);
+        font-size: 1rem;
+        padding: 20px 0 30px 10px;
+        font-weight: var(--normal); 
+    }
+
+    .Sub-dd b{
+        display: none;
+    }
+
+    .container-img .UX{
+        max-width: 48%;
+        margin: 0 auto;
+    }
+
+    .DD{
+        width: 75%;
+    }
+
+    .progra{
+        margin: 20px auto 10px;
+    }
+
+}
+@media screen and (max-width: 360px){
+    .Trabajo{
+        background-size: 5px 90%;
+    }
+
+}

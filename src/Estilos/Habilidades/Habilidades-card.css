@@ -1,0 +1,203 @@
+.services__container{
+    grid-template-columns: repeat(3, 380px);
+    justify-content:center;
+    column-gap: 1.8rem;
+    height: 380px;
+    margin-top: 50px;
+}
+/* Cambiar el borde dependiendo del fondo / aplicar color visto en figma */
+.services__content{
+    position: relative;
+    padding: 6rem 0 2.5rem 3rem;
+    border-radius: 12px;
+}
+.services__icon{
+    display: block;
+    font-size: 2rem;
+    margin-bottom: var(--mb-1-5);
+}
+
+.services__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-1-5);
+    font-weight: var(--font-medium);
+}
+
+.services__button{
+    color: #121212;
+    font-size: 0.91rem;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    cursor: pointer;
+}
+
+.services__button-icon{
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+.services__button:hover .services__button-icon{
+    transform: translateX(0.25rem);
+}
+
+
+/* Posicion del Card que se aparece !!!!!!! */
+.services__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    /* !!!!!!!!!!!!!! */
+    opacity: 0;
+    visibility: hidden;
+    /* !!!!!!!!!!!!!! */
+    transition: 0.4s;
+}
+
+/* Color y dimensiones del card*/
+.services__modal-content{
+    width: 600px;
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.4rem;
+}
+
+/* Posicion del boton de cerrar */
+.services__modal-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.services__modal-title,
+.services__modal-description{
+    text-align: center;
+ }
+
+ .services__modal-description{
+    color: #686868;
+    font-size: var(--normal-font-size);
+    padding: 0 3.5rem;
+    margin-bottom: var(--mb-2);
+ }
+
+ .services__modal-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+ }
+
+ .services__modal-services{
+    row-gap: 0.75rem;
+ }
+/* color modificar */
+ .services__modal-service{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    color: #484848;
+ }
+/* color modificar */
+ .services__modal-icon{
+    font-size: 1.1rem;
+ }
+
+ .services__modal-info{
+    font-size: var(--normal-font-size);
+ }
+
+ /* Modal activo */
+
+ .active-modal{
+     /* !!!!!!!!!!!!!! */
+    opacity: 1;
+    visibility: visible;        
+     /* !!!!!!!!!!!!!! */
+   
+ }
+
+@media screen and (max-width: 1024px){
+.services__container{
+    grid-template-columns: repeat(3, 258px);
+
+}
+}
+
+@media screen and (max-width: 834px){
+.services__container{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px 20px 20px;
+    height: 560px;
+}
+.services__content{
+    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+}
+.services__icon{
+    font-size: 1.7rem;
+}
+.services__modal-service{
+    display: flex;
+    align-items: start;
+    column-gap: .2rem;
+    text-align: start;
+    color: #484848;
+ }
+/* color modificar */
+ .services__modal-icon{
+    font-size: 1.1rem;
+ }
+
+ .services__modal-info{
+    font-size: var(--small-font-size);
+ }
+}
+
+@media screen and (max-width: 600px){
+
+    .services__modal-content{
+        padding: 4.5rem .5rem 2.5rem;
+        width: 90%;
+        height: 85%;
+        box-sizing: border-box;
+    }
+    .services__modal-description{
+        padding: 0;
+        margin-bottom: var(--mb-0-5);
+    }
+    .services__modal-services{
+        width: 100%;
+        padding:0 15px;
+    }
+    .services__container{
+        height: 870px;
+        grid-template-columns: repeat(1, .9fr); 
+        margin-top: 0; 
+        
+    }
+    .services__modal-info{
+        width: 80%;
+        line-height: 30px;
+    }
+    
+    .services__content{
+        padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+    }
+    .services__modal-service{   
+        line-height: 20px;
+        align-items: center;
+        column-gap: .7rem;
+        text-align: start;
+     }
+
+}
