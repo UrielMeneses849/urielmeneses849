@@ -18,6 +18,18 @@
     width: 3.5rem;
 }
 
+@media screen and (max-width: 1600px){
+    .icon{
+        margin: 5px 3rem;
+        width: 3.5rem;
+    }
+    .icon-figma{
+        margin: 5px 3rem;
+        width: 3rem;
+    }
+}
+
+
 @media screen and (max-width: 1440px){
     .iconos{
         width: 100%;

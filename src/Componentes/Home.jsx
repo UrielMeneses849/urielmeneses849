@@ -78,12 +78,10 @@ export default function Home(props){
         data-aos-delay="30"
         data-aos-duration="900"
         data-aos-easing="ease-in">
-            <li>Diseñador de experiencia de usuario</li>
+            <li> Diseñador de experiencia de usuario</li>
             <li>Desarrollador Front End</li>
             <li>Ingeniero en computación</li>
         </ul>
-
-        
         </div>
         </div>
     )

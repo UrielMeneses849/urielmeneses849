@@ -15,7 +15,7 @@ line-height: normal;
 .container-maquetas{
 display: flex;
 justify-content: space-between;
-align-items: end;
+align-items: center
 }
 .maquetas-ui{
 width: 45%;
@@ -23,7 +23,7 @@ height: 500px;
 flex-shrink: 0;
 border-radius: 40px;
 background: #98EECC;
-margin: 70px 0 0 185px;
+margin: 50px 0 0 180px;
 z-index: var(--z-tooltip);
 display: flex;
 flex-direction: column;
@@ -36,6 +36,7 @@ filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
 .container-ux{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .proyectos-ux{
@@ -44,19 +45,21 @@ filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
 flex-shrink: 0;
 border-radius: 40px;
 background: #FAAB78;
-position: relative; 
-margin: 70px 185px 0 0;
+
+margin: 50px 180px 0 0;
 display: flex;
 cursor: pointer;
 filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .fondo2{
     margin-left: 160px;
+    height: 400px;
 }
 /* Contenedor 3 */
 .container-dd{
     display: flex;
     justify-content: space-between; 
+    align-items: center;
 }
 
 .daily-design{
@@ -72,15 +75,17 @@ cursor: pointer;
 filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .fondo1{    
-    height: 500px;
+    height: 400px;
 }
 .fondo3{
     margin-right: 160px;
+    height: 400px;
 }
 /* Contenedor 4 */
 .container-challenge{
     display: flex;
     justify-content: space-between;
+    align-items:center;
     }
 .challenges-programacion{
     width: 45%;
@@ -96,23 +101,66 @@ filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .fondo4{
     margin-left: 170px;
+    height: 350px;
 }
+
+@media screen and (max-width: 1600px){
+    /* Maquetas UI */
+.Titulo_trabajo{
+    margin-left: 120px;
+}
+
+.maquetas-ui{
+    width: 40%;
+    height: 400px;
+    margin: 40px 0 0 120px;
+}
+/* Proyectos UX */
+.proyectos-ux{
+    width: 40%;
+    height: 400px;
+    margin: 40px 120px 0 0;
+}
+/* Daily Design */
+.daily-design{
+width: 40%;
+height: 400px;
+margin: 40px 0 0 120px;
+}
+/* Challenges progra */
+.challenges-programacion{
+    width: 40%;
+    height: 400px;
+    margin: 40px 120px 0 0;
+}
+    }
 @media screen and (max-width: 1440px){
+    /* Maquetas UI */
+    .Titulo_trabajo{
+        margin-left: 120px;
+        font-family: var(--poppins);
+        font-size: 53px;
+        font-weight: 800;
+        }
     .maquetas-ui{
-        width: 52%;
-        height: 510px;
+        width: 45%;
+        height: 380px;
+        margin: 30px 0 0 120px;
     }
+    /* Proyectos UX */
     .proyectos-ux{
-        width: 52%;
-        height: 510px;
+        width: 45%;
+        height: 380px;
     }
+    /* Daily Design */
     .daily-design{
-        width: 52%;
-        height: 510px;
+        width: 45%;
+        height: 380px;
     }
+    /*Challenges progra */
     .challenges-programacion{
-        width: 52%;
-        height: 510px;
+        width: 45%;
+        height: 380px;
     }
 }
 @media screen and (max-width: 1280px){

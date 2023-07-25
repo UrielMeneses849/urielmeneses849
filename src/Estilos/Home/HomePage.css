@@ -54,6 +54,36 @@ background-position: top center;
   width: 30px;
   height: 30px;
 }
+@media screen and (max-width: 1600px){
+  h1{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3.8rem;
+    font-family: 'Macondo', cursive;
+    text-shadow: 2px 4px 4px 0px rgba(12, 13, 29, 0.50);
+    line-height: 6rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .logo{
+    top: 0;
+    left: 0;
+    margin: 20px;
+    width: 50px;
+  }
+  .lista-home{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    width: 25rem;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    margin: 25px auto 0;
+  }
+.Home{
+  height: 80vh;
+}
+}
+
 
 @media screen and (max-width: 1024px){
   .logo{

@@ -3,7 +3,7 @@ export default function Educacion(props){
 
     return(
     <>   
-        <section className="qualification " data-aos="fade-down" 
+        <section className="qualification " data-aos="fade" 
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"

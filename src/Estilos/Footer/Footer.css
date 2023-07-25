@@ -64,7 +64,7 @@ flex-shrink: 0;
 color: #FAFAFA;
 font-family: var(--poppins);
 font-size: 21px;
-margin:20px auto 0;
+margin:5px auto 0;
 }
 
 .contact-form-div{
@@ -96,6 +96,16 @@ padding: 1.5rem;
     height: 7rem;
     resize: none;
 }
+
+@media screen and (max-width: 1600){
+    .contacto1{
+
+    width: 290px;
+    height: 276px;
+   
+    }
+}
+
 @media screen and (max-width: 1024px){
 
     .contacto{

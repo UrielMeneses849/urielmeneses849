@@ -48,6 +48,16 @@ backdrop-filter: blur(20px);
     font-weight: var(--font-medium);
     transition: .3s;
 }
+@media screen and (max-width: 1600px){
+    .nav_menu { 
+        margin: 30px auto ;
+        height: 70px;
+    }
+    .nav_link{
+        font-size: var(--small-font-size);
+    }
+}
+
 @media screen and (max-width: 600px){
     .nav_link{
         font-size: var(--normal-font-size);
