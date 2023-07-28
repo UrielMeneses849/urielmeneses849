@@ -9,6 +9,7 @@ export default function MaquetasUI(props) {
         <br />
         <h3 className="services__modal-title">MebloStyle</h3>
         <div className="M1">
+            <img src="./images/M1.svg" alt="" />
         </div>
 
         <br />
