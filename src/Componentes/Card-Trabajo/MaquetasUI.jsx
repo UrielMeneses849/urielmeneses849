@@ -8,8 +8,7 @@ export default function MaquetasUI(props) {
                     <p className="services__modal-description">Visita mis sitios con un click</p>
         <br />
         <h3 className="services__modal-title">MebloStyle</h3>
-        <div className="M1">
-            <img src="./images/M1.svg" alt="" />
+        <div className="M1" style={{backgroundImage: `url("./images/maquetas/M1.svg")`}}>
         </div>
 
         <br />
@@ -21,12 +20,18 @@ export default function MaquetasUI(props) {
         <br />
         <br />
         <h3 className="services__modal-title">Optima Consulting</h3>
-        <div className="M3"></div>
+        <div className="M3" style={{backgroundImage: `url("./images/maquetas/M3.svg")`}}></div>
 
         <br />
         <br />
         <h3 className="services__modal-title">Preparación IPN</h3>
-        <div className="M4"></div>
+        <div className="M4" style={{backgroundImage: `url("./images/maquetas/M4.svg")`}}></div>
+
+        <br />
+        <br />
+        <h3 className="services__modal-title">ExploraViajes</h3>
+        <div className="M5" style={{backgroundImage: `url("./images/maquetas/M5.svg")`}}></div>
+
         </div>
     )
 }
