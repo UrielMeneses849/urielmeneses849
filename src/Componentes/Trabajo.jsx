@@ -1,7 +1,23 @@
 import "../Estilos/Trabajo/Trabajo-cards.css"
 import "../Estilos/Trabajo/Titulos-textos.css"
-export default function Trabajo(props){
+import "../Estilos/Trabajo/CrdsTrabajo.css"
 
+import MaquetasUI from "./Card-Trabajo/MaquetasUI";
+import ProyectosUX from "./Card-Trabajo/ProyectosUX"
+import DailyDesign from "./Card-Trabajo/DailyDesign"
+import ChallengesProgra from "./Card-Trabajo/ChallengesProgra"
+
+import { useState } from "react";
+
+export default function Trabajo(props){
+    
+    const [modal, setModal] = useState(0);
+
+    const toggleTab = (index) => {
+        setModal(index);
+    }
+
+    console.log(toggleTab)
     return(
         <div className="Trabajo" id="trabajo">
 
@@ -24,7 +40,8 @@ export default function Trabajo(props){
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="600"
-        data-aos-easing="ease-in-out">
+        data-aos-easing="ease-in-out"
+        onClick={() => toggleTab(1)}>
             <h2 className="Titulo-trabajo"> Maquetas UI </h2>
             <h3 className="Sub">Maquetas hechas en figma y programadas con React</h3>
             <div className="container-img">
@@ -34,6 +51,13 @@ export default function Trabajo(props){
             />
             </div>
             </div>
+
+            <div className={modal === 1 ? "card-activa active-card" : "services__modal" }>
+                
+                <MaquetasUI toggleTab = {toggleTab}/>
+
+            </div>
+
             <img className="fondo1"
             alt="fondo1"
             src="./images/fondo1.svg" />
@@ -49,7 +73,8 @@ export default function Trabajo(props){
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="600"
-            data-aos-easing="ease-in-out">
+            data-aos-easing="ease-in-out"
+            onClick={() => toggleTab(2)}>
             <div className="textos-ux">
                 <h2 className="Titulo-ux"> Proyectos UX </h2>
                 <h3 className="Sub-ux">Creando productos con la <b>metodología Design Thinking</b> y aplicando distintas <b>investigaciones, métodos  de ideación, pruebas de usabilidad y prototipado </b></h3>
@@ -61,7 +86,11 @@ export default function Trabajo(props){
                 />
             </div>
             </div>
+            <div className={modal === 2 ? "card-activa active-card" : "services__modal" }>
+                
+                <ProyectosUX toggleTab = {toggleTab}/>
 
+            </div>
         </div>
 
         {/* Contenedor 3 */}
@@ -71,7 +100,8 @@ export default function Trabajo(props){
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="600"
-            data-aos-easing="ease-in-out">
+            data-aos-easing="ease-in-out"
+            onClick={() => toggleTab(3)}>
             <h2 className="Titulo-trabajo"> Daily Design</h2>
             <h3 className="Sub-dd"><b>Explorando la Creatividad Cotidiana </b>Una recopilación que representan mi compromiso y la mejora continua.</h3>
             <div className="container-img">
@@ -80,6 +110,11 @@ export default function Trabajo(props){
             src="./images/Trabajo/DD.gif"
             />
             </div>
+            </div>
+            <div className={modal === 3 ? "card-activa active-card" : "services__modal" }>
+                
+                <DailyDesign toggleTab = {toggleTab}/>
+
             </div>
             <img className="fondo3"
             alt="fondo3"
@@ -96,7 +131,8 @@ export default function Trabajo(props){
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="600"
-        data-aos-easing="ease-in-out">
+        data-aos-easing="ease-in-out"
+        onClick={() => toggleTab(4)}>
             <h2 className="Titulo-trabajo"> Challenges Programacion </h2>
             <h3 className="Sub-cp">Desafíos de programación para crear sitios con una lógica más compleja </h3>
             <div className="container-img">
@@ -106,7 +142,11 @@ export default function Trabajo(props){
             />
             </div>
             </div>
-            
+            <div className={modal === 4 ? "card-activa active-card" : "services__modal" }>
+                
+            <ChallengesProgra toggleTab = {toggleTab}/>
+
+            </div>
         </div>
         
         </div>

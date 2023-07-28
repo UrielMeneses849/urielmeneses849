@@ -11,7 +11,7 @@
     font-family: var(--poppins);
     font-size: 3rem;
     font-weight: var(--font-semi-bold);
-    padding: 70px 0 0 100px;
+    padding: 50px 0 0 80px;
 }
 
 /* Sub titulos de las card */
@@ -24,7 +24,7 @@
 /* Sub de la card UX */
 .Sub-ux{
     font-family: var(--poppins);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 0 0 40px 100px;
     font-weight: var(--normal); 
 }
@@ -80,7 +80,7 @@
     font-family: var(--poppins);
     font-size: 3rem;
     font-weight: var(--font-semi-bold);
-    padding: 70px 0 30px 100px;
+    padding: 50px 0 30px 80px;
 }
 @media screen and (max-width: 1600px){
     /* Maquetas UI */

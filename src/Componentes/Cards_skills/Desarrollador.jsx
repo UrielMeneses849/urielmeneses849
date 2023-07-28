@@ -16,7 +16,7 @@ export default function Desarrollador(props){
 
                         <li className="services__modal-service">
                             <i className="uil uil-check-circle services__modal-icon"></i>
-                            <p className="services__modal-info">Diseño y desarrollo responsivo <i className="uil uil-mobile-android"></i></p>
+                            <p className="services__modal-info">Diseño y desarrollo responsivo<i className="uil uil-mobile-android"></i></p>
                         </li>
 
                         <li className="services__modal-service">
@@ -26,7 +26,7 @@ export default function Desarrollador(props){
 
                         <li className="services__modal-service">
                             <i className="uil uil-check-circle services__modal-icon"></i>
-                            <p className="services__modal-info">Frameworks CSS (Tailwind CSS y Boostrap)</p>
+                            <p className="services__modal-info">Frameworks CSS (Material UI)</p>
                         </li>
 
                         <li className="services__modal-service">
@@ -36,7 +36,7 @@ export default function Desarrollador(props){
 
                         <li className="services__modal-service">
                             <i className="uil uil-check-circle services__modal-icon"></i>
-                            <p className="services__modal-info">Branding <i className="uil uil-brain"></i></p>
+                            <p className="services__modal-info">Micro-Animaciones con Framer Motion <i className="uil uil-brain"></i></p>
                         </li>
 
                     </ul>

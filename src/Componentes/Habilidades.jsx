@@ -36,7 +36,8 @@ export default function Habilidades(props){
         <div className="services__container container grid" >
 
             {/* Contenedor 1 */}
-        <div className="services__content" style={{backgroundColor: `${fondoCard}`, border: `${bordeCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}
+        <div className="services__content" style={{backgroundColor: `${fondoCard}`, border: `${bordeCard}`}} onMouseEnter={props.textEnter} 
+        onMouseLeave={props.textLeave}
 >
                 <div>
         {/* Parte visible de la card  */}
@@ -47,7 +48,7 @@ export default function Habilidades(props){
                     <i className="uil uil-arrow-right services__button-icon"></i></span>
 
             {/* Contenido oculto de la card */}
-            <div className={modal === 1? "services__modal active-modal" : "services__modal" }>
+            <div className={modal === 1 ? "services__modal active-modal" : "services__modal" }>
                 
                     <Diseñador toggleTab = {toggleTab}/>
 

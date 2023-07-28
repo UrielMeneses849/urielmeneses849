@@ -1,0 +1,63 @@
+.M1{
+    width: 75%;
+    height: 600px;
+    border-radius: 30px;
+    background-color: #FFD9C0;
+    margin: 0 auto;
+    background-image: url("./images/Maquetas/M1.svg");
+}
+
+.M2{
+    width: 75%;
+    height: 600px;
+    border-radius: 30px;
+    background-color: #EF6262;
+    margin: 0 auto;
+    background-image: url("./images/Maquetas/M2.svg");
+    background-size: cover;
+}
+
+.M3{
+    width: 75%;
+    height: 600px;
+    border-radius: 30px;
+    background-color: #CEE5D0;
+    margin: 0 auto;
+    background-image: url("./images/Maquetas/M3.svg");
+}
+
+.M4{
+    width: 75%;
+    height: 600px;
+    border-radius: 30px;
+    background-color: #FBEEAC;
+    margin: 0 auto;
+    background-image: url("./images/Maquetas/M4.svg");
+    background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .M1{
+        width: 100%;
+        height: 35%;
+        background-size: cover;
+        background-position: center;
+    }
+    .M2{
+        width: 100%;
+        height: 35%;
+        background-position: center;
+    }
+
+    .M3{
+        width: 100%;
+        height: 35%;
+        background-size: cover;
+        background-position: center;
+    }
+    .M4{
+        width: 100%;
+        height: 35%;
+        background-position: center;
+    }
+}

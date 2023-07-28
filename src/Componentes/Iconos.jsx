@@ -13,11 +13,11 @@ export default function Iconos(){
             alt=""
             className="icon-figma"/></li>
             <li className="icono"><img 
-            src="./images/iconos/html.svg"
+            src="./images/iconos/FM.png"
             alt=""
             className="icon" /></li>
             <li className="icono"><img 
-            src="./images/iconos/css.svg"
+            src="./images/iconos/MUI.svg"
             alt=""
             className="icon" /></li>
             <li className="icono"><img 

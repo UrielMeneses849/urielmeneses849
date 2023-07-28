@@ -50,7 +50,7 @@ backdrop-filter: blur(20px);
 }
 @media screen and (max-width: 1600px){
     .nav_menu { 
-        margin: 30px auto ;
+        margin: 30px auto;
         height: 70px;
     }
     .nav_link{
@@ -65,6 +65,7 @@ backdrop-filter: blur(20px);
     }
 
     .nav_menu {
+        margin: 0 auto;
     top: initial;
     bottom: -100%;
     position: fixed;
