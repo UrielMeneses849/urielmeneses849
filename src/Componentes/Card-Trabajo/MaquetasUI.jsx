@@ -15,7 +15,7 @@ export default function MaquetasUI(props) {
         <br />
         <br />
         <h3 className="services__modal-title">Honda Civic</h3>
-        <div className="M2">
+        <div className="M2" style={{backgroundImage: "./images/M1.svg"}}>
         </div>
 
         <br />
