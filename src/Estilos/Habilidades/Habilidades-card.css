@@ -199,6 +199,11 @@
         width: 100%;
         padding:0 15px;
     }
+
+    .services__modal-title{
+        font-size: var(--h2-font-size);
+     }
+
     .services__container{
         height: 870px;
         grid-template-columns: repeat(1, .9fr); 

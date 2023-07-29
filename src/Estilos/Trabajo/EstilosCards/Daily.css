@@ -1,0 +1,24 @@
+.contenedor-daily{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.D1{
+    width: 75%;
+    height: 600px;
+    border-radius: 30px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+    .D1{
+        width: 100%;
+        height: 35%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+}
