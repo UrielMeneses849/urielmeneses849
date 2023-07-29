@@ -10,19 +10,19 @@ export default function DailyDesign(props) {
 
         <br />
         <br />
-        <h3 className="services__modal-title" style={{fontSize: "1.5rem"}}>LOGIN Page</h3>
+        <h3 className="services__modal-title2">LOGIN Page</h3>
         <div className="D1" style={{backgroundImage: `url("./images/Diseños/D1.svg")`}}>        
         </div>
 
         <br />
         <br />
-        <h3 className="services__modal-title" style={{fontSize: "1.5rem"}}>PAYMENT Page</h3>
+        <h3 className="services__modal-title2">PAYMENT Page</h3>
         <div className="D1" style={{backgroundImage: `url("./images/Diseños/D2.svg")`}}>        
         </div>
 
         <br />
         <br />
-        <h3 className="services__modal-title" style={{fontSize: "1.5rem"}}>USER Page</h3>
+        <h3 className="services__modal-title2">USER Page</h3>
         <div className="D1" style={{backgroundImage: `url("./images/Diseños/D3.svg")`}}>        
         </div>
 

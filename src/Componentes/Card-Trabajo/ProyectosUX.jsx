@@ -11,13 +11,13 @@ export default function ProyectosUX(props) {
 
         <br />
         <br />
-        <h3 className="services__modal-title" style={{fontSize: "1.5rem"}}>HoodiesCool</h3>
+        <h3 className="services__modal-title2">HoodiesCool</h3>
         <div className="HC" style={{backgroundImage: `url("./images/maquetas/HC.svg")`}}>
         </div>
 
         <br />
         <br />
-        <h3 className="services__modal-title" style={{fontSize: "1.5rem"}}>CineFast</h3>
+        <h3 className="services__modal-title2">CineFast</h3>
         <div className="CF" style={{backgroundImage: `url("./images/maquetas/CF.svg")`}}>
             <div className="texto-cf">
         <p className="services__modal-description" style={{fontSize: 22}}>CineFast es el primer proyecto  de mi carrera como diseñador, el cual he decidido no actualizar para contrastar la evolución que he tenido diseñando productos.</p>
