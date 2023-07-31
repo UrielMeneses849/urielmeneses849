@@ -1,7 +1,7 @@
 import "../Estilos/Home/HomePage.css"
 import "../Estilos/Home/Toggle.css"
 
-
+import { motion } from "framer-motion"
 
 export default function Home(props){
     // Fondo del Home
@@ -55,8 +55,8 @@ export default function Home(props){
                     className="toggler--slider"
                     // Llamado de la funcion
                     onClick={props.toggleDarkMode}
-                >
-                    <div className="toggler--slider--circle"></div>
+                    >
+                    <motion.div className="toggler--slider--circle" layout transition={spring}></motion.div>
                 </div>
                 <p className="toggler--dark"><img src={luna}
                 alt=""
@@ -86,3 +86,9 @@ export default function Home(props){
         </div>
     )
 }
+
+const spring = {
+    type: "spring",
+    stiffness: 700,
+    damping: 30
+  };

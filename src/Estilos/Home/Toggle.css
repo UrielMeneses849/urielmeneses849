@@ -19,8 +19,8 @@ nav {
   
   /* Barra que contiene el circulo del toggle con un fondo oscuro para contrastar con el claro */
   .toggler--slider {
-    width: 44px;
-    height: 28px;
+    width: 65px;
+    height: 35px;
     background-color: #121212;
     border-radius: 2rem;
     margin-inline: 7px;
@@ -42,8 +42,8 @@ nav {
   
   /* Circulo que esta dentro del toggle */
   .toggler--slider--circle {
-    height: 20px;
-    width: 20px;
+    height: 32px;
+    width: 32px;
     background-color: white;
     border-radius: 50%;
   }
@@ -79,11 +79,11 @@ nav {
       padding: 30px 10px;
     }
     .toggler--slider {
-      width: 40px;
-      height: 24px;
+      width: 50px;
+      height: 30px;
     }
     .toggler--slider--circle {
-      height: 18px;
-      width: 18px;
+      height: 25px;
+      width: 25px;
     }
   }

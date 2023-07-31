@@ -5,7 +5,7 @@
 
 /* Color del fondo*/
 body{
-transition: 0.9s;
+transition: 1.2s;
 }
 
 .logo{
@@ -18,20 +18,18 @@ transition: 0.9s;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  
+
 }
 
 /* Titulo principal */
 h1{
-  text-align: center;
   margin-top: 5rem;
-  font-size: 6rem;
-  font-family: 'Macondo', cursive;
+  font-size: 10rem;
+  font-family: var(--poppins);
   text-shadow: 2px 4px 4px 0px rgba(12, 13, 29, 0.50);
-  line-height: 8.5rem;
-
-  width: 50%;
+  line-height: 12.5rem;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 /* Lista con mis grados */
@@ -57,12 +55,9 @@ background-position: top center;
 @media screen and (max-width: 1600px){
   h1{
     text-align: center;
-    margin-top: 3rem;
-    font-size: 3.8rem;
-    font-family: 'Macondo', cursive;
+    font-size: 8rem;
     text-shadow: 2px 4px 4px 0px rgba(12, 13, 29, 0.50);
-    line-height: 6rem;
-    width: 50%;
+    line-height: 9rem;
     margin: 0 auto;
   }
   .logo{
@@ -80,11 +75,19 @@ background-position: top center;
     margin: 25px auto 0;
   }
 .Home{
-  height: 80vh;
+  height: 84vh;
 }
 }
-
-
+@media screen and (max-width: 1366px){
+  .lista-home{
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px){
+  .lista-home{
+    display: block;
+  }
+}
 @media screen and (max-width: 1024px){
   .logo{
     top: 0;
@@ -134,8 +137,9 @@ background-position: top center;
   }
   @media screen and (max-width: 600px){
     h1{
-      font-size: 3.1rem;
-      width: 100%;
+      font-size: 3.5rem;
+      width: 80%;
+      line-height: 70px;
     }
     .Home{
       height: 95vh;
