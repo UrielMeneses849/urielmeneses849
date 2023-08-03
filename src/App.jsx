@@ -70,7 +70,7 @@ const variants = {
     width: 100,
     x: mousePosition.x - 50,
     y: mousePosition.y - 50,
-    backgroundColor: "#E2F6CA"
+    backgroundColor: "#8BE8E5"
   }
 }
 
@@ -88,6 +88,7 @@ function textEnterVisitar (){
   setCursorVariant("link");
   setCursorText("Abrir");
 }
+
 
 // Cursor
   return (

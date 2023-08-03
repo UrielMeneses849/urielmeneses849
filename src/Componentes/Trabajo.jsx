@@ -54,7 +54,10 @@ export default function Trabajo(props){
 
             <div className={modal === 1 ? "card-activa active-card" : "services__modal" }>
                 
-                <MaquetasUI toggleTab = {toggleTab}/>
+                <MaquetasUI 
+                toggleTab = {toggleTab}
+                textEnterVisitar = {props.textEnterVisitar}
+                textLeave = {props.textLeave}/>
 
             </div>
 
@@ -88,7 +91,10 @@ export default function Trabajo(props){
             </div>
             <div className={modal === 2 ? "card-activa active-card" : "services__modal" }>
                 
-                <ProyectosUX toggleTab = {toggleTab}/>
+                <ProyectosUX 
+                toggleTab = {toggleTab}
+                textEnterVisitar = {props.textEnterVisitar}
+                textLeave = {props.textLeave}/>
 
             </div>
         </div>
@@ -144,7 +150,10 @@ export default function Trabajo(props){
             </div>
             <div className={modal === 4 ? "card-activa active-card" : "services__modal" }>
                 
-            <ChallengesProgra toggleTab = {toggleTab}/>
+            <ChallengesProgra 
+            toggleTab = {toggleTab}
+            textEnterVisitar = {props.textEnterVisitar}
+            textLeave = {props.textLeave}/>
 
             </div>
         </div>
