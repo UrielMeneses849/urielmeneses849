@@ -14,7 +14,7 @@ export default function ChallengesProgra(props) {
         <br />
         <br />
         <h3 className="services__modal-title2">Alura Geek</h3>
-        <a href="https://urielmeneses849.github.io/Generador-de-Memes/" target="blank"><img src="./images/Challenges/C5.png" alt="" className="imgC" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}/></a>
+        <a href="https://urielmeneses849.github.io/AluraGeek/" target="blank"><img src="./images/Challenges/C5.png" alt="" className="imgC" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}/></a>
         </div> 
 
         <div className="cont">
