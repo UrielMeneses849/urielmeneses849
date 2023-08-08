@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../../Estilos/Trabajo/EstilosCards/Maquetas.css"
 
 export default function MaquetasUI(props) {

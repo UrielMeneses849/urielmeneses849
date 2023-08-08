@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../../Estilos/Trabajo/EstilosCards/Daily.css"
 
 export default function DailyDesign(props) {

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../Estilos/Educacion/Educacion.css"
 export default function Educacion(props){
 

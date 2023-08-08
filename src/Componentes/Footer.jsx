@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../Estilos/Footer/Footer.css"
 
 import Formulario from "./fomulario/Formulario"

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../Estilos/Acerca/Acerca.css"
 
 export default function About(props){

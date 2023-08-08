@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../Estilos/Trabajo/Trabajo-cards.css"
 import "../Estilos/Trabajo/Titulos-textos.css"
 import "../Estilos/Trabajo/CrdsTrabajo.css"

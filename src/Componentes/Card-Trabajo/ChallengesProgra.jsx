@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../../Estilos/Trabajo/EstilosCards/Challenges.css"
 
 export default function ChallengesProgra(props) {

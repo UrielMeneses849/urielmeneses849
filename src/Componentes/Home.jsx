@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../Estilos/Home/HomePage.css"
 import "../Estilos/Home/Toggle.css"
 
