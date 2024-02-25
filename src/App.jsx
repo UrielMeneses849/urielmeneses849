@@ -139,10 +139,11 @@ function textEnterVisitar (){
       textEnter = {textEnter}
       textLeave = {textLeave}
       />
+
       <motion.div 
-    className="cursor"
-    variants={variants}
-    animate={cursorVariant}>
+      className="cursor"
+      variants={variants}
+      animate={cursorVariant}>
       <span className="cursorText">{cursorText}</span>
       </motion.div>
     </>

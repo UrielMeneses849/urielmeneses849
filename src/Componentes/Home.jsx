@@ -6,19 +6,19 @@ import { motion } from "framer-motion"
 
 export default function Home(props){
     // Fondo del Home
-    const fondo = props.darkMode ? `url("./images/fondoBlanco.svg")`: `url("./images/fondo.svg")`
+    const fondo = props.darkMode ? `url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/fondoBlanco.svg?alt=media&token=d2caa56e-25c9-4a1a-96e5-b0f376498d85")`: `url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/fondo.svg?alt=media&token=e50a76e6-1705-4a57-8134-e05426eedac3")`
 
     // Icono de la esquina
-    let icon = props.darkMode ? "./images/logoBlanco.svg" : "./images/logo.svg"
+    let icon = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/logoBlanco.svg?alt=media&token=12752dca-ce65-4a7c-a4ad-c57ef4dfd23c" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/logo.svg?alt=media&token=14170856-340e-4b5c-b014-f087cfce9158"
 
     // Color de fondo de todo el body
     document.body.style = props.darkMode ? `background-Color: #0b0b0c` : `background-Color: #fafafa`
     
     // Logo de luna
-    let luna = props.darkMode ? "./images/lunaDark.svg" : "./images/lunaLight.svg"
+    let luna = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/lunaDark.svg?alt=media&token=e59f9b0d-fc15-4488-9cd0-239bed026949" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/lunaLight.svg?alt=media&token=56f33537-39ac-42ed-b2c8-32a5d1c33927"
 
     // Logo del sol
-    let sol = props.darkMode ? "./images/solDark.svg" : "./images/solLight.svg"
+    let sol = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/solDark.svg?alt=media&token=f5188a83-abd4-4211-85a5-e467c34dfc23" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/solLight.svg?alt=media&token=54bcc591-dde5-43a0-8674-9813e4997f85"
 
     // Cursor personalizado
     

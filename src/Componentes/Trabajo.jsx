@@ -34,6 +34,8 @@ export default function Trabajo(props){
         data-aos-duration="1000"
         data-aos-easing="ease-in-out">Da click y conoce mi trabajo</h3>
         {/* Contenedor 1 */}
+
+        
         <div className="container-maquetas">
 
         <div className="maquetas-ui" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}
@@ -150,7 +152,7 @@ export default function Trabajo(props){
             </div>
             </div>
             <div className={modal === 4 ? "card-activa active-card" : "services__modal" }>
-                
+                 
             <ChallengesProgra 
             toggleTab = {toggleTab}
             textEnterVisitar = {props.textEnterVisitar}
