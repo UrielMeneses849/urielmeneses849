@@ -72,7 +72,7 @@ export default function Home(props){
         data-aos-offset="100"
         data-aos-delay="30"
         data-aos-duration="900"
-        data-aos-easing="ease-in">Hey, soy Uriel <br/> Web Developer</h1>
+        data-aos-easing="ease-in">Hola, soy Uriel <br/> Web Developer</h1>
         <ul style={{ color: `${props.colortexto}` }} className="lista-home" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}
         data-aos="fade-up" 
         data-aos-offset="100"
