@@ -8,24 +8,14 @@ nav {
     height: 65px;
     z-index: 1;
     transition: 0.6s;
-    justify-content: space-between;
+    justify-content: right;
   }
   
   /* Contenedor del toggle */
-  .toggler {
-    display: flex;
-    align-items: center;
-  }
+  .toggler { display: flex; align-items: center; margin-top: 50px; }
   
   /* Barra que contiene el circulo del toggle con un fondo oscuro para contrastar con el claro */
-  .toggler--slider {
-    width: 65px;
-    height: 35px;
-    background-color: #121212;
-    border-radius: 2rem;
-    margin-inline: 7px;
-    cursor: pointer;
-    display: flex;
+  .toggler--slider { width: 55px; height: 34px; background-color: #121212; border-radius: 2rem; margin-inline: 15px; cursor: pointer; display: flex;
     /* Cuando esta en modo light se alinea al principio del toggle */
     justify-content: flex-start;
     align-items: center;
@@ -42,8 +32,9 @@ nav {
   
   /* Circulo que esta dentro del toggle */
   .toggler--slider--circle {
-    height: 32px;
-    width: 32px;
+    height: 25px;
+    width: 25px;
+    margin: 0 3px;
     background-color: white;
     border-radius: 50%;
   }
@@ -73,17 +64,13 @@ nav {
     justify-content: flex-end;
     transition: 0.9s;
   }
-
+  @media screen and (max-width: 820px){ .toggler{  margin: 30px;} nav{ padding: 20px 0;} }
   @media screen and (max-width: 600px){
-    nav{
-      padding: 30px 10px;
-    }
-    .toggler--slider {
-      width: 50px;
-      height: 30px;
-    }
-    .toggler--slider--circle {
-      height: 25px;
-      width: 25px;
-    }
+    nav{ padding: 10px; }
+
+    .toggler{ margin: 0px;}
+
+    .toggler--slider { width: 45px; height: 26px; }
+
+    .toggler--slider--circle { height: 20px; width: 20px; }
   }

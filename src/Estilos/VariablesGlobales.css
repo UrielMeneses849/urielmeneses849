@@ -81,10 +81,7 @@ font-family: var(--poppins);
     margin-bottom: 4rem;
 
 }
-ul{
-    list-style: none;
-    font-family: var(--poppins);
-}
+
 span,
 p,
 h3{

@@ -6,13 +6,10 @@ import { motion } from "framer-motion"
 
 export default function Home(props){
     // Fondo del Home
-    const fondo = props.darkMode ? `url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/fondoBlanco.svg?alt=media&token=d2caa56e-25c9-4a1a-96e5-b0f376498d85")`: `url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/fondo.svg?alt=media&token=e50a76e6-1705-4a57-8134-e05426eedac3")`
-
-    // Icono de la esquina
-    let icon = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/logoBlanco.svg?alt=media&token=12752dca-ce65-4a7c-a4ad-c57ef4dfd23c" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/logo.svg?alt=media&token=14170856-340e-4b5c-b014-f087cfce9158"
+    const fondo = props.darkMode ? `url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2FFondoBlanco.svg?alt=media&token=62775da3-f4fa-400c-9a92-12bf73af72df")`: `url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2FFondoNegro.svg?alt=media&token=6c3c471d-5b05-4138-ba84-43aaa662d115")`
 
     // Color de fondo de todo el body
-    document.body.style = props.darkMode ? `background-Color: #0b0b0c` : `background-Color: #fafafa`
+    document.body.style = props.darkMode ? `background-Color: #0b0b0c` : `background-Color: #f0f0f0`
     
     // Logo de luna
     let luna = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/lunaDark.svg?alt=media&token=e59f9b0d-fc15-4488-9cd0-239bed026949" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/lunaLight.svg?alt=media&token=56f33537-39ac-42ed-b2c8-32a5d1c33927"
@@ -26,63 +23,45 @@ export default function Home(props){
     return(
         // Nav que cambia el color del toggle
         <div className="Home" style={
-                {backgroundImage: `${fondo}`}}>
-            <nav 
-            // Ponemos un ternario para cambiar la clase, se pone un color por default con el nav sin clase y una con el nav con clase
-            className={props.darkMode ? "dark": ""}
-        >
+        {backgroundImage: `${fondo}`}}>
 
-            <img 
-            src= {icon}
-            alt="logo"
-            className="logo"
-            data-aos="fade-down" 
-        data-aos-offset="100"
-        data-aos-delay="30"
-        data-aos-duration="900"
-        data-aos-easing="ease-in"/>
+{/*  // Ponemos un ternario para cambiar la clase, se pone un color por default con el nav sin clase y una con el nav con clase */}
+            <nav className={props.darkMode ? "dark": ""} >
+
+            
         {/* Toggle */}
             <div 
-                className="toggler" 
-                data-aos="fade-down" 
-                data-aos-offset="100"
-                data-aos-delay="30"
-                data-aos-duration="900"
-                data-aos-easing="ease-in">
-                <p className="toggler--light"><img src={sol}
-                alt=""
-                className="toggle"/></p> 
-                <div 
-                    className="toggler--slider"
-                    // Llamado de la funcion
-                    onClick={props.toggleDarkMode}
-                    >
-                    <motion.div className="toggler--slider--circle" layout transition={spring}></motion.div>
-                </div>
-                <p className="toggler--dark"><img src={luna}
-                alt=""
-                className="toggle"/></p>
+            className="toggler" 
+            data-aos="fade-down" 
+            data-aos-offset="100"
+            data-aos-delay="30"
+            data-aos-duration="900"
+            data-aos-easing="ease-in">
+            <p className="toggler--light"><img src={sol} alt="" className="toggle"/></p> 
+
+            <div className="toggler--slider" onClick={props.toggleDarkMode} > <motion.div className="toggler--slider--circle" layout transition={spring}> </motion.div> </div>
+
+            <p className="toggler--dark"><img src={luna} alt="" className="toggle"/></p>
             </div>
-        </nav>
+            </nav>
         {/* Toggle */}
 
         <div className="Textos-Home">
-        <h1 style={{ color: `${props.colortexto}` }} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}
-        data-aos="fade-up" 
-        data-aos-offset="100"
-        data-aos-delay="30"
-        data-aos-duration="900"
-        data-aos-easing="ease-in">Hola, soy Uriel <br/> Web Developer</h1>
-        <ul style={{ color: `${props.colortexto}` }} className="lista-home" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}
+        <h1 style={{ color: `${props.colortexto}` }} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave} className={props.darkMode ? "SombraDark" : "SombraLight"} >Hola, Soy Uriel <br/> <span>Web Developer</span></h1>
+
+
+
+        <div style={{ color: `${props.colortexto}` }} className="lista-home" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}
         data-aos="fade-up" 
         data-aos-offset="100"
         data-aos-delay="30"
         data-aos-duration="900"
         data-aos-easing="ease-in">
-            <li> Diseñador de experiencia de usuario</li>
-            <li>Desarrollador Front End</li>
-            <li>Ingeniero en computación</li>
-        </ul>
+            <span><b className="verde"> UX/UI</b> Designer </span>
+            <span><b className="guinda"> Ingeniero</b> en computación</span>
+            <span><b className="azul"> Front End</b> Developer</span>
+            
+        </div>
         </div>
         </div>
     )
