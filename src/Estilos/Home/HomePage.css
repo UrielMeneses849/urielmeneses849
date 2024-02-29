@@ -93,7 +93,7 @@ h1{
 
   .lista-home{ flex-direction: column; margin: 30px auto 10px;}
 
-  .lista-home span { width: 90%; margin: 0 auto; font-size: 1.125rem; line-height: 4rem; }
+  .lista-home span { width: 90%; margin: 0 auto; font-size: 1.45rem; line-height: 4rem; }
 
   .lista-home b {text-underline-offset: 8px; }
 }
@@ -107,7 +107,7 @@ h1{
 
   .lista-home{ flex-direction: column; margin: 0 auto 10px;}
 
-  .lista-home span { width: 90%; margin: 0 auto; font-size: 1.1rem; line-height: 4rem; }
+  .lista-home span { width: 90%; margin: 0 auto; font-size: 1.3rem; line-height: 4rem; }
 
   .lista-home b {text-underline-offset: 8px; }
 }

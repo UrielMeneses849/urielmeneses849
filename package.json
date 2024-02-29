@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://urielmeneses.github.io/urielmeneses849", 
+  "homepage": "https://urielmeneses.me/", 
   "scripts": {
     "dev": "vite",
     "build": "vite build",
