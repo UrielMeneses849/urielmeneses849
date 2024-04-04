@@ -1,0 +1,105 @@
+.skills__container{ display: flex; justify-content: space-between; align-items: center; height: 50vh; margin: 20px auto; flex-wrap: no-wrap; max-width: 80%;}
+
+.contenedorSkillText{width: 22%; max-width: 23%; height: 100%; margin: 0 20px; text-align: center; display: flex; flex-direction: column; justify-content: start;}   
+
+.tituloCard{ font-family: var(--poppins); font-weight: 300; font-size: var(--h3-font-size); margin-bottom: var(--mb-0-75); }
+
+.skills__content{
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.15), 0px 30px 30px 0px rgba(0, 0, 0, 0.13), 0px 68px 41px 0px rgba(0, 0, 0, 0.08), 0px 121px 48px 0px rgba(0, 0, 0, 0.02), 0px 189px 53px 0px rgba(0, 0, 0, 0.00);
+}
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 3; }
+    .div4 { grid-area: 3 / 1 / 4 / 2; }
+    .div5 { grid-area: 3 / 2 / 4 / 3; }
+
+    .div1 img, .div2 img, .div3 img, .div4 img, .div5 img{ width: 50%; filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.10)) drop-shadow(0px 9px 9px rgba(0, 0, 0, 0.09)) drop-shadow(0px 20px 12px rgba(0, 0, 0, 0.05)) drop-shadow(0px 35px 14px rgba(0, 0, 0, 0.01)) drop-shadow(0px 55px 15px rgba(0, 0, 0, 0.00));}
+    .div2 img { width: 40%; }
+    .div3 img { width: 30%; }
+
+.contenedorSkillText:nth-child(2){justify-content: end; }
+
+.Herramientas{ height: 50%; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr);}
+
+.UX-Content .div3 img, .UX-Content .div2 img, .Herramientas .div2 img, .Herramientas .div1 img, .Herramientas .div3 img, .BD .div1 img, .BD .div2 img, .FW .div2 img, .FW .div1 img{ width: 55%;}
+
+.UX-Content .div1 img { width: 40%;}
+
+.contenedorSkillText:nth-child(3){justify-content: center;}
+
+.UX-Content{height: 60%; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr);}
+
+.contenedorSkillText:nth-child(4){justify-content: center;}
+
+.FW{height: 30%; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: 1fr; align-items: center;}
+
+.contenedorSkillText:nth-child(5){justify-content: end;}
+
+.BD{height: 60%; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr);}
+
+
+@media screen and (max-width: 1440px){
+    .div1 img, .div4 img, .div5 img{ width: 55%; }
+
+    .BD .div3 img{width: 50%;}
+
+    .Herramientas .div2 img, .Herramientas .div1 img, .Herramientas .div3 img, .BD .div1 img, .BD .div2 img, .BD .div2 img , .FW .div1 img, .UX-Content .div3 img, .UX-Content .div2 img, .UX-Content .div1 img { width: 65%;}
+}
+/* * Tablet pequeña*/
+@media screen and (max-width: 1024px){ 
+.skills__container{flex-wrap: wrap; height: 85vh;  margin: 0 auto ; justify-content: center; } 
+
+.contenedorSkillText{height: 31%; min-width: 45%; margin: 10px auto; }
+
+.contenedorSkillText:nth-child(2){justify-content: start; order: 3;} 
+
+.Herramientas{ height: 50%;}
+
+.contenedorSkillText:nth-child(3){justify-content: start; order: 4;  margin: -20% auto 0;}
+
+.UX-Content{height: 70%;}
+
+.contenedorSkillText:nth-child(4){justify-content: start; min-width: 50%; order: 5; margin: -15% auto 0;}
+
+.FW{height: 40%;}
+
+.contenedorSkillText:nth-child(5){justify-content: start; order: 2;}
+
+.BD{height: 60%;}
+
+/* * Iconos */
+
+.skills__content .div1 img, .skills__content .div2 img, .skills__content .div4 img, .skills__content .div5 img { width: 40%;}
+
+.skills__content .div3 img { width: 25%;}
+
+.BD .div1 img, .BD .div2 img, .Herramientas .div3 img, .UX-Content .div3 img{width: 50%;}
+}
+
+/* ? Movil */
+@media screen and (max-width: 480px){ 
+    /* .skills__container{order: 1;} .services__container{order: 3;} .Educacion_container{order: 2;} */
+.tituloCard{ font-size: var(--h3-font-size); margin-bottom: var(--mb-0-75); } 
+
+.contenedorSkillText:nth-child(3), .contenedorSkillText:nth-child(4){  margin: -30% auto 0; }
+
+.contenedorSkillText:nth-child(4){min-width: 80%; }
+
+.skills__content .div1 img,.skills__content .div4 img,.skills__content .div5 img{ width: 52%;}
+
+.UX-Content .div3 img, .UX-Content .div2 img,  .Herramientas .div1 img, .Herramientas .div2 img  { width: 55%;}
+
+.BD .div1 img, .BD .div2 img{ width: 70%;}
+
+.UX-Content .div1 img,.FW .div2 img, .FW .div1 img{ width: 45%;}
+}
+

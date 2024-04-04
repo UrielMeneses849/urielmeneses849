@@ -4,11 +4,9 @@ import { motion } from "framer-motion"
 // Componentes
 import Home from "./Componentes/Home"
 import Menu from "./Componentes/Menu"
-import Iconos from "./Componentes/Iconos"
 import Trabajo from "./Componentes/Trabajo"
 import About from "./Componentes/About"
-import Habilidades from "./Componentes/Habilidades"
-import Educacion from "./Componentes/Educacion"
+import Habilidades from "./Componentes/Habilidades/Habilidades"
 import Footer from "./Componentes/Footer"
 // Variables globales
 import './Estilos/VariablesGlobales.css'
@@ -23,7 +21,9 @@ function toggleDarkMode(){
 }
 let icon = darkMode ? "./images/logoBlanco.svg" : "./images/logo.svg"
 
-let colortexto = darkMode ? "#F9F5F6" : "#0b0b0c"
+let colortexto = darkMode ? "#e0e0e0" : "#0b0b0c"
+
+let colortextoSub =  darkMode ? "#F0f0f0" : "#3f3f3f"
 
 // Cursor
 
@@ -99,6 +99,7 @@ function textEnterVisitar (){
       darkMode = {darkMode}
       toggleDarkMode = {toggleDarkMode}
       colortexto = {colortexto}
+      colortextoSub = {colortextoSub}
       textEnter = {textEnter}
       textLeave = {textLeave}
       />
@@ -110,29 +111,26 @@ function textEnterVisitar (){
       textEnter = {textEnter}
       textLeave = {textLeave}/>
 
-      <Iconos />
-      
-      <Trabajo 
-      colortexto = {colortexto}
-      textEnter = {textEnter}
-      textLeave = {textLeave}
-      textEnterVisitar = {textEnterVisitar}/>
-
       <Habilidades 
       darkMode = {darkMode}
       colortexto = {colortexto}
       textEnter = {textEnter}
       textLeave = {textLeave}/> 
-
-      <Educacion 
-      colortexto = {colortexto}/>
+      
+      <Trabajo 
+      darkMode = {darkMode}
+      colortexto = {colortexto}
+      textEnter = {textEnter}
+      textLeave = {textLeave}
+      textEnterVisitar = {textEnterVisitar}/>
 
       <About 
+      darkMode = {darkMode}
       colortexto = {colortexto}
       textEnter = {textEnter}
       textLeave = {textLeave}
       />
-      
+
       <Footer 
       darkMode = {darkMode}
       colortexto = {colortexto}

@@ -1,7 +1,7 @@
 .nav_menu {
     background-color: transparent;
     border: #888888 0.5px solid;
-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     height: 85px;
     padding: 0 10px;
     display: flex;
@@ -9,15 +9,15 @@ backdrop-filter: blur(20px);
     top: 0;
     overflow: hidden;
     font-family: var(--poppins);
-  font-weight: 500;
-    font-size: 21px;
+    font-weight: 500;
     border-radius: 8px;
     z-index: var(--z-modal);   
-    margin-top: 50px;
+    margin-top: -90px;
 }
 
 .nav_menu a {
     flex: 1;
+    font-size: 0.9rem;
     height: 100%;
     text-transform: uppercase;
     display: flex;
@@ -30,7 +30,7 @@ backdrop-filter: blur(20px);
     text-decoration: none;
 }
 .nav_menu a:hover {
-    font-size: 18px;
+    scale: 1.1;
 }
 .nav_icon{
     margin-right: 7px;
@@ -48,15 +48,33 @@ backdrop-filter: blur(20px);
     font-weight: var(--font-medium);
     transition: .3s;
 }
+
+
+
+@media screen and (min-width: 2500px){ .nav_menu a {font-size: 1.2rem;}}
+
+@media screen and (min-width: 3200px){ .nav_menu a {font-size: 1.5rem;} }
+
 @media screen and (max-width: 1600px){
     .nav_menu { 
-        margin: 30px auto;
+        margin-top: -75px;
         height: 70px;
     }
     .nav_link{
         font-size: var(--small-font-size);
     }
 }
+@media screen and (max-width: 1024px){
+    .nav_menu {
+        margin-top: -10px;
+        height: 60px;
+    }
+    .nav_link{
+        font-size: var(--small-font-size);
+    }
+}
+
+@media screen and (max-width: 768px){.nav_menu { margin-top: -65px; height: 60px; } }
 
 @media screen and (max-width: 600px){
     .nav_link{

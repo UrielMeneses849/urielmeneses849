@@ -8,6 +8,8 @@ import ProyectosUX from "./Card-Trabajo/ProyectosUX"
 import DailyDesign from "./Card-Trabajo/DailyDesign"
 import ChallengesProgra from "./Card-Trabajo/ChallengesProgra"
 
+import Finvero from "./Finvero/Finvero";
+
 import { useState } from "react";
 
 export default function Trabajo(props){
@@ -18,149 +20,172 @@ export default function Trabajo(props){
         setModal(index);
     }
 
+    const fondoCard = props.darkMode ? `#494949` : `#eeeeee`
+
+    const pdf = "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Curriculum%20espa%C3%B1ol.pdf?alt=media&token=4c4968e8-da92-407c-9a9a-c2d0bc788922";
     console.log(toggleTab)
     return(
         <div className="Trabajo" id="trabajo">
 
-        <h2 className="Titulo_trabajo" style={{ color: `${props.colortexto}` }} data-aos="fade-down" 
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in">Mi trabajo</h2>
+        <h2 className="Titulo_trabajo" style={{ color: `${props.colortexto}` }}>Mi trabajo</h2>
 
-        <h3 className="subtitulo" data-aos="fade" 
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out">Da click y conoce mi trabajo</h3>
+        {/* <h3 className="subtitulo" >Da click y conoce mi trabajo</h3> */}
         {/* Contenedor 1 */}
 
-        
-        <div className="container-maquetas">
+        <Finvero darkMode={props.darkMode} colortexto={props.colortexto}/>
 
-        <div className="maquetas-ui" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}
-        data-aos="flip-left" 
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="600"
-        data-aos-easing="ease-in-out"
-        onClick={() => toggleTab(1)}>
+        
+    <div className="container-general">
+
+        <div className="container1">
+
+            <div className="maquetas-ui" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={() => toggleTab(1)}>
             <h2 className="Titulo-trabajo"> Maquetas UI </h2>
             <h3 className="Sub">Maquetas hechas en figma y programadas con React</h3>
-            <div className="container-img">
-            <img className="UI"
-            alt="ui"
-            src="./images/Trabajo/UI.svg"
-            />
-            </div>
             </div>
 
             <div className={modal === 1 ? "card-activa active-card" : "services__modal" }>
-                
                 <MaquetasUI 
+                darkmode = {props.darkMode}
                 toggleTab = {toggleTab}
                 textEnterVisitar = {props.textEnterVisitar}
-                textLeave = {props.textLeave}/>
-
+                textLeave = {props.textLeave}
+                fondoCard = {fondoCard} 
+                colortexto= {props.colortexto}/>
             </div>
 
-            <img className="fondo1"
-            alt="fondo1"
-            src="./images/fondo1.svg" />
+            <div className="daily-design" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={() => toggleTab(3)}>
+            <h2 className="Titulo-trabajo"> Daily Design</h2>
+            <h3 className="Sub derecha"><b>Explorando la Creatividad Cotidiana </b>Una recopilación que representan mi compromiso y la mejora continua.</h3>
+            
+            </div>
+
+            <div className={modal === 3 ? "card-activa active-card" : "services__modal" }>
+                <DailyDesign toggleTab = {toggleTab}
+                fondoCard = {fondoCard} 
+                colortexto= {props.colortexto}
+                />
+            </div>
+        
         </div>
 
         {/* Contenedor 2 */}
-        <div className="container-ux">
-        <img className="fondo2"
-            alt="fondo2"
-            src="./images/fondo2.svg"/>
-            <div className="proyectos-ux" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}
-            data-aos="flip-right" 
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-            onClick={() => toggleTab(2)}>
-            <div className="textos-ux">
-                <h2 className="Titulo-ux"> Proyectos UX </h2>
-                <h3 className="Sub-ux">Creando productos con la <b>metodología Design Thinking</b> y aplicando distintas <b>investigaciones, métodos  de ideación, pruebas de usabilidad y prototipado </b></h3>
+        <div className="container2">
+            <div className="proyectos-ux" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={() => toggleTab(2)}>
+            
+                <h2 className="Titulo-trabajo center"> Proyectos UX </h2>
+                <h3 className="Sub">Creando productos con distintas <b>investigaciones, métodos  de ideación y pruebas de usabilidad.</b></h3>
             </div>
-            <div className="container-img">
-                <img className="UX"
-                alt="ux"
-                src="./images/Trabajo/UX.svg"
-                />
+            <div className={modal === 2 ? "card-activa active-card" : "services__modal" }>
+                
+                <ProyectosUX 
+                darkmode = {props.darkMode}
+                toggleTab = {toggleTab}
+                textEnterVisitar = {props.textEnterVisitar}
+                textLeave = {props.textLeave}
+                fondoCard = {fondoCard} 
+                colortexto= {props.colortexto}/>
+
             </div>
+        </div>
+
+
+        {/* Contenedor 3 */}
+       <div className="container1">
+
+       <a href={pdf} target="blank" className="pdf curriculum"><div onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}>
+            <h2 className="Titulo-trabajo"> Curriculum </h2>
+            
+        </div></a>
+
+
+        <div className="challenges-programacion" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={() => toggleTab(4)}>
+            <h2 className="Titulo-trabajo"> Programacion </h2>
+            <h3 className="Sub progra">Desafíos de programación para crear sitios con una lógica más compleja </h3>
+            </div>
+
+            <div className={modal === 4 ? "card-activa active-card" : "services__modal" }>
+                 
+            <ChallengesProgra 
+            darkmode = {props.darkMode}
+            toggleTab = {toggleTab}
+            textEnterVisitar = {props.textEnterVisitar}
+            textLeave = {props.textLeave}
+            fondoCard = {fondoCard} 
+            colortexto= {props.colortexto}/>
+            </div>
+
+         </div>
+
+        </div>
+
+
+    <div className="containerMovil">
+    <div className="maquetas-ui" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={() => toggleTab(1)}>
+            <h2 className="Titulo-trabajo"> Maquetas UI </h2>
+            <h3 className="Sub">Maquetas hechas en figma y programadas con React</h3>
+            
+            </div>
+
+            <div className={modal === 1 ? "card-activa active-card" : "services__modal" }>
+                <MaquetasUI 
+                toggleTab = {toggleTab}
+                textEnterVisitar = {props.textEnterVisitar}
+                textLeave = {props.textLeave}
+                fondoCard = {fondoCard} 
+                colortexto= {props.colortexto}/>
+            </div>
+
+            <div className="daily-design" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={() => toggleTab(3)}>
+            <h2 className="Titulo-trabajo"> Daily Design</h2>
+            <h3 className="Sub Sub2"><b>Explorando la Creatividad Cotidiana </b>Una recopilación que representan mi compromiso y la mejora continua.</h3>
+            
+            </div>
+
+            <div className={modal === 3 ? "card-activa active-card" : "services__modal" }>
+                <DailyDesign toggleTab = {toggleTab}
+                fondoCard = {fondoCard} 
+                colortexto= {props.colortexto}/>
+            </div>
+            
+            <div className="proyectos-ux" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={() => toggleTab(2)}>
+            
+                <h2 className="Titulo-trabajo"> Proyectos UX </h2>
+                <h3 className="Sub">Creando productos aplicando <b>investigaciones, métodos  de ideación y pruebas de usabilidad </b></h3>
+           
+            
             </div>
             <div className={modal === 2 ? "card-activa active-card" : "services__modal" }>
                 
                 <ProyectosUX 
                 toggleTab = {toggleTab}
-                textEnterVisitar = {props.textEnterVisitar}
-                textLeave = {props.textLeave}/>
+                fondoCard = {fondoCard} 
+                colortexto= {props.colortexto}/>
 
             </div>
-        </div>
 
-        {/* Contenedor 3 */}
-        <div className="container-dd">
-            <div className="daily-design" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}
-            data-aos="flip-left" 
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-easing="ease-in-out"
-            onClick={() => toggleTab(3)}>
-            <h2 className="Titulo-trabajo"> Daily Design</h2>
-            <h3 className="Sub-dd"><b>Explorando la Creatividad Cotidiana </b>Una recopilación que representan mi compromiso y la mejora continua.</h3>
-            <div className="container-img">
-            <img className="DD"
-            alt="ui"
-            src="./images/Trabajo/DD.gif"
-            />
-            </div>
-            </div>
-            <div className={modal === 3 ? "card-activa active-card" : "services__modal" }>
-                
-                <DailyDesign toggleTab = {toggleTab}/>
 
-            </div>
-            <img className="fondo3"
-            alt="fondo3"
-            src="./images/fondo3.svg" />
-        </div>
+            <a href={pdf} target="blank" className="curriculum pdf"><div onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}>
+            <h2 className="Titulo-trabajo"> Curriculum </h2>
+           
+        </div></a>
 
-        {/* Container 4 */}
-        <div className="container-challenge">
-        <img className="fondo4"
-            alt="fondo1"
-            src="./images/fondo4.svg" />
-        <div className="challenges-programacion" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}
-        data-aos="flip-right" 
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="600"
-        data-aos-easing="ease-in-out"
-        onClick={() => toggleTab(4)}>
-            <h2 className="Titulo-trabajo"> Challenges Programacion </h2>
-            <h3 className="Sub-cp">Desafíos de programación para crear sitios con una lógica más compleja </h3>
-            <div className="container-img">
-            <img className="progra"
-            alt="ui"
-            src="./images/Trabajo/CP.svg"
-            />
+
+        <div className="challenges-programacion" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={() => toggleTab(4)}>
+            <h2 className="Titulo-trabajo"> Programacion </h2>
+            <h3 className="Sub Sub2">Desafíos de programación para crear sitios con una lógica más compleja </h3>
             </div>
-            </div>
+
             <div className={modal === 4 ? "card-activa active-card" : "services__modal" }>
                  
             <ChallengesProgra 
             toggleTab = {toggleTab}
-            textEnterVisitar = {props.textEnterVisitar}
-            textLeave = {props.textLeave}/>
+            fondoCard = {fondoCard} 
+                colortexto= {props.colortexto}
+            
+            /> </div>
 
-            </div>
-        </div>
-        
-        </div>
+    </div>
+    </div>
     )
 }

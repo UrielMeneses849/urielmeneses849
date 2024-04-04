@@ -2,7 +2,7 @@
 
 body{ transition: 1.2s; }
 
-.Textos-Home{ display: flex; flex-direction: column; margin-top: 20px; }
+.Textos-Home{ display: flex; flex-direction: column; }
 
 /* Titulo principal */
 h1{
@@ -14,100 +14,85 @@ h1{
   margin: 0 auto;
   padding: 1rem;
 }
-.SombraDark{ text-shadow: 25px 23px 10px rgb(32, 32, 32), -3px 2px #fafafa; }
+
+.salto { display: none;}
+
+.SombraDark{ text-shadow: 25px 23px 10px rgb(32, 32, 32), -3px 1px #fafafa; }
 
 .SombraLight{
   text-shadow: 0px 6px 12px rgba(0, 0, 0, 0.54), 0px 22px 22px rgba(0, 0, 0, 0.47), 0px 50px 30px rgba(0, 0, 0, 0.28), 0px 88px 35px rgba(0, 0, 0, 0.08), 0px 138px 39px rgba(0, 0, 0, 0.01); 
 }
 /* Lista con mis grados */
-.lista-home{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  width: 85%;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-around;
-  margin: 80px auto 0;
-}
 
-.lista-home b { text-decoration-line: underline; text-decoration-style: solid;  text-decoration-thickness: 5px;  text-underline-offset: 10px; }
+.lista-home{ display: flex; margin: 30px auto 0; gap: 50px; width: 75%;  justify-content: space-between;}
 
-.verde{ text-decoration-color: #74E291; }
+.contenedorLogoTexto{display: inline-flex; align-items: center;}
 
-.guinda{ text-decoration-color: #75003E; }
+.LayoutTag{ display: flex; padding: 10px 20px; align-items: center; gap: 15px; border-radius: 69.872px; width:fit-content; }
 
-.azul { text-decoration-color: #7BD3EA; }
+.Home{ background-repeat: no-repeat; background-position: center; min-height: 100vh;  }
 
-.Home{ background-repeat: no-repeat; background-position: top center; height: 100vh; }
+/* ! Pantallas grandes */
 
 
-@media screen and (max-width: 1600px){
 
-  h1{ font-size: 9.5rem; line-height: 13rem; }
+@media screen and (min-width: 2500px){h1{ font-size: 19rem; line-height: 28rem; margin: 100px auto;} .lista-home{ font-size: 1.8rem; max-width: 70%;} .LayoutTag{ padding: 20px;}}
 
-  .lista-home{ font-size: 1.4rem;}
-}
-@media screen and (max-width: 1366px){
-  .lista-home{ display: flex; }
-}
+@media screen and (min-width: 3400px){ h1{ font-size: 25rem; line-height: 30rem; margin: 250px auto;} .lista-home{max-width: 60%; font-size: 2rem;}}
 
+/* ! Pantallas grandes */
+
+@media screen and (max-width: 1660px){ h1{ font-size: 9.5rem; line-height: 13rem; margin: 10px auto;} .lista-home{ margin: 0 auto; width: 85%;} .LayoutTag{font-size: 0.9rem;} }
+
+@media screen and (max-width: 1440px){ .lista-home{ margin: 60px auto 0; } }
+
+@media screen and (max-width: 1366px){ h1{ font-size: 7.5rem; line-height: 9rem; } .lista-home{ margin: 0 auto 30px;} .logos{max-width: 20%;}}
+
+@media screen and (max-width: 1280px){ .lista-home{ margin: 30px auto;} .logos{max-width: 22%;}}
+/* * Laptop pequeña */
 @media screen and (max-width: 1024px){
-.Home{ height: 71vh;}
-}
-@media screen and (max-width: 820px){
- 
-  h1{ font-size: 7.3rem; line-height: 8.5rem; width: 90%; }
+  .Home{ min-height: 90vh; background-position: center;}
 
-  .lista-home span { width: 33%;}
+  h1{ font-size: 8.5rem; line-height: 11rem; }
+
+  h1 span{ font-size: 5.5rem;}
+
+  .salto { display: block; margin-top: 1rem; }
+
+  .lista-home{ flex-direction: column; margin: 50px auto 10px; width: 70%;}
+
+  .contenedorLogoTexto{ flex-direction: row-reverse; justify-content: start;}
+ }
+
+/* * Estilos de Tablet pequeña*/
+@media screen and (max-width: 768px){
+  .lista-home{ margin: 20px auto;}
+
+  .Home{ min-height: 100vh;}
+
+  h1{  font-size: 7rem; line-height: 8rem; margin: 0 auto;}
+}
+
+/* ? Estilos de movil */
+@media screen and (max-width: 480px){ 
+  .Home{ min-height: 100vh;}
   
-  .lista-home{ font-size: 1.1rem;}
+  h1{ font-size: 5rem; line-height: 5.5rem; margin: 0 auto;}
 
-  .lista-home b { text-underline-offset: 1px; }
+  h1 span{ font-size: 4rem;  line-height: 1rem;}
   
-  @media screen and (max-width: 600px){
-    h1{
-      font-size: 3.5rem;
-      width: 80%;
-      line-height: 70px;
-    }
-    .Home{
-      height: 95vh;
-    }
-    .lista-home{
-   
-      font-weight: var(--font-semi-bold);
-      width: 100%;
-      font-size: 1rem;
-      line-height: 3rem;
-      margin: 40px auto;
-    }
-  } 
+  .lista-home  {margin: 15px auto; width: 95%; gap: 30px; } 
+
+  .LayoutTag{font-size: 0.8rem;}
+
+  .logos{max-width: 18%;}
+
+  
 }
 
-@media screen and (max-width: 600px){
-  .Textos-Home{margin: 55px auto 0;}
-
-  h1{ width: 90%; font-size: 5rem; line-height: 6rem; margin: 0 auto;}
-
-  h1 span{ font-size: 2.7rem;  line-height: 1rem;}
-
-  .lista-home{ flex-direction: column; margin: 30px auto 10px;}
-
-  .lista-home span { width: 90%; margin: 0 auto; font-size: 1.45rem; line-height: 4rem; }
-
-  .lista-home b {text-underline-offset: 8px; }
-}
-
-@media screen and (max-width: 375px){ 
-
-  .Textos-Home{margin: 0 auto;}
-  h1{ width: 90%; font-size: 4.8rem; line-height: 5.8rem; margin: 0 auto;}
-
-  h1 span{ font-size: 2.5rem;  line-height: 1rem;}
-
-  .lista-home{ flex-direction: column; margin: 0 auto 10px;}
-
-  .lista-home span { width: 90%; margin: 0 auto; font-size: 1.3rem; line-height: 4rem; }
-
-  .lista-home b {text-underline-offset: 8px; }
+/* * Estilos de movil pequeño*/
+@media screen and (max-width: 390px){ 
+  h1{ font-size: 4.6rem; line-height: 6rem; }
+  
+  .lista-home{ gap: 20px;}
 }

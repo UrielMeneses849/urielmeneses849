@@ -1,284 +1,134 @@
 
-.Titulo_trabajo{
-color: #121212;
-margin-left: 170px;
-padding-top: 85px;
-text-shadow: 2px 4px 4px 0px rgba(5, 13, 29, 0.50);
-font-family: Poppins;
-font-size: 68px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
 /* Contenedor 1 */
-.container-maquetas{
+.container-general{
 display: flex;
-justify-content: space-between;
-align-items: center
+justify-content: center;
+gap: 15px;
+height: 80vh;
+max-width: 95%;
+margin: 40px auto 0;
 }
+.containerMovil{display: none;}
+
+.container1{ display: flex; flex-direction: column; width: 30%; justify-content: space-between;}
+
+.container1:first-child{width: 40%;}
+
+.container2{  display: flex; width: 20%; }
+
 .maquetas-ui{
-width: 45%;
-height: 500px;
-flex-shrink: 0;
-border-radius: 40px;
+width: 100%;
+height: 49%;
+border-radius: 20px;
 background: #98EECC;
-margin: 50px 0 0 180px;
-z-index: var(--z-tooltip);
-display: flex;
-flex-direction: column;
-justify-content: space-between;
 cursor: pointer;
-filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
-}
+transition: 0.5s;
 
-/* Contenedor 2 */
-.container-ux{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.proyectos-ux{
-    width: 45%;
-    height: 500px;
-flex-shrink: 0;
-border-radius: 40px;
-background: #FAAB78;
-
-margin: 50px 180px 0 0;
-display: flex;
-cursor: pointer;
-filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.fondo2{
-    margin-left: 160px;
-    height: 400px;
-}
-/* Contenedor 3 */
-.container-dd{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
+background-image: url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FMaquetas.svg?alt=media&token=c658ee3c-5e28-49de-aaa5-74e4d2fdbf48");
+background-repeat: no-repeat;
+background-size: 90%;
+background-position: bottom right;
+box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.15), 0px 26px 26px 0px rgba(0, 0, 0, 0.13), 0px 58px 35px 0px rgba(0, 0, 0, 0.08), 0px 103px 41px 0px rgba(0, 0, 0, 0.02), 0px 161px 45px 0px rgba(0, 0, 0, 0.00);
 }
 
 .daily-design{
-    width: 45%;
-    height: 500px;
-flex-shrink: 0;
-border-radius: 40px;
-background: #CBFFA9;
-position: relative; 
-margin: 70px 0 0 185px;
-left: 0;
+width: 100%;
+height: 49%;
+border-radius: 20px;
+background: #B4D4FF;
 cursor: pointer;
-filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
+background-image: url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FDise%C3%B1os.png?alt=media&token=eca4d164-f63a-4158-86a9-324752b60d82");
+transition: 0.5s;
+
+display: flex;
+flex-direction: column;
+align-items: end;
+background-repeat: no-repeat;
+background-position-x: 10%;
+background-position-y: 85%;
+box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.15), 0px 26px 26px 0px rgba(0, 0, 0, 0.13), 0px 58px 35px 0px rgba(0, 0, 0, 0.08), 0px 103px 41px 0px rgba(0, 0, 0, 0.02), 0px 161px 45px 0px rgba(0, 0, 0, 0.00);
+
 }
-.fondo1{    
-    height: 400px;
+
+.proyectos-ux{
+width: 100%;
+height: 100%;
+border-radius: 20px;
+background: #DBC1FE;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+transition: 0.5s;
+
+background-image: url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FUX.svg?alt=media&token=aa3e599b-1b6c-4002-99d8-fe1debf5ebd2");
+background-repeat: no-repeat;
+background-position-x: center;
+background-position-y: 35%;
+box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.15), 0px 26px 26px 0px rgba(0, 0, 0, 0.13), 0px 58px 35px 0px rgba(0, 0, 0, 0.08), 0px 103px 41px 0px rgba(0, 0, 0, 0.02), 0px 161px 45px 0px rgba(0, 0, 0, 0.00);
 }
-.fondo3{
-    margin-right: 160px;
-    height: 400px;
-}
+
 /* Contenedor 4 */
-.container-challenge{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    }
+
 .challenges-programacion{
-    width: 45%;
-    height: 500px;
-flex-shrink: 0;
-border-radius: 40px;
+width: 100%;
+height: 49%;
+border-radius: 20px;
 background: #B9F3E4;
-position: relative; 
-margin: 70px 185px 0 0;
-left: 0;
 cursor: pointer;
-filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.fondo4{
-    margin-left: 170px;
-    height: 350px;
-}
-
-@media screen and (max-width: 1600px){
-    /* Maquetas UI */
-.Titulo_trabajo{
-    margin-left: 120px;
-}
-
-.maquetas-ui{
-    width: 40%;
-    height: 400px;
-    margin: 40px 0 0 120px;
-}
-/* Proyectos UX */
-.proyectos-ux{
-    width: 40%;
-    height: 400px;
-    margin: 40px 120px 0 0;
-}
-/* Daily Design */
-.daily-design{
-width: 40%;
-height: 400px;
-margin: 40px 0 0 120px;
-}
-/* Challenges progra */
-.challenges-programacion{
-    width: 40%;
-    height: 400px;
-    margin: 40px 120px 0 0;
-}
-    }
-@media screen and (max-width: 1440px){
-    /* Maquetas UI */
-    .Titulo_trabajo{
-        margin-left: 120px;
-        font-family: var(--poppins);
-        font-size: 53px;
-        font-weight: 800;
-        }
-    .maquetas-ui{
-        width: 45%;
-        height: 380px;
-        margin: 30px 0 0 120px;
-    }
-    /* Proyectos UX */
-    .proyectos-ux{
-        width: 45%;
-        height: 380px;
-    }
-    /* Daily Design */
-    .daily-design{
-        width: 45%;
-        height: 380px;
-    }
-    /*Challenges progra */
-    .challenges-programacion{
-        width: 45%;
-        height: 380px;
-    }
-}
-@media screen and (max-width: 1280px){
-    .maquetas-ui{
-        width: 55%;
-        height: 500px;
-        margin: 50px auto 0;
-    }
-    .fondo1{
-    display: none;
-}
-.proyectos-ux{
-    width: 55%;
-    height: 500px;
-    margin: 50px auto 0;
-}
-.fondo2{
-display: none;
-}
-.daily-design{
-    width: 50%;
-    height: 500px;
-    margin: 50px auto 0;
-}
-.fondo3{
-    display: none;
-}
-.challenges-programacion{
-    width: 50%;
-    height: 500px;
-    margin: 50px auto 0;
-}
-.fondo4{
-    display: none;
-}
-
-}
-@media screen and (max-width: 1024px){
-    
-    .Titulo_trabajo{
-        font-size: 60px;
-        width: 85%;
-        margin: 0 auto;
-        
-    }
-
-    /* Card 1 */
-    .maquetas-ui{
-        width: 85%;
-        height: 560px;
-        margin: 30px auto;
-    }
-    .fondo1{
-        display: none;
-    }
-
-    /* Card 2 */
-    .proyectos-ux{
-        width: 85%;
-        height: 560px;
-        margin: 30px auto;
-    }
-    .fondo2{
-        display: none;
-    }
-
-    /* Card 3 */
-    .daily-design{
-        width: 85%;
-        height: 560px;
-        margin: 30px auto;
-    }
-    .fondo3{
-        display: none;
-    }
-
-    /* Card 4 */
-    .challenges-programacion{
-        width: 85%;
-        height: 560px;
-        margin: 30px auto;
-    }
-    .fondo4{
-        display: none;
-    }
-
-}
-@media screen and (max-width: 600px){
-
-.Titulo_trabajo{
-    font-size: 40px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 5px;
-}
-
-.maquetas-ui{
-width: 85%;
-height: 300px;
-margin: var(--center);
-}
-
-.proyectos-ux{
-width: 85%;
-height: 300px;
-margin: var(--center);
-flex-direction: column;
+box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.15), 0px 26px 26px 0px rgba(0, 0, 0, 0.13), 0px 58px 35px 0px rgba(0, 0, 0, 0.08), 0px 103px 41px 0px rgba(0, 0, 0, 0.02), 0px 161px 45px 0px rgba(0, 0, 0, 0.00);
+display: flex;
 justify-content: space-between;
+flex-direction: column;
+transition: 0.5s;
+
+background-image: url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FProgra.png?alt=media&token=9ca9fa99-067f-44d4-b1e3-412c9316df06");
+background-repeat: no-repeat;
+background-position: center;
 }
 
-.daily-design{
-width: 85%;
-height: 300px;
-margin: var(--center)
+.curriculum{
+border-radius: 20px;
+width: 100%;
+height: 49%;
+background-color: #FF8080;
+cursor: pointer;
+transition: 0.5s;
+
+background-image: url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FCurriculum.png?alt=media&token=ec1b7cb9-8019-4493-8d5e-b831072ea132");
+background-repeat: no-repeat;
+background-position: center;
+background-position-y: 90%;
+box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.15), 0px 26px 26px 0px rgba(0, 0, 0, 0.13), 0px 58px 35px 0px rgba(0, 0, 0, 0.08), 0px 103px 41px 0px rgba(0, 0, 0, 0.02), 0px 161px 45px 0px rgba(0, 0, 0, 0.00);
 }
-.challenges-programacion{
-    width: 85%;
-    height: 300px;
-margin: var(--center)
+
+.maquetas-ui:hover, .daily-design:hover, .proyectos-ux:hover, .challenges-programacion:hover, .curriculum:hover{ scale: 1.02; transition: 0.5s;}
+
+@media screen and (min-width: 2500px){ .proyectos-ux{ padding: 30px 0; background-size: 75%; box-sizing: border-box;} .curriculum, .challenges-programacion, .daily-design{ background-size: 45%;}}
+
+@media screen and (max-width: 1440px){
+    .curriculum, .challenges-programacion { background-size: 50%;}
+    .proyectos-ux { background-size: 60%;}
+    .daily-design { background-size: 40%;}
 }
+
+@media screen and (max-width: 1024px){
+    .container-general{ height: 45vh;}
+    .container2{ width: 30%;}
+    .container1{ width: 30%;}
+    .container1:first-child { width: 40%;}
+}
+
+@media screen and (max-width: 768px){  .proyectos-ux { background-size: 45%;} .challenges-programacion{background-position-y: 70%;} .daily-design{background-position-x: center; background-size: 50%;}}
+
+@media screen and (max-width: 480px){ 
+    .container-general{display: none;}
+    .containerMovil{display: flex; flex-direction: column; gap: 25px; height: 140vh; max-width: 98%; margin: 0 auto 50px;}
+
+    .curriculum, .challenges-programacion, .maquetas-ui, .daily-design, .proyectos-ux  {width: 80%; min-height: 20%; margin: 0 auto;}
+
+    .curriculum, .challenges-programacion { background-size: 40%; background-position-y: 90%;}
+    .proyectos-ux { background-size: 30%; background-position-x: 95%; background-position-y: center; justify-content: start; }
+    .daily-design { background-size: 45%;}
+     
 }

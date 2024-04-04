@@ -3,34 +3,23 @@ import "../Estilos/Acerca/Acerca.css"
 
 export default function About(props){
 
+
+    let foto = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/PersonaD.png?alt=media&token=de5e09b4-089b-4117-8b47-2651da6f31f8" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/PersonaL.png?alt=media&token=1abc60a5-b469-46c3-8868-7afa2acd9a16"
     return(
         <div className="container-about" id="acerca">
-        <h2 className="Titulo_trabajo" style={{ color: `${props.colortexto}`}} data-aos="fade-down" 
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in">Acerca de mi</h2>
+        <h2 className="Titulo_trabajo Acerca_de" style={{ color: `${props.colortexto}`}} >Acerca de mi</h2>
 
-        <h3 className="subtitulo" data-aos="fade" 
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out">Diseñador UX y Front-End Developer</h3>
+        <div className="container-foto-texto" >
+            
+            <div className="textos-about" style={{ color: `${props.colortexto}`}}> Soy un <b className="TextoGuinda">Ingeniero en computación</b> de la <b className={props.darkMode ? "VerdeDark" : "VerdeLight"}> Escuela Superior de Ingeniería Mecánica y Eléctrica</b> con una sólida formación en diseño de experiencia
+            de usuario <b>(UX/UI)</b> por parte de <b className="G">G</b><b className="o">o</b><b className="o2">o</b><b className="G">g</b><b className="l">l</b><b className="o">e</b>, 
+            también formado en el programa <b className="Oracle">Oracle Next Education</b> como desarrollador <b>Front-End.</b> <br /> 
 
-        <div className="container-foto-texto" data-aos="fade-up" 
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out">
-            <img className="imagen-about"
-            alt="imagen"
-            src="./images/Persona.jpg"/>
-            <div className="textos-about" style={{ color: `${props.colortexto}`}}> Soy un <b>desarrollador Front-end </b>con una sólida formación en 
-            diseño de experiencia de usuario por parte de Google y una amplia experiencia en la creación de interfaces atractivas y funcionales.
-             Con un enfoque centrado en el usuario y un ojo atento a los detalles, me esfuerzo por proporcionar experiencias digitales 
-             excepcionales que combinen una interfaz intuitiva con un diseño visualmente atractivo.
-             <a href="./images/CV.pdf" className="CV" target="blank" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}> Descargar CV <i className="uil uil-file-download-alt"></i> </a>
-             </div>
+           <b> Trabajo en el sector Fintech</b> en la creación de productos de originación de credito y distintos servicios financieros, con un enfoque centrado en el usuario y un ojo atento a los detalles tanto en el <b>diseño</b> como en la <b>programación</b>, me esfuerzo por proporcionar <b>experiencias digitales atractivas. </b>
+             
+        </div>
+             <img className="imagen-about" alt="imagen"
+            src={foto}/>
         </div>
         </div>
     )

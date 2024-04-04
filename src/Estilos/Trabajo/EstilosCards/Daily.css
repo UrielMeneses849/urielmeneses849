@@ -13,6 +13,10 @@
     background-position: center;
 }
 
+.finv{margin: 20px auto;}
+
+
+
 @media screen and (max-width: 600px) {
     .D1{
         width: 100%;

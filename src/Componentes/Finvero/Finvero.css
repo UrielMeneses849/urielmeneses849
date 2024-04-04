@@ -1,0 +1,128 @@
+.container-finvero{display: flex; flex-direction: column; max-width: 85%; margin: 5px auto 150px;}
+
+.textoDestacar{font-size: var(--h2-font-size); font-weight: 700; }
+
+.finvero{max-width: 13%; margin: 25px 0;}
+
+.spanFinvero{max-width: 90%; font-size: var(--normal-font-size); font-weight: 500; }
+
+.Originacion{font-family: "Urbanist", sans-serif; margin: 30px auto; font-size: var(--h1-font-size); font-weight: 400;}
+
+.textoOriginacion{max-width: 50%; margin: 0 auto; text-align: center; color: #878787;}
+
+.credito{gap: 20px; max-width: 100%; grid-template-columns: repeat(3, 1fr); margin: 20px auto 0;}
+
+.card{ grid-template-columns: 1fr; height: 300px; background-color: #FEC524; border-radius: 15px; padding: 50px 30px;  display: flex; flex-direction: column; 
+    justify-content: space-between; font-size: var(--normal-font-size); font-weight: 500;}
+
+.cashi{ background-color: #652D90; color: #fafafa;}
+
+.colaboracion{ background-image: url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2Fmask.png?alt=media&token=2c5631c7-a67b-4996-a169-1b798160a4e9"); background-size: cover;}
+
+.h3-finvero{font-size: var(--h2-font-size); font-weight: 600; margin: 15px 0;}
+
+.logoCard2{max-width: 80%;}
+
+.logoCard{max-width: 40%; }
+
+/* Estilos del Swiper */
+.swiper { max-width: 100%; }
+.swiper-slide { text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center; }
+.swiper-pagination-clickable .swiper-pagination-bullet { width: 20px; height: 20px; } 
+
+  
+  .imagenes { display: grid;grid-template-columns: repeat(3, 1fr) 2fr; grid-template-rows: repeat(3, 0.5fr); max-width: 90%; height: auto;  margin: 0 auto; }
+    
+    .Movil{display: none;}
+
+    .img1 { grid-area: 1 / 1 / 3 / 2;  }
+    .img2 { grid-area: 1 / 2 / 2 / 3; }
+    .img3 { grid-area: 1 / 3 / 2 / 4; }
+    .img4 { grid-area: 1 / 4 / 3 / 5; }
+    .img5 { grid-area: 2 / 2 / 3 / 4; }
+    
+    .img7 { grid-area: 3 / 1 / 4 / 4; }
+    .img8 { grid-area: 3 / 4 / 4 / 5; }
+
+    
+    .imagenes2{display: grid;
+      grid-template-columns: repeat(3, 0.75fr) 1fr;
+      grid-template-rows: 0.20fr repeat(3, 0.4fr);
+    max-width: 80%; margin: 0 auto;
+    grid-gap: 15px;}
+  
+    .img9 { grid-area: 1 / 1 / 3 / 4; }
+    .img10 { grid-area: 1 / 4 / 4 / 5; }
+    .img11 { grid-area: 3 / 1 / 5 / 2; }
+    .img12 { grid-area: 3 / 2 / 5 / 3; }
+    .img13 { grid-area: 3 / 3 / 5 / 4; }
+    .img14 { grid-area: 4 / 4 / 5 / 5; }
+      
+      .img1 img, .img2 img, .img3 img, .img4 img, .img5 img, .img8 img, .img7 img,  .img9 img, .img10 img, .img11 img, .img12 img, .img13 img, .img14 img{max-width: 95%;}
+
+      @media screen and (min-width: 2500px){.imagenes{max-width: 60%; }}
+ 
+  @media screen and (max-width: 1440px){ .img5 img{max-width: 50%;} }
+ 
+  @media screen and (max-width: 800px){
+    .container-finvero{margin: 5px auto 50px;}
+
+    .desktop{display: none;}
+
+    .Movil{display: block;}
+
+    .finvero{max-width: 40%; margin: 10px 0 20px;}
+
+    .spanFinvero{max-width: 95%; font-size: var(--h3-font-size); }
+
+    .Originacion{font-size: var(--h1-font-size); font-weight: 400; margin: 30px auto 10px;}
+
+    .textoOriginacion{max-width: 90%; font-size: var(--normal-font-size);}
+
+    .credito{gap: 20px; max-width: 100%; grid-template-columns: 1fr; grid-template-rows: repeat(3, 1fr); margin: 20px auto 0;}
+
+    .logoCard2{max-width: 90%;}
+
+    .logoCard{max-width: 55%;}
+
+    .imagenesMovil {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 0.5fr);
+      grid-gap: 10px;  }
+  
+    .img1 { grid-area: imagen1; }
+    .img2 { grid-area: imagen2; }
+    .img3 { grid-area: imagen3; }
+    .img4 { grid-area: imagen4; justify-self: center;}
+    .img5 { grid-area: imagen5; }
+    .img6 { grid-area: imagen6; }
+    .img7 { grid-area: imagen7; }
+    .img8 { grid-area: imagen8; }
+    .img9 { grid-area: imagen9; }
+    .img10 { grid-area: imagen10; }
+    .img11 { grid-area: imagen11; }
+    .img12 { grid-area: imagen12; }
+  
+  .imagenesMovil {
+      grid-template-areas:
+          "imagen1 imagen1"
+          "imagen2 imagen3"
+          "imagen4 imagen4";
+  }
+
+  .movil2{grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 0.7fr);}
+  
+  .movil2 { grid-template-areas: "imagen5 imagen5" "imagen6 imagen7" ; }
+
+  .movil3{ grid-template-columns: repeat(2, 1fr); grid-template-rows: 0.5fr repeat(3, 1fr);}
+   
+  .movil3 { grid-template-areas: "imagen8 imagen8" 
+                                  "imagen9 imagen10" 
+                                  "imagen11 imagen10" 
+                                  "imagen11 imagen12"; }
+
+
+  .img1 img, .img2 img, .img3 img, .img4 img, .img5 img, .img6 img, .img7 img, .img8 img, .img9 img, .img10 img, .img11 img, .img12 img{max-width: 100%;}
+  
+  }

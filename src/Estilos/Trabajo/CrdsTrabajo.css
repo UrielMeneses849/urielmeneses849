@@ -37,6 +37,7 @@
     font-size: 2rem;
     z-index: var(--z-modal);
     cursor: pointer;
+    border-radius: 5px;
 }
 
 

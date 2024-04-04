@@ -7,13 +7,15 @@ import '../Estilos/Menu/Menu.css'
 export default function Menu(props){
     const[toggle, setToggle] = useState(false)
 
-    const menu = props.darkMode ? './images/iconos/menuDark.svg' : './images/iconos/menuLight.svg'
+    const menu = props.darkMode ? 'https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FmenuDark.svg?alt=media&token=2222580c-2ffa-422c-aa62-4ff15503cd64' :
+     'https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FmenuLight.svg?alt=media&token=18e0ae88-5118-4202-b615-8e1ca978e027'
 
     return(
        <>
         <nav id="menu" className={toggle ? "nav_menu show-menu" : "nav_menu"} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+        <a href="#habilidades"  onClick={() => setToggle(!toggle)} style={{ color: `${props.colortexto}` }} className='nav_link'><i className="uil uil-file-alt nav_icon"></i>Habilidades</a>
 		<a href="#trabajo"  onClick={() => setToggle(!toggle)} style={{ color: `${props.colortexto}` }} className='nav_link'><i className="uil uil-brackets-curly nav_icon"></i> Mi Trabajo</a>
-		<a href="#habilidades"  onClick={() => setToggle(!toggle)} style={{ color: `${props.colortexto}` }} className='nav_link'><i className="uil uil-file-alt nav_icon"></i>Habilidades</a>
+		
         {/* <a href="#" className='logo_icon'><img 
             src= {props.icon}
             alt="logo"

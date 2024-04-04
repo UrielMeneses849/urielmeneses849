@@ -1,0 +1,22 @@
+name: Update Domain on GitHub Pages
+
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  update_domain:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Update domain
+        run: |
+          echo "urielmeneses.me" > CNAME
+          git config --local user.email "urielmeneses849@gmail.com"
+          git config --local user.name "Uriel"
+          git add .
+          git commit -m "Update domain"
+          git push origin gh-pages

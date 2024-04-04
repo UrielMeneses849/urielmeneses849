@@ -1,31 +1,33 @@
 .HC{
     width: 75%;
+    height: 75%;
     height: 600px;
     border-radius: 30px;
     background-color: #F3DEBA;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .CF{
-    width: 75%;
-    height: 600px;
-    border-radius: 30px;
-    background-color: #E9FFC2;
-    margin: 0 auto;
-    background-size:25vh;
-    background-repeat: no-repeat;
-    background-position-x:20cap;
-    background-position-y: center;
+    background-color: #ACE2E1;
+    background-size:20%;
+    background-position-x:15%;
     display: flex;
-    justify-content: end;
+
 }
 
 .texto-cf{
     width: 50%;
+    text-align: left;
     padding-top: 60px;
     margin-right: 150px;
+    font-size: 1.5em;
+    font-family: var(--poppins);
+}
+
+.pdf{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
