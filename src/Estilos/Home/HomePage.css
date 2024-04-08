@@ -30,7 +30,7 @@ h1{
 
 .LayoutTag{ display: flex; padding: 10px 20px; align-items: center; gap: 15px; border-radius: 69.872px; width:fit-content; }
 
-.Home{ background-repeat: no-repeat; background-position: center; min-height: 100vh;  }
+.Home{ background-repeat: no-repeat; background-position: center; min-height: 100vh; }
 
 /* ! Pantallas grandes */
 
@@ -75,7 +75,7 @@ h1{
 
 /* ? Estilos de movil */
 @media screen and (max-width: 480px){ 
-  .Home{ min-height: 100vh;}
+  .Home{ min-height: 100vh;  display: flex; flex-direction: column; justify-content: center;}
   
   h1{ font-size: 5rem; line-height: 5.5rem; margin: 0 auto;}
 

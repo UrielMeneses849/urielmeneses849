@@ -9,6 +9,7 @@ import DailyDesign from "./Card-Trabajo/DailyDesign"
 import ChallengesProgra from "./Card-Trabajo/ChallengesProgra"
 
 import Finvero from "./Finvero/Finvero";
+import OpenFinance from "./OpenFinance/OpenFinance";
 
 import { useState } from "react";
 
@@ -32,8 +33,9 @@ export default function Trabajo(props){
         {/* <h3 className="subtitulo" >Da click y conoce mi trabajo</h3> */}
         {/* Contenedor 1 */}
 
-        <Finvero darkMode={props.darkMode} colortexto={props.colortexto}/>
 
+        <OpenFinance darkMode={props.darkMode} colortexto={props.colortexto}/>
+        <Finvero darkMode={props.darkMode} colortexto={props.colortexto}/>
         
     <div className="container-general">
 

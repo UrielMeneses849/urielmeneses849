@@ -8,6 +8,7 @@ import Trabajo from "./Componentes/Trabajo"
 import About from "./Componentes/About"
 import Habilidades from "./Componentes/Habilidades/Habilidades"
 import Footer from "./Componentes/Footer"
+
 // Variables globales
 import './Estilos/VariablesGlobales.css'
 

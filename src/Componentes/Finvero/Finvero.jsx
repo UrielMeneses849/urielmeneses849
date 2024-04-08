@@ -86,8 +86,7 @@ return(
         <div className="img2">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F2.png?alt=media&token=cd15870f-6d6e-4def-b2c2-132c25fe63d2" alt="" /></div>
         <div className="img3">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F3.png?alt=media&token=7b148dd6-c5f2-4195-abbb-858b4150790f" alt="" /></div>
         <div className="img4">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F4.png?alt=media&token=3d5c7336-cd2b-4e02-9216-bb1e66c15e73" alt="" /></div>
-        <div className="img5">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F5.png?alt=media&token=c3553f64-4745-4228-ba90-25750832f4eb" alt="" /></div>
-        
+       
         <div className="img7">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F7.png?alt=media&token=fae7a91e-5e9c-41ff-b152-73880376429a" alt="" /></div>
         <div className="img8">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F8.png?alt=media&token=ec2afa76-492e-44db-89d6-3f3cc316b96a" alt="" /></div>
         </div>
