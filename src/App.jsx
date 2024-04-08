@@ -64,14 +64,15 @@ const variants = {
     x: mousePosition.x - 50,
     y: mousePosition.y - 50,
     backgroundColor: "white",
-    mixBlendMode: "difference"
+    mixBlendMode: "difference",
+    
   },
   link:{
     height: 100,
     width: 100,
     x: mousePosition.x - 50,
     y: mousePosition.y - 50,
-    backgroundColor: "#8BE8E5"
+    backgroundColor: "#C7C8CC"
   }
 }
 
@@ -142,7 +143,8 @@ function textEnterVisitar (){
       <motion.div 
       className="cursor"
       variants={variants}
-      animate={cursorVariant}>
+      animate={cursorVariant}
+      >
       <span className="cursorText">{cursorText}</span>
       </motion.div>
     </>

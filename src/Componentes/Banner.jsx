@@ -44,9 +44,10 @@ export default function Banner(props) {
       <BannerRowBottom title={"Diseñador·UX/UI"} color={color}/>
     </motion.div>
     </div>
+
     <div className="HomeMobile" >
     <motion.div className='banner' variants={banner} >
-    <BannerRowTop title={"Hola, "}  color={color}/>
+    <BannerRowTop title={"Hola, "} color={color}/>
     <BannerRowTop title={"Soy Uriel"} color={color}/>
       <BannerRowCenter title={"Web Developer"} playMarquee={playMarquee} color={color}/>
       <BannerRowBottom title={"Diseñador"} color={color}/>
@@ -77,7 +78,7 @@ const AnimatedLetters = ({ title, disabled }) => (
 const BannerRowTop = ({ title, color }) => {
   return (
     <div className={"banner-row"} style={{color: `${color}`}}>
-      <div className={"row-col texto"}>
+      <div className={"row-col texto"} translate="no">
         <AnimatedLetters title={title} />
         
       </div>
@@ -90,7 +91,7 @@ const BannerRowTop = ({ title, color }) => {
           delay: 0.4,
         }}
         className='row-col'>
-        <span className='row-message'  >
+        <span className='row-message' >
           Ingeníero en computación del Insituto Politécnico Nacional.
         </span>
       </motion.div>
@@ -100,7 +101,7 @@ const BannerRowTop = ({ title, color }) => {
 
 const BannerRowBottom = ({ title, color }) => {
   return (
-    <div className={"banner-row center"} style={{color: `${color}`}}>
+    <div className={"banner-row center"} style={{color: `${color}`}} translate="no">
       
       <AnimatedLetters title={title} />
     </div>
@@ -110,12 +111,12 @@ const BannerRowBottom = ({ title, color }) => {
 
 const BannerRowCenter = ({ title, playMarquee, color }) => {
   return (
-    <div className={`banner-row marquee  ${playMarquee && "animate"}`} style={{color: `${color}`}}> 
+    <div className={`banner-row marquee  ${playMarquee && "animate"}`} style={{color: `${color}`}} translate="no"> 
       <motion.div
         initial={{ y: 310 }}
         animate={{ y: 0 }}
         transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1}}
-        className='marquee__inner'>
+        className='marquee__inner' >
         <AnimatedLetters title={title} disabled />
         <AnimatedLetters title={title} />
         <AnimatedLetters title={title} disabled/>
