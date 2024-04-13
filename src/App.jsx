@@ -1,13 +1,15 @@
 // estados
-import { useEffect,useState } from "react"
+import React, { useEffect,useState, Suspense } from "react"
 import { motion } from "framer-motion"
 // Componentes
 import Home from "./Componentes/Home"
+const Habilidades = React.lazy(() => import("./Componentes/Habilidades/Habilidades"))
 import Menu from "./Componentes/Menu"
-import Trabajo from "./Componentes/Trabajo"
-import About from "./Componentes/About"
-import Habilidades from "./Componentes/Habilidades/Habilidades"
-import Footer from "./Componentes/Footer"
+const Trabajo = React.lazy(() => import("./Componentes/Trabajo"))
+const About = React.lazy(() => import("./Componentes/About"))
+const Footer = React.lazy(() => import("./Componentes/Footer"))
+
+
 
 // Variables globales
 import './Estilos/VariablesGlobales.css'
@@ -126,12 +128,15 @@ function textEnterVisitar (){
       textLeave = {textLeave}
       textEnterVisitar = {textEnterVisitar}/>
 
+      <Suspense fallback={<div>Loading...</div>}>
       <About 
       darkMode = {darkMode}
       colortexto = {colortexto}
       textEnter = {textEnter}
       textLeave = {textLeave}
       />
+      </Suspense>
+     
 
       <Footer 
       darkMode = {darkMode}

@@ -5,19 +5,26 @@
     border-radius: 30px;
     background-color: #F3DEBA;
     margin: 0 auto 20px;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.HC img{
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+}
 .CF{
     background-color: #ACE2E1;
     background-size:20%;
     background-position-x:15%;
     display: flex;
-
 }
+.enlace{  text-decoration: none;}
 
 .texto-cf{
+    color: #121212;
+    
     width: 50%;
     text-align: left;
     padding-top: 60px;

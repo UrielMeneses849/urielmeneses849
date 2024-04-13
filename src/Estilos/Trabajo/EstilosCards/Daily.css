@@ -12,7 +12,12 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-
+.D1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: contain;
+}
 .finv{margin: 20px auto;}
 
 

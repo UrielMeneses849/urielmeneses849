@@ -19,7 +19,7 @@ export default function About(props){
              
         </div>
              <img className="imagen-about" alt="imagen"
-            src={foto}/>
+            src={foto} loading="lazy"/>
         </div>
         </div>
     )

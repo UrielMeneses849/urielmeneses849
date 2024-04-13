@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
 import  { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const banner = {
   animate: {
@@ -37,22 +37,31 @@ export default function Banner(props) {
     // eslint-disable-next-line react/prop-types
     <>
     <div className="HomeDesktop" >
-    <motion.div className='banner' variants={banner} >
+    <AnimatePresence>
+    <motion.div className='banner' variants={banner}
+    initial="hidden" // Establece la variante inicial
+    animate="visible" // Establece la variante para la animación visible
+    exit="exit">
       <BannerRowTop title={"Hola, Soy Uriel"} color={color}/>
-      
       <BannerRowCenter title={"Web Developer"} playMarquee={playMarquee} color={color}/>
       <BannerRowBottom title={"Diseñador·UX/UI"} color={color}/>
     </motion.div>
+    </AnimatePresence>
     </div>
 
     <div className="HomeMobile" >
-    <motion.div className='banner' variants={banner} >
+    <AnimatePresence>
+    <motion.div className='banner' variants={banner} 
+    initial="hidden" // Establece la variante inicial
+    animate="visible" // Establece la variante para la animación visible
+    exit="exit">
     <BannerRowTop title={"Hola, "} color={color}/>
     <BannerRowTop title={"Soy Uriel"} color={color}/>
       <BannerRowCenter title={"Web Developer"} playMarquee={playMarquee} color={color}/>
       <BannerRowBottom title={"Diseñador"} color={color}/>
       <BannerRowBottom title={"UX/UI"} color={color}/>
       </motion.div>
+    </AnimatePresence>
     </div>
     </>
   );
@@ -91,7 +100,7 @@ const BannerRowTop = ({ title, color }) => {
           delay: 0.4,
         }}
         className='row-col'>
-        <span className='row-message' >
+        <span className='row-message' style={{color: `${color}`, opacity:0.8}} >
           Ingeníero en computación del Insituto Politécnico Nacional.
         </span>
       </motion.div>

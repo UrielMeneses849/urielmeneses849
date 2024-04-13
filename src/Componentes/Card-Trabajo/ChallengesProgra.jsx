@@ -11,39 +11,28 @@ export default function ChallengesProgra(props) {
 
         <div className="contenedorC">
 
-        <div className="cont">
-        <br />
-        <br />
+        {/* <div className="cont">
+        
         <h3 className="services__modal-title2">Alura Geek</h3>
         <a href="https://urielmeneses849.github.io/AluraGeek/" target="blank"><img src="./images/Challenges/C5.png" alt="" className="imgC" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}/></a>
-        </div> 
+        </div>  */}
 
         <div className="cont">
-        <br />
-        <br />
+        
         <h3 className="services__modal-title2">Generador de memes</h3>
-        <a href="https://urielmeneses849.github.io/Generador-de-Memes/" target="blank"><img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Programaci%C3%B3n%2FC1.png?alt=media&token=a1252f39-f280-44d4-96a2-1ee4bd5c6f24" alt="" className="imgC" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}/></a>
+        <a href="https://urielmeneses849.github.io/Generador-de-Memes/" target="blank"><img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Programaci%C3%B3n%2FCH1.svg?alt=media&token=5705cf8e-5ce6-4e36-b210-650ea61fb9a9" alt="" className="imgC" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} loading="lazy"/></a>
         </div>
         
         <div className="cont">
-        <br />
-        <br />
+
         <h3 className="services__modal-title2" >TO - DO App</h3>
-        <a href="https://urielmeneses849.github.io/To-Do-App-JS/" target="blank"><img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Programaci%C3%B3n%2FC2.png?alt=media&token=37907db4-0c37-4357-ad7e-fb100d44d70e" alt="" className="imgC" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}/></a>
+        <a href="https://urielmeneses849.github.io/To-Do-App-JS/" target="blank"><img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Programaci%C3%B3n%2FCH3.svg?alt=media&token=81ea7b5f-eda2-4019-ba49-c4a832e499b8" alt="" className="imgC" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} loading="lazy"/></a>
         </div>
 
         <div className="cont">
-        <br />
-        <br />
+ 
         <h3 className="services__modal-title2" >Encriptador de palabras</h3>
-        <a href="https://urielmeneses849.github.io/Challenge-Oracle-ONE/" target="blank"><img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Programaci%C3%B3n%2FC3.png?alt=media&token=c76bd540-e143-4060-85ae-39e5fdffe27b" alt="" className="imgC" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}/></a>
-        </div>
-
-        <div className="cont">
-        <br />
-        <br />
-        <h3 className="services__modal-title2">Card de Airbnb</h3>
-        <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Programaci%C3%B3n%2FC4.png?alt=media&token=01421e84-edcc-497f-800b-795ea261c96b" alt="" className="imgC"/>
+        <a href="https://urielmeneses849.github.io/Challenge-Oracle-ONE/" target="blank"><img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Programaci%C3%B3n%2FCH2.svg?alt=media&token=95582ff0-e05f-442f-939a-58f46cbc165e" alt="" className="imgC" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} loading="lazy"/></a>
         </div>
 
         </div>

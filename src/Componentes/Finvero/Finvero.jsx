@@ -82,24 +82,24 @@ return(
 
         <SwiperSlide style={{backgroundColor: `${fondoSwiper}`}}>
         <div className="imagenes">
-        <div className="img1">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F1.png?alt=media&token=a5b9971b-5945-40c7-b00b-2ecca1360b6b" alt="" /></div>
-        <div className="img2">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F2.png?alt=media&token=cd15870f-6d6e-4def-b2c2-132c25fe63d2" alt="" /></div>
-        <div className="img3">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F3.png?alt=media&token=7b148dd6-c5f2-4195-abbb-858b4150790f" alt="" /></div>
-        <div className="img4">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F4.png?alt=media&token=3d5c7336-cd2b-4e02-9216-bb1e66c15e73" alt="" /></div>
+        <div className="img1">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F1.png?alt=media&token=a5b9971b-5945-40c7-b00b-2ecca1360b6b" alt="" loading='lazy'/></div>
+        <div className="img2">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F2.png?alt=media&token=cd15870f-6d6e-4def-b2c2-132c25fe63d2" alt="" loading='lazy'/></div>
+        <div className="img3">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F3.png?alt=media&token=7b148dd6-c5f2-4195-abbb-858b4150790f" alt="" loading='lazy' /></div>
+        <div className="img4">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F4.png?alt=media&token=3d5c7336-cd2b-4e02-9216-bb1e66c15e73" alt="" loading='lazy' /></div>
        
-        <div className="img7">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F7.png?alt=media&token=fae7a91e-5e9c-41ff-b152-73880376429a" alt="" /></div>
-        <div className="img8">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F8.png?alt=media&token=ec2afa76-492e-44db-89d6-3f3cc316b96a" alt="" /></div>
+        <div className="img7">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F7.png?alt=media&token=fae7a91e-5e9c-41ff-b152-73880376429a" alt="" loading='lazy' /></div>
+        <div className="img8">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F8.png?alt=media&token=ec2afa76-492e-44db-89d6-3f3cc316b96a" alt="" loading='lazy' /></div>
         </div>
         </SwiperSlide>
 
         <SwiperSlide style={{backgroundColor: `${fondoSwiper}`}}>
         <div className="imagenes2">
-        <div className="img9">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F9.png?alt=media&token=2f3b23fe-1a5f-4486-ade2-a2d7267ba9dc" alt="" /></div>
-        <div className="img10">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F10.png?alt=media&token=b52d9155-f075-45a3-9317-a35d7c9aab3a" alt="" /></div>
-        <div className="img11">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F11.png?alt=media&token=e515d101-e7e2-4e7d-a03a-baf3c372c366" alt="" /></div>
-        <div className="img12">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F12.png?alt=media&token=eedf27d7-e709-4c28-b36a-24a4ce9fcb67" alt="" /></div>
-        <div className="img13">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F13.png?alt=media&token=092b2f97-1f6a-4c2b-8911-f3541da05707" alt="" /></div>
-        <div className="img14">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F14.png?alt=media&token=f56532f8-7fe2-4067-bcfc-4eb6a653f0b6" alt="" /></div>
+        <div className="img9">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F9.png?alt=media&token=2f3b23fe-1a5f-4486-ade2-a2d7267ba9dc" alt="" loading='lazy' /></div>
+        <div className="img10">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F10.png?alt=media&token=b52d9155-f075-45a3-9317-a35d7c9aab3a" alt="" loading='lazy' /></div>
+        <div className="img11">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F11.png?alt=media&token=e515d101-e7e2-4e7d-a03a-baf3c372c366" alt="" loading='lazy' /></div>
+        <div className="img12">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F12.png?alt=media&token=eedf27d7-e709-4c28-b36a-24a4ce9fcb67" alt="" loading='lazy' /></div>
+        <div className="img13">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F13.png?alt=media&token=092b2f97-1f6a-4c2b-8911-f3541da05707" alt="" loading='lazy' /></div>
+        <div className="img14">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F14.png?alt=media&token=f56532f8-7fe2-4067-bcfc-4eb6a653f0b6" alt="" loading='lazy' /></div>
         </div>
 
         </SwiperSlide>
@@ -124,10 +124,10 @@ return(
 <SwiperSlide style={{backgroundColor: `${fondoSwiper}`}}>
 <div className="imagenesMovil">
 
-        <div className="img1">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F7.png?alt=media&token=fae7a91e-5e9c-41ff-b152-73880376429a" alt="" /></div>
-        <div className="img2">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F2.png?alt=media&token=cd15870f-6d6e-4def-b2c2-132c25fe63d2" alt="" /></div>
-        <div className="img3">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F3.png?alt=media&token=7b148dd6-c5f2-4195-abbb-858b4150790f" alt="" /></div>
-        <div className="img4">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F5.png?alt=media&token=c3553f64-4745-4228-ba90-25750832f4eb" alt="" /></div>
+        <div className="img1">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F7.png?alt=media&token=fae7a91e-5e9c-41ff-b152-73880376429a" alt="" loading='lazy' /></div>
+        <div className="img2">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F2.png?alt=media&token=cd15870f-6d6e-4def-b2c2-132c25fe63d2" alt="" loading='lazy' /></div>
+        <div className="img3">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F3.png?alt=media&token=7b148dd6-c5f2-4195-abbb-858b4150790f" alt="" loading='lazy' /></div>
+        <div className="img4">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F5.png?alt=media&token=c3553f64-4745-4228-ba90-25750832f4eb" alt="" loading='lazy' /></div>
 
 </div>
 </SwiperSlide>
@@ -135,9 +135,9 @@ return(
 <SwiperSlide style={{backgroundColor: `${fondoSwiper}`}}>
 <div className="imagenesMovil movil2">
 
-<div className="img5">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F8.png?alt=media&token=ec2afa76-492e-44db-89d6-3f3cc316b96a" alt="" /></div>
-<div className="img6">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F1.png?alt=media&token=a5b9971b-5945-40c7-b00b-2ecca1360b6b" alt="" /></div>
-<div className="img7">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F11.png?alt=media&token=e515d101-e7e2-4e7d-a03a-baf3c372c366" alt="" /></div>
+<div className="img5">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F8.png?alt=media&token=ec2afa76-492e-44db-89d6-3f3cc316b96a" alt="" loading='lazy' /></div>
+<div className="img6">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F1.png?alt=media&token=a5b9971b-5945-40c7-b00b-2ecca1360b6b" alt="" loading='lazy' /></div>
+<div className="img7">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F11.png?alt=media&token=e515d101-e7e2-4e7d-a03a-baf3c372c366" alt="" loading='lazy' /></div>
 
 </div>
 </SwiperSlide>
@@ -145,11 +145,11 @@ return(
 <SwiperSlide style={{backgroundColor: `${fondoSwiper}`}}>
 <div className="imagenesMovil movil3">
 
-<div className="img8">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F9.png?alt=media&token=2f3b23fe-1a5f-4486-ade2-a2d7267ba9dc" alt="" /></div>
-<div className="img9">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F4.png?alt=media&token=3d5c7336-cd2b-4e02-9216-bb1e66c15e73" alt="" /></div>
-<div className="img10">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F12.png?alt=media&token=eedf27d7-e709-4c28-b36a-24a4ce9fcb67" alt="" /></div>
-<div className="img11">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F10.png?alt=media&token=b52d9155-f075-45a3-9317-a35d7c9aab3a" alt="" /></div>
-<div className="img12">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F14.png?alt=media&token=f56532f8-7fe2-4067-bcfc-4eb6a653f0b6" alt="" /></div>
+<div className="img8">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F9.png?alt=media&token=2f3b23fe-1a5f-4486-ade2-a2d7267ba9dc" alt="" loading='lazy' /></div>
+<div className="img9">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F4.png?alt=media&token=3d5c7336-cd2b-4e02-9216-bb1e66c15e73" alt="" loading='lazy' /></div>
+<div className="img10">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F12.png?alt=media&token=eedf27d7-e709-4c28-b36a-24a4ce9fcb67" alt="" loading='lazy' /></div>
+<div className="img11">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F10.png?alt=media&token=b52d9155-f075-45a3-9317-a35d7c9aab3a" alt="" loading='lazy' /></div>
+<div className="img12">  <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2F14.png?alt=media&token=f56532f8-7fe2-4067-bcfc-4eb6a653f0b6" alt="" loading='lazy' /></div>
 
 </div>
 </SwiperSlide>

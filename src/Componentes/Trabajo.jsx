@@ -23,7 +23,7 @@ export default function Trabajo(props){
 
     const fondoCard = props.darkMode ? `#494949` : `#eeeeee`
 
-    const pdf = "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Curriculum%20espa%C3%B1ol.pdf?alt=media&token=4c4968e8-da92-407c-9a9a-c2d0bc788922";
+    const pdf = "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Curriculum%20espa%C3%B1ol.pdf?alt=media&token=d248ec36-4dff-4c4a-9597-e43ae9ab015b";
     console.log(toggleTab)
     return(
         <div className="Trabajo" id="trabajo">
