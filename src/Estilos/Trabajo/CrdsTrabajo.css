@@ -20,13 +20,14 @@
 
 /* Color y dimensiones del card*/
 .cardActiva-content{
-    width: 90%;
+    width: 100%;
     position: relative;
     background-color: #f9f9f9;
     padding: 4.5rem 2.5rem 2.5rem;
     border-radius: 1.4rem;
     overflow-y: auto;
-    height: 80vh;
+    height: 85vh;
+    box-sizing: border-box;
 }
 
 /* Posicion del boton de cerrar */
@@ -41,14 +42,6 @@
 }
 
 
-.active-card{
-    /* !!!!!!!!!!!!!! */
-   opacity: 1;
-   visibility: visible;        
-    /* !!!!!!!!!!!!!! */
-  
-}
-
 @media screen and (max-width: 600px) {
     .services__modal-closed{
         position: fixed;
@@ -56,7 +49,7 @@
         right: 1.5rem;
     }
     .cardActiva-content{
-        width: 90%;
+        width: 100%;
         position: relative;
         background-color: #f9f9f9;
         padding: 4.5rem 1.1rem 2rem;

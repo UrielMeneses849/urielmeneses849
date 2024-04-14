@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import "../../Estilos/Trabajo/EstilosCards/Daily.css"
-
+import LazyLoad from 'react-lazyload';
 export default function DailyDesign(props) {
     return(
-        <div className="cardActiva-content" style={{backgroundColor: `${props.fondoCard}`, color: `${props.colortexto}` }}>
-            <i className="uil uil-times services__modal-closed" onClick={()=> props.toggleTab(0)}></i>
+        <LazyLoad height={900} className="cardActiva-content" style={{backgroundColor: `${props.fondoCard}`, color: `${props.colortexto}` }}>
+            <i className="uil uil-times services__modal-closed" onClick={props.handleClose}></i>
     
         <h3 className="services__modal-title">Diseños Diarios</h3>
         <p className="services__modal-description">Mejora continua en el diseño </p>
@@ -45,6 +45,6 @@ export default function DailyDesign(props) {
             <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/D3.svg?alt=media&token=929bde7b-b40b-42fd-b405-499fe67c1fc7" loading="lazy" />        
         </div>
 
-        </div>
+        </LazyLoad>
     )
 }

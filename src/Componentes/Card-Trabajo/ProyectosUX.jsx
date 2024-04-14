@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import "../../Estilos/Trabajo/EstilosCards/Proyectos.css"
-
+import LazyLoad from 'react-lazyload';
 export default function ProyectosUX(props) {
     window.addEventListener("keyup", function(event){
         if (event.keyUp == 27){
@@ -11,8 +11,8 @@ export default function ProyectosUX(props) {
     });
     return(
         
-        <div className="cardActiva-content" style={{backgroundColor: `${props.fondoCard}`, color: `${props.colortexto}` }}>
-            <i className="uil uil-times services__modal-closed" onClick={()=> props.toggleTab(0)}></i>
+        <LazyLoad height={900} offset={100} className="cardActiva-content" style={{backgroundColor: `${props.fondoCard}`, color: `${props.colortexto}` }}>
+            <i className="uil uil-times services__modal-closed" onClick={props.handleClose}></i>
 
         <h3 className="services__modal-title">Proyectos de experiencia de usuario</h3>
         <p className="services__modal-description">Creación de productos</p>
@@ -34,6 +34,6 @@ export default function ProyectosUX(props) {
         </span>
         </div></a>
 
-        </div>
+        </LazyLoad>
     )
 }

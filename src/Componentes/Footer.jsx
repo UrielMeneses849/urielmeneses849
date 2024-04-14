@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "../Estilos/Footer/Footer.css"
+import LazyLoad from 'react-lazyload';
 export default function Footer(props){
     const bordeCard = props.darkMode ? `3px solid #f9f9f9` : `3px solid #121212`
 
@@ -16,7 +17,7 @@ export default function Footer(props){
     const arrow = "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Footer%2Farrow.svg?alt=media&token=e3d6a545-f427-475d-b73b-d61f4cd54097"
 
     return(
-        <div className="footer" id="contacto">
+        <LazyLoad height={900} className="footer" id="contacto">
         <h2 className="Titulo_trabajo" style={{ color: `${props.colortexto}` }} >Contacto</h2>
         <h3 className="subtitulo">Sigueme y trabajemos juntos :)</h3>
         <div className="container_footer_formulario">
@@ -47,6 +48,6 @@ export default function Footer(props){
             
         </div>
         <h3 className="subtitulo" style={{fontSize: "13px"}}>@urielmeneses849 / 2022</h3>
-        </div>
+        </LazyLoad>
     )
 }

@@ -115,18 +115,22 @@ function textEnterVisitar (){
       textEnter = {textEnter}
       textLeave = {textLeave}/>
 
+      <Suspense fallback={<div>Loading...</div>}>
       <Habilidades 
       darkMode = {darkMode}
       colortexto = {colortexto}
       textEnter = {textEnter}
       textLeave = {textLeave}/> 
+      </Suspense>
       
+      <Suspense fallback={<div>Loading...</div>}>
       <Trabajo 
       darkMode = {darkMode}
       colortexto = {colortexto}
       textEnter = {textEnter}
       textLeave = {textLeave}
       textEnterVisitar = {textEnterVisitar}/>
+      </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
       <About 
@@ -137,13 +141,14 @@ function textEnterVisitar (){
       />
       </Suspense>
      
-
+      <Suspense fallback={<div>Loading...</div>}>
       <Footer 
       darkMode = {darkMode}
       colortexto = {colortexto}
       textEnter = {textEnter}
       textLeave = {textLeave}
       />
+      </Suspense>
 
       <motion.div 
       className="cursor"

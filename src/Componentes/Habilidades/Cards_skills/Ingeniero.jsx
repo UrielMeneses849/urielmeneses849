@@ -3,7 +3,7 @@
 export default function Ingeniero(props){
     return(
     <div className="services__modal-content"  style={{backgroundColor: `${props.fondoCard}`, color: `${props.colortexto}` }}>  
-    <i className="uil uil-times services__modal-close" onClick={()=> props.toggleTab(0)}></i>
+    <i className="uil uil-times services__modal-close" onClick={props.handleClose3}></i>
 
     <h3 className="services__modal-title">Ingeniero del I.P.N</h3>
     <p className="services__modal-description">4 años de carrera estudiando todo lo relacionado acerca del basto mundo de la computación</p>

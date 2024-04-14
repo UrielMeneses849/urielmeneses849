@@ -3,7 +3,10 @@ import { useState } from "react"
 import "./Habilidades-card.css"
 import "./Tecnologias-cont.css"
 import "./educacion.css"
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
 
+import LazyLoad from 'react-lazyload';
 // Cards de contenido oculto
 import Diseñador from "./Cards_skills/Diseñador"
 import Desarrollador from "./Cards_skills/Desarrollador"
@@ -18,13 +21,18 @@ export default function Habilidades(props){
 
     const sql = props.darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FsqlD.svg?alt=media&token=64780816-23e0-48b9-a1a7-95eebc25d190` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FsqlL.svg?alt=media&token=f8e6c1c1-ac54-44bc-bb44-61103e8bbd1c`
     
-    const [modal, setModal] = useState(0);
+    // modal
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
-    const toggleTab = (index) => {
-        setModal(index);
-    }
+    const [open2, setOpen2] = useState(false);
+    const handleOpen2 = () => setOpen2(true);
+    const handleClose2 = () => setOpen2(false);
 
-    
+    const [open3, setOpen3] = useState(false);
+    const handleOpen3 = () => setOpen3(true);
+    const handleClose3 = () => setOpen3(false);
 
     return(
     <section className="skills" id="habilidades">
@@ -107,52 +115,49 @@ export default function Habilidades(props){
         onMouseLeave={props.textLeave} >
                 <div>
         {/* Parte visible de la card  */}
-                    <i className="uil uil-web-grid services__icon" style={{ color: `${props.colortexto}`}}></i>
-                    <h3 className="services__title" style={{ color: `${props.colortexto}` }}>UX <br /> Designer</h3>
-                    </div> 
-                    <span className="services__button" onClick={() => toggleTab(1)} style={{ color: `${props.colortexto}` }}>Ver más
-                    <i className="uil uil-arrow-right services__button-icon"></i></span>
-
-            {/* Contenido oculto de la card */}
-            <div className={modal === 1 ? "services__modal active-modal" : "services__modal" }>
-                
-                    <Diseñador toggleTab = {toggleTab} fondoCard = {fondoCard} colortexto= {props.colortexto}/>
-
-            </div>
+            <i className="uil uil-web-grid services__icon" style={{ color: `${props.colortexto}`}}></i>
+            <h3 className="services__title" style={{ color: `${props.colortexto}` }}>UX <br /> Designer</h3>
+            </div> 
+            <span className="services__button" onClick={handleOpen} style={{ color: `${props.colortexto}` }}>Ver más
+            <i className="uil uil-arrow-right services__button-icon"></i></span>
         </div>
+
+        <Modal open={open} onClose={handleClose}>
+        <Box className="modal-contenedor">
+        <Diseñador fondoCard = {fondoCard} colortexto = {props.colortexto} handleClose = {handleClose}/>
+        </Box>
+        </Modal>
 
             {/* Contenedor 2 */}
-        <div className="services__content" style={{backgroundColor: `${fondoCard}`,  border: `${bordeCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}
-        >
+        <div className="services__content" style={{backgroundColor: `${fondoCard}`,  border: `${bordeCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                 <div>
-                    <i className="uil uil-arrow services__icon" style={{ color: `${props.colortexto}`}}></i>
-                    <h3 className="services__title" style={{ color: `${props.colortexto}`}}>Web <br /> Developer</h3>
-                    </div> 
-                    <span className="services__button" onClick={() => toggleTab(2)} style={{ color: `${props.colortexto}`}}>Ver más <i className="uil uil-arrow-right services__button-icon"></i></span>
-
-            <div className={modal === 2 ? "services__modal active-modal" : "services__modal" }>
-
-                    <Desarrollador toggleTab = {toggleTab} fondoCard = {fondoCard} colortexto= {props.colortexto}/>
- 
-            </div>
+            <i className="uil uil-arrow services__icon" style={{ color: `${props.colortexto}`}}></i>
+            <h3 className="services__title" style={{ color: `${props.colortexto}`}}>Web <br /> Developer</h3>
+            </div> 
+            <span className="services__button" onClick={handleOpen2} style={{ color: `${props.colortexto}`}}>Ver más 
+            <i className="uil uil-arrow-right services__button-icon"></i></span>
         </div>
 
+        <Modal open={open2} onClose={handleClose2}>
+        <Box className="modal-contenedor">
+        <Desarrollador fondoCard = {fondoCard} colortexto = {props.colortexto} handleClose2 = {handleClose2}/>
+        </Box>
+        </Modal>
+
             {/* Contenedor 3 */}
-            <div className="services__content" style={{backgroundColor: `${fondoCard}`, border: `${bordeCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}
-            >
-                <div>
-                    <i className="uil uil-graduation-cap services__icon" style={{color: `${props.colortexto}`}}></i>
-                    <h3 className="services__title" style={{color: `${props.colortexto}`}}>Ingeniero en <br /> Computación</h3>
-                    </div> 
-                    <span className="services__button" onClick={() => toggleTab(3)} style={{color: `${props.colortexto}`}}>Ver más <i className="uil uil-arrow-right services__button-icon"></i></span>
-
-                    <div className={modal === 3 ? "services__modal active-modal" : "services__modal" }>
-
-                    <Ingeniero toggleTab = {toggleTab} fondoCard = {fondoCard} colortexto= {props.colortexto}/>
-                   
-                </div>
-            </div>
+            <div className="services__content" style={{backgroundColor: `${fondoCard}`, border: `${bordeCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+            <div>
+            <i className="uil uil-graduation-cap services__icon" style={{color: `${props.colortexto}`}}></i>
+            <h3 className="services__title" style={{color: `${props.colortexto}`}}>Ingeniero en <br /> Computación</h3>
+            </div> 
+            <span className="services__button" onClick={handleOpen3} style={{color: `${props.colortexto}`}}>Ver más <i className="uil uil-arrow-right services__button-icon"></i></span>
+        </div>
         </section>
+        <Modal open={open3} onClose={handleClose3}>
+        <Box className="modal-contenedor">
+        <Ingeniero fondoCard = {fondoCard} colortexto = {props.colortexto} handleClose3 = {handleClose3}/>
+        </Box>
+        </Modal>
         </div>
 
         <div className="c3">
@@ -168,13 +173,13 @@ export default function Habilidades(props){
         
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2Fingeniero%20L.png?alt=media&token=c60c7de8-73bb-48b1-ad82-a000d7b9441c" alt="ing"  className="iconoE"/>
         
-        <div className="imgizquierda">
+        <LazyLoad height={500} offset={100} className="imgizquierda">
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2Fipn.svg?alt=media&token=7bc23ee6-3d23-49d2-986f-e33839a6ff81"  loading="lazy"className="ipn"/>    
-        </div>
+        </LazyLoad>
 
-        <div className="texto imgizquierda">
+        <LazyLoad height={500} offset={100} className="texto imgizquierda">
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2FFront.svg?alt=media&token=d633958f-11ad-4b4a-a861-7b67aecf2048"  loading="lazy"/>
-        </div>
+        </LazyLoad>
 
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2Fweb%20D.svg?alt=media&token=ce126c58-000b-4519-87d3-2966bc206811" alt="webd"  className="iconoE"/>
         
@@ -190,13 +195,13 @@ export default function Habilidades(props){
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2FDise%C3%B1ador.svg?alt=media&token=f0eb4553-5304-45b4-8065-63af43a81749" className="iconoE" />
        
 
-        <div className="imgizquierda" >
+        <LazyLoad height={500} offset={100} className="imgizquierda" >
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2Fux.svg?alt=media&token=753ca56c-b229-4e20-8043-39dfda77b32d"  loading="lazy"/>
-        </div>
+        </LazyLoad>
 
-        <div className="texto imgizquierda">
+        <LazyLoad height={500} offset={100} className="texto imgizquierda">
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2Fcecy.svg?alt=media&token=b6b6f6a7-68db-46e1-8882-0f217cc38ce2"  loading="lazy"/>
-        </div>
+        </LazyLoad>
 
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2Ftec.svg?alt=media&token=5647141a-7cf0-493e-b19b-f077ee780f52"  loading="lazy" className="iconoE"/>
         

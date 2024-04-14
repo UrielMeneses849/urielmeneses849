@@ -14,31 +14,30 @@
 .services__button:hover .services__button-icon{ transform: translateX(0.25rem); }
 
 /* Posicion del Card que se aparece !!!!!!! */
-.services__modal{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: var(--z-modal);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    /* !!!!!!!!!!!!!! */
-    opacity: 0;
-    visibility: hidden;
-    /* !!!!!!!!!!!!!! */
-    transition: 0.4s;
-}
+
 
 /* Color y dimensiones del card*/
-.services__modal-content{
+.modal-contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 40%;
+    background-color: 'none';
+    border: 'none';
+    box-Shadow: 24px 24px 48px rgba(0, 0, 0, 0.5);
+    border-Radius: 1.4rem;
+}
+
+.contenedor2{
+    width: 80%;
+}
+.services__modal-content{
+    width: 100%;
     position: relative;
-    padding: 4rem 2.5rem 2.5rem;
+    padding: 4rem 2rem 2.5rem;
     border-radius: 1.4rem;
+    box-sizing: border-box;
 }
 
 /* Posicion del boton de cerrar */
@@ -94,15 +93,8 @@
     font-size: var(--normal-font-size);
  }
 
- /* Modal activo */
 
- .active-modal{
-     /* !!!!!!!!!!!!!! */
-    opacity: 1;
-    visibility: visible;        
-     /* !!!!!!!!!!!!!! */
-   
- }
+ 
 
  @media screen and (min-width: 2500px){ .services__container{ max-width: 65vw;} .services__modal-info{ font-size: var(--h3-font-size);} .services__modal-content{ padding: 4rem ;}}
 
@@ -113,8 +105,6 @@
         grid-template-columns: repeat(3, 350px);
         justify-content:center;
         column-gap: 1.8rem;
-        
-        
     }
  }
  @media screen and (max-width: 1440px){
@@ -122,7 +112,6 @@
         grid-template-columns: repeat(3, 310px);
         justify-content:center;
         column-gap: 1.4rem;
-        
     }
  }
 
@@ -162,12 +151,10 @@
 }
 
 @media screen and (max-width: 480px){
-
-    .services__modal-content{
-        padding: 4rem .5rem 2.5rem;
-        width: 95%;
-        box-sizing: border-box;
+    .modal-contenedor{
+        width: 90%;
     }
+    
     .services__modal-description{
         padding: 0;
         margin-bottom: var(--mb-0-5);

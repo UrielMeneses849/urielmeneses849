@@ -22,7 +22,7 @@ export default function Desarrollador(props){
     return(
         <div className="services__modal-content" style={{backgroundColor: `${props.fondoCard}`, color: `${props.colortexto}`}}>
         
-        <i className="uil uil-times services__modal-close" onClick={()=> props.toggleTab(0)}></i>
+        <i className="uil uil-times services__modal-close" onClick={props.handleClose2}></i>
                     <h3 className="services__modal-title">Desarrollador Frontend</h3>
                     <p className="services__modal-description">2 años de experiencia con trabajos de calidad</p>
                     <ul className="services__modal-services grid">
