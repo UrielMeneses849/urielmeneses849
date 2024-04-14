@@ -7,9 +7,7 @@ import { motion } from "framer-motion"
 
 
 export default function Home(props){
-    // Fondo del Home
-    const fondo = props.darkMode ? `url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2FFondoBlanco.svg?alt=media&token=62775da3-f4fa-400c-9a92-12bf73af72df")`: `url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2FFondoNegro.svg?alt=media&token=6c3c471d-5b05-4138-ba84-43aaa662d115")`
-
+   
     // Color de fondo de todo el body
     document.body.style = props.darkMode ? `background-Color: #15171C` : `background-Color: #f0f0f0`
 
@@ -21,8 +19,7 @@ export default function Home(props){
 
     return(
         // Nav que cambia el color del toggle
-        <div className="Home" style={
-        {backgroundImage: `${fondo}`}}>
+        <div className="Home" >
 
 {/*  // Ponemos un ternario para cambiar la clase, se pone un color por default con el nav sin clase y una con el nav con clase */}
             <nav className={props.darkMode ? "dark": ""} >

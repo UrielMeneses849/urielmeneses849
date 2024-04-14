@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import LazyLoad from 'react-lazyload';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,6 +13,27 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 // Import Swiper styles
 
 export default function Finvero(props){
+
+    // ?Web Worker
+    useEffect(() => {
+        const worker = new Worker(new URL('../../animationWorker.js', import.meta.url));
+      
+        // Enviar un mensaje al Web Worker para iniciar la animación
+        worker.postMessage('startAnimation');
+      
+        // Escuchar mensajes del Web Worker
+        worker.addEventListener('message', (event) => {
+          if (event.data === 'Animation complete') {
+            console.log('Animation completed in Finvero');
+            // Puedes realizar acciones adicionales aquí después de que la animación haya finalizado
+          }
+        });
+      
+        return () => {
+          worker.terminate(); // Terminar el Web Worker cuando el componente se desmonte
+        };
+      }, []);
+    // ?Web Worker
 
 // Variables del swipper
 const progressCircle = useRef(null);

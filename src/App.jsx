@@ -36,7 +36,6 @@ const[mousePosition, setMousePosition] = useState({
 });
 
 const [cursorVariant, setCursorVariant] = useState("default")
-console.log(mousePosition)
  
 useEffect(() => {
 

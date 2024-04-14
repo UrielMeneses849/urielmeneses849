@@ -1,18 +1,25 @@
 import { defineConfig } from 'vite';
+import { terser } from 'rollup-plugin-terser';
 import react from '@vitejs/plugin-react';
-import compression from 'compression';
+ // Importa el módulo 'compression'
 
-export default defineConfig({
+ export default defineConfig({
   plugins: [react()],
   base: "/", // Ruta base de la aplicación
 
   server: {
-    middlewareMode: true,
-    configureServer: ({ app }) => {
-      // Habilitar compresión Gzip y Brotli
-      app.use(compression());
-    },
     port: 5173, // Puerto personalizado
+  },
+
+  optimizeDeps: {
+    include: ['src/animationWorker.js'], // Ruta correcta del Web Worker
+  },
+  
+  build: {
+    minify: 'terser',
+    rollupOptions: {
+      plugins: [terser()],
+    },
   },
 
   // Otras configuraciones de Vite

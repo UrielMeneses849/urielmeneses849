@@ -1,13 +1,34 @@
 /* eslint-disable react/prop-types */
 import LazyLoad from 'react-lazyload';
 import './OpenFinance.css'
+import { useEffect } from 'react';
 
 export default function OpenFinance(props){
+    // *Web worker
+    useEffect(() => {
+        const worker = new Worker(new URL('../../animationWorker.js', import.meta.url));
+      
+        // Enviar un mensaje al Web Worker para iniciar la animación
+        worker.postMessage('startAnimation');
+      
+        // Escuchar mensajes del Web Worker
+        worker.addEventListener('message', (event) => {
+          if (event.data === 'Animation complete') {
+            console.log('Animation completed in OF2050');
+            // Puedes realizar acciones adicionales aquí después de que la animación haya finalizado
+          }
+        });
+      
+        return () => {
+          worker.terminate(); // Terminar el Web Worker cuando el componente se desmonte
+        };
+      }, []);
+    // *Web Worker
 
     let OpenFinanceImg = props.darkMode ? 'https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FOpenDark.png?alt=media&token=f348d59d-0cbe-41a7-b2c5-59ed9cb7376f' : 
     'https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FOpenLight.png?alt=media&token=79fd3ac8-5a42-4f96-86db-02e92167c148'
-return(
-
+    
+    return(
 
 <div className="container-finvero Open">
 <img src={OpenFinanceImg} alt="" className="finvero"/>

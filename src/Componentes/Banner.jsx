@@ -24,7 +24,29 @@ const letterAni = {
 };
 
 export default function Banner(props) {
-    const color = props.darkMode ? "#fafafa" : "#15171C";
+
+// * Web worker
+useEffect(() => {
+  const worker = new Worker(new URL('../animationWorker.js', import.meta.url));
+
+  // Enviar un mensaje al Web Worker para iniciar la animación
+  worker.postMessage('startAnimation');
+
+  // Escuchar mensajes del Web Worker
+  worker.addEventListener('message', (event) => {
+    if (event.data === 'Animation complete') {
+      console.log('Animation completed in Banner');
+      // Puedes realizar acciones adicionales aquí después de que la animación haya finalizado
+    }
+  });
+
+  return () => {
+    worker.terminate(); // Terminar el Web Worker cuando el componente se desmonte
+  };
+}, []);
+// * Web worker
+
+  const color = props.darkMode ? "#fafafa" : "#15171C";
 
   const [playMarquee, setPlayMarquee] = useState(false);
 
@@ -74,15 +96,17 @@ const AnimatedLetters = ({ title, disabled }) => (
     variants={disabled ? null : banner}
     initial='initial'
     animate='animate' >
-    {[...title].map((letter) => (
+    {[...title].map((letter, index) => (
       <motion.span
-        className='row-letter '
+        key={index} // Agrega una key única utilizando el índice de la iteración
+        className='row-letter'
         variants={disabled ? null : letterAni}>
         {letter}
       </motion.span>
     ))}
   </motion.span>
 );
+
 
 const BannerRowTop = ({ title, color }) => {
   return (
