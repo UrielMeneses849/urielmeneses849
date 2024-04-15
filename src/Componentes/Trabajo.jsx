@@ -15,6 +15,7 @@ import Finvero from "./Finvero/Finvero";
 import OpenFinance from "./OpenFinance/OpenFinance";
 
 import { useState } from "react";
+import LazyLoad from "react-lazyload";
 
 export default function Trabajo(props){
     
@@ -53,7 +54,7 @@ export default function Trabajo(props){
 
         <div className="container1">
 
-        <div className="maquetas-ui" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={handleOpen4}>
+        <div height={200} className="maquetas-ui" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={handleOpen4}>
         <h2 className="Titulo-trabajo"> Maquetas UI </h2>
         <h3 className="Sub">Maquetas hechas en figma y programadas con React</h3>
         </div>
@@ -98,6 +99,7 @@ export default function Trabajo(props){
         <div className="container1">
         <a href={pdf} target="blank" className="pdf curriculum"><div onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}>
         <h2 className="Titulo-trabajo"> Curriculum </h2>
+        <LazyLoad offset={400} once> <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2Fcv.svg?alt=media&token=abad38cf-b6b5-4c94-ab94-98e38e636be0" alt="" /> </LazyLoad>
         </div></a>
 
         <div className="challenges-programacion" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={handleOpen7}>
@@ -115,10 +117,11 @@ export default function Trabajo(props){
 
 
     <div className="containerMovil">
-    <div className="maquetas-ui" onClick={handleOpen4} >
+
+    <div height={200} className="maquetas-ui" onClick={handleOpen4} >
         <h2 className="Titulo-trabajo"> Maquetas UI </h2>
         <h3 className="Sub">Maquetas hechas en figma y programadas con React</h3>
-        
+    
         </div>
 
         <div className="daily-design"  onClick={handleOpen5}>
@@ -132,11 +135,14 @@ export default function Trabajo(props){
         <h3 className="Sub">Creando productos aplicando <b>investigaciones, métodos  de ideación y pruebas de usabilidad </b></h3>
         </div>
 
-        <a href={pdf} target="blank" className="curriculum pdf"><div >
+        <a href={pdf} target="blank" className="curriculum pdf"><div>
         <h2 className="Titulo-trabajo"> Curriculum </h2>
-           
-        </div></a>
-        <div className="challenges-programacion" onClick={handleOpen7}>
+   
+        <LazyLoad offset={400} once style={{display: "flex", justifyContent: "center"}}>
+             <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2Fcv.svg?alt=media&token=abad38cf-b6b5-4c94-ab94-98e38e636be0" alt="" /> 
+        </LazyLoad>
+        </div> </a>
+        <div  className="challenges-programacion" onClick={handleOpen7}>
         <h2 className="Titulo-trabajo"> Programacion </h2>
         <h3 className="Sub Sub2">Desafíos de programación para crear sitios con una lógica más compleja </h3>
         </div>

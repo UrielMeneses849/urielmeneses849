@@ -4,7 +4,9 @@
 
 .TextoEducacion{ color: #121212;  font-size: var(--normal-font-size); }
 
-.iconoE{ max-width: 35%; }
+.iconoE{ display: flex; justify-content: center; align-items: center;}
+
+.iconoE img{ max-width: 70%; margin: 0 auto;}
 
 .imgizquierda{ display: flex; justify-content: start; width: 100%;}
 

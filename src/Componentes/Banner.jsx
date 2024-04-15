@@ -59,6 +59,7 @@ useEffect(() => {
     // eslint-disable-next-line react/prop-types
     <>
     <div className="HomeDesktop" >
+    
     <AnimatePresence>
     <motion.div className='banner' variants={banner}
     initial="hidden" // Establece la variante inicial
