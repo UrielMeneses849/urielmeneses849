@@ -25,8 +25,7 @@ export default function OpenFinance(props){
       }, []);
     // *Web Worker
 
-    let OpenFinanceImg = props.darkMode ? 'https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FOpenDark.png?alt=media&token=f348d59d-0cbe-41a7-b2c5-59ed9cb7376f' : 
-    'https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FOpenLight.png?alt=media&token=79fd3ac8-5a42-4f96-86db-02e92167c148'
+    let OpenFinanceImg ='https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FLogo_OF2050%404x%202.svg?alt=media&token=1e8e8921-7245-4ea1-a135-c252c13d1a2c'
     
     return(
 
