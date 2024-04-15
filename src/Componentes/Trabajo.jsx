@@ -136,10 +136,6 @@ export default function Trabajo(props){
 
         <a href={pdf} target="blank" className="curriculum pdf"><div>
         <h2 className="Titulo-trabajo"> Curriculum </h2>
-   
-        <LazyLoad offset={400} once style={{display: "flex", justifyContent: "center"}}>
-             <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2Fcv.svg?alt=media&token=abad38cf-b6b5-4c94-ab94-98e38e636be0" alt="" /> 
-        </LazyLoad>
         </div> </a>
         <div  className="challenges-programacion" onClick={handleOpen7}>
         <h2 className="Titulo-trabajo"> Programacion </h2>
