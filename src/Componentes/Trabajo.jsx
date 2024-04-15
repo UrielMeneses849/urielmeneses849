@@ -99,7 +99,6 @@ export default function Trabajo(props){
         <div className="container1">
         <a href={pdf} target="blank" className="pdf curriculum"><div onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave}>
         <h2 className="Titulo-trabajo"> Curriculum </h2>
-        <LazyLoad offset={400} once> <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2Fcv.svg?alt=media&token=abad38cf-b6b5-4c94-ab94-98e38e636be0" alt="" /> </LazyLoad>
         </div></a>
 
         <div className="challenges-programacion" onMouseEnter={props.textEnterVisitar} onMouseLeave={props.textLeave} onClick={handleOpen7}>

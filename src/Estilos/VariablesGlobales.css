@@ -355,7 +355,15 @@ h3{
   .HomeMobile{
     display: none;
   }
- 
+
+  @media (max-width: 1550px) {
+    .banner .banner-row .row-title,
+  .banner .banner-row .row-letter { font-size: 9rem;}
+    .banner .banner-row .row-col {
+        width: 70%;
+      }
+    
+  }
 
   @media (max-width: 1440px) {
     .banner .banner-row .row-title,

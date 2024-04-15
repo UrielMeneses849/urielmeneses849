@@ -94,23 +94,29 @@ height: 49%;
 background-color: #FF8080;
 cursor: pointer;
 transition: 0.5s;
-display: flex;
-justify-content: center;
+background-image: url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2Fcv.svg?alt=media&token=abad38cf-b6b5-4c94-ab94-98e38e636be0");
+background-repeat: no-repeat;
+background-position-x: center;
+background-position-y: 80%;
 box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.15), 0px 26px 26px 0px rgba(0, 0, 0, 0.13), 0px 58px 35px 0px rgba(0, 0, 0, 0.08), 0px 103px 41px 0px rgba(0, 0, 0, 0.02), 0px 161px 45px 0px rgba(0, 0, 0, 0.00);
 }
 
-.curriculum img{ width: 90%; }
 
 .maquetas-ui:hover, .daily-design:hover, .proyectos-ux:hover, .challenges-programacion:hover, .curriculum:hover{ scale: 1.02; transition: 0.5s;}
 
 @media screen and (min-width: 2500px){ .proyectos-ux{ padding: 30px 0; background-size: 75%; box-sizing: border-box;} .curriculum, .challenges-programacion, .daily-design{ background-size: 45%;}}
 
-@media screen and (max-width: 1440px){
-    .curriculum, .challenges-programacion { background-size: 50%;}
+
+
+@media screen and (max-width: 1550px){
+    .challenges-programacion { background-size: 30%;}
+    .curriculum { background-size: 40%;}
     .proyectos-ux { background-size: 60%;}
     .daily-design { background-size: 40%;}
 }
-
+@media screen and (max-width: 1440px){
+    .curriculum { background-size: 50%;}
+}
 @media screen and (max-width: 1024px){
     .container-general{ height: 45vh;}
     .container2{ width: 30%;}
