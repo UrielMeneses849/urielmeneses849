@@ -306,35 +306,23 @@ h3{
 /* * Animaciones del texto */
 
 /* ? Letras y estilos del texto */
-.banner {
-    z-index: 100;
-    position: relative;
-    
-  }
+  .banner { z-index: 100; position: relative;}
   
-  .banner .banner-row {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-  }
+  .banner .banner-row { overflow: hidden; display: flex; align-items: center; }
   
   .banner .banner-row.center, .bottom {
-    justify-content: center;
-    text-align: center;
-    margin-top: -50px;
+    justify-content: space-around; 
   }
-
-  .banner .banner-row.right { justify-content: flex-end;}
 
   .banner .banner-row .row-title,
   .banner .banner-row .row-letter {
-    font-size: 12rem;
-  font-family: var(--poppins);
-  text-shadow: 2px 4px 4px 0px rgba(12, 13, 29, 0.50);
-  font-weight: 600;
-    letter-spacing: -1rem;
-    display: inline-block;
+    font-size: 9.575vw;
+    font-family: var(--poppins);
+    font-weight: 600;
+    letter-spacing: -1.183rem;
+    /* display: inline-block; */
     white-space: nowrap;
+    display: flex;
     position: relative;
   }
 
@@ -347,11 +335,21 @@ h3{
   }
 
   .banner .banner-row .row-col .row-message {
-    font-weight: 500;
-    color: #504f4f;
-    font-size: 1.8rem;
+    font-weight: 300;
+    color: #121212;
+    font-size: 1.2541666666666667vw;
     width: 100%;
+    line-height: 35.425px;
   }
+  
+  .banner .banner-row .row-col.top .row-title, .banner .banner-row .row-col.top .row-letter { font-weight: 400; }
+  .banner .banner-row .row-col.bottom .row-title, .banner .banner-row .row-col.bottom .row-letter { font-weight: 400; margin-bottom: 30px;}
+  
+
+
+  .HomeDesktop{margin-top: 1%;}
+
+  .row-img{width: 50%;}
   .HomeMobile{
     display: none;
   }
@@ -362,7 +360,7 @@ h3{
     .banner .banner-row .row-col {
         width: 70%;
       }
-    
+   
   }
 
   @media (max-width: 1440px) {
@@ -371,17 +369,16 @@ h3{
     .banner .banner-row .row-col {
         width: 70%;
       }
-    
   }
   
    
   @media (max-width: 1280px) {
-    .banner .banner-row .row-col:last-child {
-      display: none;
+    
+    .banner .banner-row .row-title,
+    .banner .banner-row .row-letter {
+      font-size: 9.575vw;
     }
-    .banner .banner-row .scroll {
-        display: none;
-      }
+
   }
   @media (max-width: 1024px) {
     .banner .banner-row .row-title,
@@ -404,61 +401,43 @@ h3{
     }
 
       @media (max-width: 770px) {
-        .banner .banner-row .row-title,
-        .banner .banner-row .row-letter { font-size: 7rem; letter-spacing: -0.5rem;} 
-        .banner .banner-row .row-col.texto .row-letter{ font-size: 9rem; text-align: end; }
-        .banner  .banner-row.center .row-letter{ font-size: 7rem;}}
-
-
-  @media (max-width: 480px) {
+       
     .HomeDesktop{
+      display: none;
+    }
+    .row-message {
       display: none;
     }
     .HomeMobile{
       display: block;
+      transform: translateY(25%);
+      z-index: 0;
     }
     
     .banner .banner-row .row-title,
     .banner .banner-row .row-letter {
       font-size: 6rem;
-      font-weight: 700;
-    }
-    .salto{display: none}
+      font-weight: 600;
     
-    .banner .banner-row .row-col {
-        width: 100%;
-        justify-content: flex-start;
-      }
-      
-      .banner .banner-row.center, .bottom {
-        justify-content: center;
-        
-        margin-top: -20px;
-      }
-      .banner .banner-row .row-title,
-  .banner .banner-row .row-letter{
-    letter-spacing: -0.4rem;
-  }
-  .banner .banner-row .row-col.texto .row-letter{ font-size: 6rem;}
-  .banner  .banner-row.center .row-letter{ font-size: 5rem;}
+    }
 
-  .banner .banner-row .row-col {
-    width: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 ;
-  }
-  }
-  @media (max-width: 393px) {
-    .banner .banner-row .row-title,
-    .banner .banner-row .row-letter { font-size: 4.8rem; letter-spacing: -0.3rem;} 
-    .banner .banner-row .row-col.texto .row-letter{ font-size: 6rem; }
-    .banner .banner-row .row-letter { font-size: 4.5rem;} .banner  .banner-row.center .row-letter{ font-size: 4rem;}
-}
+  .banner .banner-row .row-title, .banner .banner-row .row-letter{ letter-spacing: -0.4rem;  }
 
+  .banner .banner-row .row-letter { font-size: 19.673151750972762vw} 
+  
+  .banner .banner-row .row-col.top .row-title, .banner .banner-row .row-col.top .row-letter { font-weight: 300; font-size: 17vw; }
+  .banner .banner-row .row-col.top .row-title, .banner .banner-row .row-col.top {justify-content: start; margin-left: 3%; display: flex; }
 
+  .banner .banner-row .row-col.bottom .row-title, .banner .banner-row .row-col.bottom .row-letter { font-weight: 300;  font-size: 17vw; margin: 0;}
+  .banner .banner-row .row-col.bottom .row-title, .banner .banner-row .row-col.bottom {display: flex;  justify-content: end; margin-right: 3%;}
+    .row-img{display: none;}
+  }
+
+@media screen and (max-width: 390px){  .HomeMobile{
+  display: block;
+  transform: translateY(15%);
+  z-index: 0;
+}}
 
 @media screen and (min-width: 2500px){ 
     .banner .banner-row .row-title,

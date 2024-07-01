@@ -4,7 +4,7 @@
 nav {
     display: flex;
     align-items: center;
-    padding: 20px 80px;
+
     height: 65px;
     z-index: 1;
     transition: 0.6s;
@@ -12,10 +12,10 @@ nav {
   }
   
   /* Contenedor del toggle */
-  .toggler { display: flex; align-items: center; margin-top: 50px; }
+  .toggler { display: flex; align-items: center; margin-top: 10%; }
   
   /* Barra que contiene el circulo del toggle con un fondo oscuro para contrastar con el claro */
-  .toggler--slider { width: 55px; height: 34px; background-color: #121212; border-radius: 2rem; margin-inline: 15px; cursor: pointer; display: flex;
+  .toggler--slider { width: 60px; height: 40px; background-color: #121212; border-radius: 2rem; margin-inline: 15px; cursor: pointer; display: flex;
     /* Cuando esta en modo light se alinea al principio del toggle */
     justify-content: flex-start;
     align-items: center;
@@ -32,8 +32,8 @@ nav {
   
   /* Circulo que esta dentro del toggle */
   .toggler--slider--circle {
-    height: 25px;
-    width: 25px;
+    height: 28px;
+    width: 28px;
     margin: 0 3px;
     background-color: white;
     border-radius: 50%;
@@ -64,7 +64,48 @@ nav {
     justify-content: flex-end;
     transition: 0.9s;
   }
+
+  .toggle {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
+    line-height: 1;
+  }
+  
+  .input {
+    display: none;
+  }
+  
+  .icon {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    transition: transform 500ms;
+  }
+  
+  .icon--moon {
+    transition-delay: 200ms;
+  }
+  
+  .icon--sun {
+    transform: scale(0);
+  }
+  
+  #switch:checked + .icon--moon {
+    transform: rotate(360deg) scale(0);
+  }
+  
+  #switch:checked ~ .icon--sun {
+    transition-delay: 200ms;
+    transform: scale(1) rotate(360deg);
+  }
+
   @media screen and (max-width: 820px){ .toggler{  margin: 30px;} nav{ padding: 20px 0;} }
+
   @media screen and (max-width: 600px){
     nav{ padding: 10px; margin-top: -20%;}
 
@@ -73,4 +114,44 @@ nav {
     .toggler--slider { width: 45px; height: 26px; }
 
     .toggler--slider--circle { height: 20px; width: 20px; }
+
+.toggle {
+  background-color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  
+filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.39)) drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.34)) drop-shadow(0px 14px 9px rgba(0, 0, 0, 0.20)) drop-shadow(0px 25px 10px rgba(0, 0, 0, 0.06)) drop-shadow(0px 40px 11px rgba(0, 0, 0, 0.01));
+  line-height: 1;
+}
+
+.input {
+  display: none;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms;
+}
+
+.icon--moon {
+  transition-delay: 200ms;
+}
+
+.icon--sun {
+  transform: scale(0);
+}
+
+#switch:checked + .icon--moon {
+  transform: rotate(360deg) scale(0);
+}
+
+#switch:checked ~ .icon--sun {
+  transition-delay: 200ms;
+  transform: scale(1) rotate(360deg);
+}
   }

@@ -22,7 +22,7 @@ function App() {
 function toggleDarkMode(){
    setDarkMode(darkMode => !darkMode)
 }
-let icon = darkMode ? "./images/logoBlanco.svg" : "./images/logo.svg"
+
 
 let colortexto = darkMode ? "#e0e0e0" : "#0b0b0c"
 
@@ -98,21 +98,22 @@ function textEnterVisitar (){
     <>
     
     {/* Pasar props textenter y textleave */}
+      <Menu
+      darkMode = {darkMode} 
+      colortexto = {colortexto}
+      textEnter = {textEnter}
+      textLeave = {textLeave}
+      toggleDarkMode = {toggleDarkMode}/>
+
       <Home 
       darkMode = {darkMode}
-      toggleDarkMode = {toggleDarkMode}
       colortexto = {colortexto}
       colortextoSub = {colortextoSub}
       textEnter = {textEnter}
       textLeave = {textLeave}
       />
       
-      <Menu
-      darkMode = {darkMode}
-      icon = {icon} 
-      colortexto = {colortexto}
-      textEnter = {textEnter}
-      textLeave = {textLeave}/>
+      
 
       <Suspense fallback={<div>Loading...</div>}>
       <Habilidades 

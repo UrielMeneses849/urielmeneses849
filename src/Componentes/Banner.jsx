@@ -24,9 +24,10 @@ const letterAni = {
 };
 
 export default function Banner(props) {
-
-// * Web worker
-useEffect(() => {
+  
+  
+  // * Web worker
+  useEffect(() => {
   const worker = new Worker(new URL('../animationWorker.js', import.meta.url));
 
   // Enviar un mensaje al Web Worker para iniciar la animación
@@ -47,14 +48,16 @@ useEffect(() => {
 // * Web worker
 
   const color = props.darkMode ? "#fafafa" : "#15171C";
-
   const [playMarquee, setPlayMarquee] = useState(false);
 
+  const FlechaScroll = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2FFlecha%20Negra.svg?alt=media&token=3bfae33d-f8ce-432f-88fa-1d4cdecae8c8" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2FFlechaBlanca.svg?alt=media&token=d1da3034-64db-4edf-a518-a2e591f997e0";
+  
   useEffect(() => {
     setTimeout(() => {
       setPlayMarquee(true);
     }, 2000);
   }, []);
+  
   return (
     // eslint-disable-next-line react/prop-types
     <>
@@ -65,9 +68,9 @@ useEffect(() => {
     initial="hidden" // Establece la variante inicial
     animate="visible" // Establece la variante para la animación visible
     exit="exit">
-      <BannerRowTop title={"Hola, Soy Uriel"} color={color}/>
-      <BannerRowCenter title={"Web Developer"} playMarquee={playMarquee} color={color}/>
-      <BannerRowBottom title={"Diseñador·UX/UI"} color={color}/>
+      <BannerRowTop title={"Web Developer"} color={color}/>
+      <BannerRowCenter title={"Hola, Soy Uriel"} playMarquee={playMarquee} color={color}/>
+      <BannerRowBottom title={"Diseñador UX/UI"} color={color} FlechaScroll={FlechaScroll} />
     </motion.div>
     </AnimatePresence>
     </div>
@@ -78,11 +81,11 @@ useEffect(() => {
     initial="hidden" // Establece la variante inicial
     animate="visible" // Establece la variante para la animación visible
     exit="exit">
-    <BannerRowTop title={"Hola, "} color={color}/>
-    <BannerRowTop title={"Soy Uriel"} color={color}/>
-      <BannerRowCenter title={"Web Developer"} playMarquee={playMarquee} color={color}/>
-      <BannerRowBottom title={"Diseñador"} color={color}/>
-      <BannerRowBottom title={"UX/UI"} color={color}/>
+    <BannerRowTop title={"Web "} color={color}/>
+    <BannerRowTop title={"Developer"} color={color}/>
+      <BannerRowCenter title={"Hola, soy Uriel"} playMarquee={playMarquee} color={color}/>
+      <BannerRowBottom title={"Diseñador"} color={color} FlechaScroll={FlechaScroll}/>
+      <BannerRowBottom title={"UX/UI"} color={color} FlechaScroll={FlechaScroll}/>
       </motion.div>
     </AnimatePresence>
     </div>
@@ -112,9 +115,8 @@ const AnimatedLetters = ({ title, disabled }) => (
 const BannerRowTop = ({ title, color }) => {
   return (
     <div className={"banner-row"} style={{color: `${color}`}}>
-      <div className={"row-col texto"} translate="no">
+      <div className="row-col top" translate="no">
         <AnimatedLetters title={title} />
-        
       </div>
       <motion.div
         initial={{ opacity: 0, y: 80 }}
@@ -125,20 +127,38 @@ const BannerRowTop = ({ title, color }) => {
           delay: 0.4,
         }}
         className='row-col'>
-        <span className='row-message' style={{color: `${color}`, opacity:0.8}} >
-          Ingeníero en computación del Insituto Politécnico Nacional.
+        <span className='row-message' style={{color: `${color}`}} >
+          Ingeníero en <b>computación</b> del Instituto Politécnico Nacional.
         </span>
       </motion.div>
     </div>
   );
 };
 
-const BannerRowBottom = ({ title, color }) => {
+const BannerRowBottom = ({ title, color, FlechaScroll}) => {
+
   return (
-    <div className={"banner-row center"} style={{color: `${color}`}} translate="no">
+    <div className={"banner-row"} style={{color: `${color}`}}>
       
-      <AnimatedLetters title={title} />
+      <div className="row-col bottom" translate="no">
+      <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          ease: "easeInOut",
+          duration: 1,
+          delay: 0.4,
+        }}
+        className='row-col'>
+          
+      <img src={FlechaScroll} alt="Flecha para scroll" className='row-img' style={{color: `${color}`}} />
+  
+      </motion.div>
+        <AnimatedLetters title={title} />
+      </div>
+      
     </div>
+    
   );
 };
 
@@ -150,7 +170,7 @@ const BannerRowCenter = ({ title, playMarquee, color }) => {
         initial={{ y: 310 }}
         animate={{ y: 0 }}
         transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1}}
-        className='marquee__inner' >
+        className='marquee__inner'>
         <AnimatedLetters title={title} disabled />
         <AnimatedLetters title={title} />
         <AnimatedLetters title={title} disabled/>
