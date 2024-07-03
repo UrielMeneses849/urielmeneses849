@@ -16,6 +16,7 @@
 
 .contenedorEducacionResponsivo{ display: none;}
 
+.skills{width: 85%; margin: 0 auto;}
 @media screen and (min-width: 2500px){ .Educacion_container{ height: 55vh;} .TextoEducacion{ font-size: 23px; }}
 
 @media screen and (min-width: 3200px){  .TextoEducacion{ font-size: 27px; } }

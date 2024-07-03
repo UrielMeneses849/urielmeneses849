@@ -17,13 +17,13 @@ export default function Footer(props){
     const arrow = "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Footer%2Farrow.svg?alt=media&token=e3d6a545-f427-475d-b73b-d61f4cd54097"
 
     return(
-        <div height={900} className="footer" id="contact">
+        <footer height={900} className="footer" id="contact">
         <h2 className="Titulo_trabajo" style={{ color: `${props.colortexto}` }} >Contacto</h2>
         <h3 className="subtitulo">Sigueme y trabajemos juntos :)</h3>
         <div className="container_footer_formulario">
         <div className="contacto" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
 
-           <a href="https://www.linkedin.com/in/urielmen/" className="enlace" target="blank"><div className="contacto1" style={{border: `${bordeCard}`}}>
+           <a href="https://www.linkedin.com/in/esaul-uriel-meneses-torres-83475a2a0/" className="enlace" target="blank"><div className="contacto1" style={{border: `${bordeCard}`}}>
             <img src={Linkdin} alt="linkdn" className="linkdn" />
             <span className="texto_abajo" style={{ color: `${props.colortexto}` }}> <img src={arrow} alt="arrow" className="arrow" /> <b>UrielMen</b> </span>
             </div></a> 
@@ -48,6 +48,6 @@ export default function Footer(props){
             
         </div>
         <h3 className="subtitulo" style={{fontSize: "13px"}}>@urielmeneses849 / 2022</h3>
-        </div>
+        </footer>
     )
 }

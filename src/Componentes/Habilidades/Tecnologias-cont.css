@@ -50,9 +50,9 @@
 @media screen and (max-width: 1440px){
     .div1 img, .div4 img, .div5 img{ width: 55%; }
 
-    .BD .div3 img{width: 50%;}
+    .BD .div3 img{width: 30%;}
 
-    .Herramientas .div2 img, .Herramientas .div1 img, .Herramientas .div3 img, .BD .div1 img, .BD .div2 img, .BD .div2 img , .FW .div1 img, .UX-Content .div3 img, .UX-Content .div2 img, .UX-Content .div1 img { width: 65%;}
+ .Herramientas .div1 img, .BD .div1 img, .BD .div2 img, .BD .div2 img , .FW .div1 img{ width: 65%;}
 }
 /* * Tablet pequeña*/
 @media screen and (max-width: 1024px){ 
