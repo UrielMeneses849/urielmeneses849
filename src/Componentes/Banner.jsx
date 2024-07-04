@@ -150,8 +150,9 @@ const BannerRowBottom = ({ title, color, FlechaScroll}) => {
           delay: 0.4,
         }}
         className='row-col'>
-          
+      <a href="#trabajo" style={{width:"100%"}}>
       <img src={FlechaScroll} alt="Flecha para scroll" className='row-img' style={{color: `${color}`}} />
+      </a>
   
       </motion.div>
         <AnimatedLetters title={title} />

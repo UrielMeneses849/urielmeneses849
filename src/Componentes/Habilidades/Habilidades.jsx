@@ -110,7 +110,7 @@ export default function Habilidades(props){
                 </div>
                 <div className="div2"> 
                 <LazyLoad offset={200} >
-                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fframer-svgrepo-com.svg?alt=media&token=95bdcd3b-8807-48f4-9a1c-da24b0d7a313"  />
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fnotion-svgrepo-com.svg?alt=media&token=1bb052c7-6351-41b5-919b-32fe69d70fa0"  />
                 </LazyLoad>
                 </div>
                 <div className="div3"> 

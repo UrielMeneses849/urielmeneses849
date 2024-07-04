@@ -112,8 +112,6 @@ function textEnterVisitar (){
       textEnter = {textEnter}
       textLeave = {textLeave}
       />
-      
-      
 
       <Suspense fallback={<div>Loading...</div>}>
       <Habilidades 

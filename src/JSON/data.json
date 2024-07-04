@@ -3,8 +3,11 @@
     "id": 1,
     "CardArte": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FFinveroCard.svg?alt=media&token=4076fd17-e087-432f-a933-106fb20389cc" ,
     "Logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FMask%20group.svg?alt=media&token=ecc5033e-1c50-44e9-b9e7-caa818c6bfe2",
+    "LogoDark" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FFV%202.svg?alt=media&token=6d032902-cf95-4ba2-9350-dec7b4ca4ffa",
     "tagName" : "Diseño UX/UI",
-    "descripcion" :"Como <b>Diseñador UX/UI</b> en el equipo de CX (Customer Experience) de Finvero, participe en el diseño, investigación, análisis y pruebas de usabilidad para distintas <b>interfaces</b>, flujos de <b>originación de crédito</b>, dashboards y aplicaciones en el <b>sector fintech.</b>"
+    "descripcion" :"Como <b>Diseñador UX/UI</b> en el equipo de CX (Customer Experience) de Finvero, participe en el diseño, investigación, análisis y pruebas de usabilidad para distintas <b>interfaces</b>, flujos de <b>originación de crédito</b>, dashboards y aplicaciones en el <b>sector fintech.</b>",
+    "path" : "/finvero"
+  
   },
   {
     "id": 2,
@@ -12,14 +15,16 @@
     "Logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FLogo_OF2050%404x%202.svg?alt=media&token=1e8e8921-7245-4ea1-a135-c252c13d1a2c",
     "tagName" : "Desarrollo Frontend",
     "descripcion" :"Trabajé en el <b> Desarrollo Frontend </b>para el evento Open Finance, creando componentes e interfaces responsivas junto a más desarrolladores y diseñadores UX/UI. El evento reune personas <b>lideres del mundo fintech</b> y se lleva a cabo en el hotel ST. REGIS en CDMX cada año.",
-    "reverse" : true
+    "reverse" : true,
+    "path" : "/open-finance"
   },
   {
     "id": 3,
     "CardArte": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FTransbordeCard.svg?alt=media&token=5f653cb7-bea2-48c7-88b3-257166f195b9" ,
     "Logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2Flogo.svg?alt=media&token=fb9c06ac-804e-4675-a2a6-f21d5f76253c",
     "tagName" : "Diseño UX/UI",
-    "descripcion" :"Tuve la oportunidad de crear una propuesta de diseño para la empresa OMNIBUS mejorando su web de manera responsiva  aplicando la metodología design thinking, auditoria competitiva y distintas técnicas para <b>mejorar el UI</b> de la pagina web."
+    "descripcion" :"Tuve la oportunidad de crear una propuesta de diseño para la empresa OMNIBUS mejorando su web de manera responsiva  aplicando la metodología design thinking, auditoria competitiva y distintas técnicas para <b>mejorar el UI</b> de la pagina web.",
+    "path" : "/transborde"
   },
   {
     "id": 4,
@@ -27,7 +32,8 @@
     "tituloCard": "MebloStyle",
     "tagName" : "Desarrollo Frontend",
     "descripcion" :"Como <b>diseñador y desarrollador</b> independiente, he sido responsable de todo el proceso de creación de la plataforma, asegurando una <b>experiencia de usuario fluida</b> y una <b>interfaz atractiva</b>. El resultado es una tienda en línea elegante que también refuerza la marca con un diseño visual atractivo.",
-    "reverse" : true
+    "reverse" : true,
+    "path" : "meblostyle"
   },
   {
     "id": 5,
@@ -35,7 +41,9 @@
     "Logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FGroup%2025.svg?alt=media&token=7582774f-26f5-4c07-9e86-408341bc062e",
     "LogoSmall" : true,
     "tagName" : "Diseño UX/UI",
-    "descripcion" :"Como diseñador UX/UI, tuve el placer de colaborar con Sushi Zen, un restaurante de sushi emergente que busca ofrecer una experiencia auténtica y moderna a sus clientes. Mi participación en este proyecto abarcó desde el <b>branding</b> hasta el <b>diseño detallado del menú</b> y los posters promocionales."
+    "descripcion" :"Como diseñador UX/UI, tuve el placer de colaborar con Sushi Zen, un restaurante de sushi emergente que busca ofrecer una experiencia auténtica y moderna a sus clientes. Mi participación en este proyecto abarcó desde el <b>branding</b> hasta el <b>diseño detallado del menú</b> y los posters promocionales.",
+    "path" : "sushizen"
+  
   },
   {
     "id": 6,
@@ -43,6 +51,7 @@
     "tituloCard": "Boda",
     "tagName" : "Diseño UX/UI",
     "descripcion" :"Diseñé una elegante página web para una boda, el sitio incluía fotos, historia de los novios, itinerario y un registro de invitados, y una sección de información sobre la ceremonia y la recepción. Utilicé un <b>diseño responsivo para asegurar que la página se viera impecable en todos los dispositivos.</b> ",
-    "reverse" : true
+    "reverse" : true,
+    "path" : "boda"
   }
 ]

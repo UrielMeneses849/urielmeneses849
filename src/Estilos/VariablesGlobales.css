@@ -376,12 +376,7 @@ h3{
       z-index: 0;
     }
     
-    .banner .banner-row .row-title,
-    .banner .banner-row .row-letter {
-      font-size: 6rem;
-      font-weight: 600;
-    }
-
+    
   .banner .banner-row .row-title, .banner .banner-row .row-letter{ letter-spacing: -0.5rem;  }
 
   .banner .banner-row .row-letter { font-size: 20.673151750972762vw} 
@@ -399,6 +394,12 @@ h3{
   transform: translateY(10%);
   z-index: 0;
 }}
+
+@media screen and (max-width: 320px){  
+  .banner .banner-row .row-letter { font-size: 17.673151750972762vw;} 
+  .banner .banner-row .row-col.bottom .row-title, .banner .banner-row .row-col.bottom .row-letter { font-size: 17vw; }
+  .banner .banner-row .row-col.bottom .row-title, .banner .banner-row .row-col.bottom .row-letter { font-size: 17vw; }
+}
 
 @media screen and (min-width: 2500px){ 
     .banner .banner-row .row-title,

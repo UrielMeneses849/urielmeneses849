@@ -1,43 +1,16 @@
 /* eslint-disable react/prop-types */
 import "../Estilos/Trabajo/Trabajo-cards.css"
 import "../Estilos/Trabajo/Titulos-textos.css"
-import "../Estilos/Trabajo/CrdsTrabajo.css"
-
-// import Box from '@mui/material/Box';
-// import Modal from '@mui/material/Modal';
+import { Link } from "react-router-dom"
+import data from "../JSON/data.json"
+import LazyLoad from 'react-lazyload';
 
 // import MaquetasUI from "./Card-Trabajo/MaquetasUI";
 // import ProyectosUX from "./Card-Trabajo/ProyectosUX"
 
-// import Finvero from "./Finvero/Finvero";
-// import OpenFinance from "./OpenFinance/OpenFinance";
-import data from "../JSON/data.json"
-
-// import { useState, useEffect } from "react";
-
-
 
 export default function Trabajo(props){
 
-    
-    
-    // const [open4, setOpen4] = useState(false);
-    // const handleOpen4 = () => setOpen4(true);
-    // const handleClose4 = () => setOpen4(false);
-
-    // const [open5, setOpen5] = useState(false);
-    // const handleOpen5 = () => setOpen5(true);
-    // const handleClose5 = () => setOpen5(false);
-
-    // const [open6, setOpen6] = useState(false);
-    // const handleOpen6 = () => setOpen6(true);
-    // const handleClose6 = () => setOpen6(false);
-
-    // const [open7, setOpen7] = useState(false);
-    // const handleOpen7 = () => setOpen7(true);
-    // const handleClose7 = () => setOpen7(false);
-
-    // const fondoCard = props.darkMode ? `#494949` : `#eeeeee`
 
     const colorTag = props.darkMode ? `#949494` : `#454545`
     const colorBoton = props.darkMode ? `#fafafa` : `#121212`
@@ -62,23 +35,28 @@ export default function Trabajo(props){
             {data.map(item => (
            
             <div className={item.reverse ? "contenedorTrabajos reverse" : "contenedorTrabajos"} key={item.id}> 
+            
+            <LazyLoad offset={600} className={item.reverse ? "loaderTrabajosReverse" : "LoaderTrabajos"}>
             <img src={item.CardArte} alt="Tarjeta" className="CardTrabajo"/>
-
+            </LazyLoad>
             <div className="textosCardTrabajo">
 
             <div className="tituloTrabajoCard">
-            { item.Logo ? <img src={item.Logo} alt="" className={item.LogoSmall ? "LogoimgTsmall" : "LogoimgT"}/> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{item.tituloCard}</h3> }
+            { props.darkMode ? ( item.LogoDark ? <img src={item.LogoDark} alt="logo" className="LogoimgT"/>  : 
+             
+            ( item.Logo ? <img src={item.Logo} alt="logo" className={item.LogoSmall ? "LogoimgTsmall" : "LogoimgT"}/> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{item.tituloCard}</h3> )) : 
+            
+            (item.Logo ? <img src={item.Logo} alt="logo" className={item.LogoSmall ? "LogoimgTsmall" : "LogoimgT"}/> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{item.tituloCard}</h3>)}
             
             <div className="tag" >
                 {item.tagName === "Diseño UX/UI" ? <i className="uil uil-web-grid nav_icon" style={{ color: "#FCCA3F"}}></i> : <i className="uil uil-brackets-curly nav_icon" style={{ color: "#8A97FF"}}></i>}
                 <h4 style={{ color: `${colorTag}` }}>{item.tagName}</h4>
             </div>
-
             </div>
-
             <span className="descripcionCardTrabajo" dangerouslySetInnerHTML={{ __html: item.descripcion }} style={{ color: `${props.colortexto}` }}/>
 
             {/* * Boton */}
+            <Link key={item.id} to={`${item.path}`}>
             <button style={{ background: `${colorBoton}` }}>
             <div className="svg-wrapper-1">
             <div className="svg-wrapper">
@@ -96,7 +74,7 @@ export default function Trabajo(props){
             </div>
             </div>
             <span style={{ color: `${colortextoBoton}` }}>Ver proyecto</span>
-            </button>
+            </button> </Link>
             {/*  Boton */}
             </div>
             </div>
