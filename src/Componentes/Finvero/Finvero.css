@@ -1,5 +1,7 @@
 .container-finvero{display: flex; flex-direction: column; max-width: 85%; margin: 5px auto 100px;}
 
+.ArrowBack{font-size: 2.5vw;}
+
 .textoDestacar{font-size: var(--h2-font-size); font-weight: 700; }
 
 .finvero{max-width: 13%; margin: 25px 0;}

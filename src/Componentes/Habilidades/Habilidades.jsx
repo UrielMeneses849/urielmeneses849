@@ -17,7 +17,7 @@ export default function Habilidades(props){
 
     const bordeCard = props.darkMode ? `` : `1px solid #121212`
 
-    const next = props.darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FNextD.svg?alt=media&token=05c58d04-3733-4ccb-9200-ec62f8dc0cea` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FNextL.svg?alt=media&token=a1046b51-d423-4845-ad06-eef262f6eaa3`
+    // const next = props.darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FNextD.svg?alt=media&token=05c58d04-3733-4ccb-9200-ec62f8dc0cea` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FNextL.svg?alt=media&token=a1046b51-d423-4845-ad06-eef262f6eaa3`
 
     const sql = props.darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FsqlD.svg?alt=media&token=64780816-23e0-48b9-a1a7-95eebc25d190` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FsqlL.svg?alt=media&token=f8e6c1c1-ac54-44bc-bb44-61103e8bbd1c`
     
@@ -123,7 +123,7 @@ export default function Habilidades(props){
             </div>
             
             <div className="contenedorSkillText">
-                <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Frameworks</h2> 
+                <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Desarrollo y metricas</h2> 
                 <div className="skills__content FW" style={{backgroundColor: `${fondoCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
 
                 <div className="div1"> 
@@ -134,7 +134,7 @@ export default function Habilidades(props){
                 {/*  */}
                 <div className="div2"> 
                 <LazyLoad offset={200} >
-                <img src={next}/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FAnalytics.svg?alt=media&token=51d95724-6002-4bde-89cf-809872116145"/>
                 </LazyLoad>
                 </div>
 

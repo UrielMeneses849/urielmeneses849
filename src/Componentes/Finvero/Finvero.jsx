@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import LazyLoad from 'react-lazyload';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useNavigate } from 'react-router-dom';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -10,6 +11,7 @@ import 'swiper/css/navigation';
 import './Finvero.css'
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 // Import Swiper styles
 
 export default function Finvero(props){
@@ -43,8 +45,16 @@ const onAutoplayTimeLeft = (s, time, progress) => {
   progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
 };
 
+const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1); // Navega una página atrás en el historial
+  };
+
 // eslint-disable-next-line react/prop-types
 const fondoCard = props.darkMode ? `#494949` : `#F5FFFF`
+
+const colortexto = props.darkMode ? `#e0e0e0` : `#0b0b0c`
 
 const fondoSwiper = props.darkMode ? `#15171C` :  `#f0f0f0`
 
@@ -55,15 +65,20 @@ let finvero = props.darkMode ? `https://firebasestorage.googleapis.com/v0/b/port
 return(
 
 <div className="container-finvero">
-<LazyLoad offset={600} once>
+
+<LazyLoad offset={600} once style={{display: "flex", gap: "24px", alignItems: "center"}}>
+  <Link to="/">
+<i className="uil uil-arrow-circle-left ArrowBack" onClick={handleBackClick}></i>
+  </Link>
 <img src={finvero} alt="" className="finvero"/>
 </LazyLoad>
-<span  style={{ color: `${props.colortexto}` }} className='spanFinvero'>Desempeñe el rol de <b style={{ color: `${color}` }} className='textoDestacar'>Diseñador UX/UI</b> en el equipo de CX al realizar algunos diseños, investigaciones, pruebas de usabilidad y KPI´s, participando en los flujos 
+
+<span  style={{ color: `${colortexto}` }} className='spanFinvero'>Desempeñe el rol de <b style={{ color: `${color}` }} className='textoDestacar'>Diseñador UX/UI</b> en el equipo de CX al realizar algunos diseños, investigaciones, pruebas de usabilidad y KPI´s, participando en los flujos 
     de originación de crédito, dashboards y distintas interfaces para los <b style={{ color: `${color}` }}>servicios y aplicaciones</b> de Finvero en el sector <b style={{ color: `${color}` }}>Fintech. </b></span>
 
-<h3 className='Originacion' style={{ color: `${props.colortexto}` }}>Originación de crédito</h3>
+<h3 className='Originacion' style={{ color: `${colortexto}` }}>Originación de crédito</h3>
 
-<span className='textoOriginacion' style={{ color: `${props.colortexto}` }}>Creación de flujos para solicitar un crédito considerando a distintos lenders, pensado para los diferentes casos de uso, directo en tienda, desde la aplicación del comercio ó el usuario independiente.</span>
+<span className='textoOriginacion' style={{ color: `${colortexto}` }}>Creación de flujos para solicitar un crédito considerando a distintos lenders, pensado para los diferentes casos de uso, directo en tienda, desde la aplicación del comercio ó el usuario independiente.</span>
 
 <div className="grid credito">
 
@@ -89,7 +104,7 @@ return(
 <LazyLoad offset={500}>
     <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FGroup%2018.png?alt=media&token=523ce9d8-9326-47e0-9e46-2240df64eef3" alt="" className='logoCard'/>
 </LazyLoad>
-    <div style={{ color: `${props.colortexto}` }}>
+    <div style={{ color: `${colortexto}` }}>
     <h3 className='h3-finvero'>Colaboración con diferentes empresas</h3>
     <span>Tuve participación en diferentes proyectos que involucraban distintas empresas</span>
     </div>
@@ -97,7 +112,7 @@ return(
 </div>
 
 
-<h3 className='Originacion' style={{ color: `${props.colortexto}` }}>Un poco de mi trabajo</h3>
+<h3 className='Originacion' style={{ color: `${colortexto}` }}>Un poco de mi trabajo</h3>
 
 <Swiper spaceBetween={30} centeredSlides={false} autoplay={{ delay: 30000, disableOnInteraction: false, }}
         pagination={{ clickable: true, }}
