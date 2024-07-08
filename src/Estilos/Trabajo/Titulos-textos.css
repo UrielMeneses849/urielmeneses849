@@ -124,9 +124,11 @@ button {
 
 .contenedorTrabajos img:first-child {max-width: 100%;} .textosCardTrabajo{width: 100%; margin-top: 24px;} .descripcionCardTrabajo{font-size: 3.6666666666667vw;} 
 
-.tag{font-size: 3.2666666666667vw;} .tituloCardTrabajo{font-size: 7.3333333333333vw;}  .LogoimgT{width: 40%;} .LogoimgTsmall{width: 30%;} .progra{display: none;} .derecha{display: none; }
+.tituloCardTrabajo{font-size: 7.3333333333333vw;}  .LogoimgT{width: 40%;} .LogoimgTsmall{width: 30%;} .progra{display: none;} .derecha{display: none; }
 
 button span{font-size: 3.6666666666667vw;} button{padding: 0.7rem ;}
+
+.tag{font-size: 3.025vw;}
 }
 
 

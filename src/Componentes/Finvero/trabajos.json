@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "descripcion": "Detallar paso por paso la interacción del usuario.",
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2Fcw1-1.webp?alt=media&token=abb01755-9891-42b1-a3c7-c6627df1894a"
+    },
+    {
+        "id": 2,
+        "descripcion": "Creación de flujos para los diferentes casos de uso, pensando en cada e interacción del usuario.",
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2Fcp1-1.webp?alt=media&token=8ac36fbe-20dd-4b9d-9777-687ccc0b2786"
+    },
+    {
+        "id": 3,
+        "descripcion": "Estados de un form",
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2FFrame-427320653.webp?alt=media&token=e7f6ea56-9eda-4fe0-a3d1-95fddd254a79"
+    },
+    {
+        "id": 4,
+        "descripcion": "Modal",
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2FModal-terminos-y-condiciones.webp?alt=media&token=36f4e64a-82e7-4110-aecb-b0b70fd257b0"
+    },
+    {
+        "id": 5,
+        "descripcion": "Dashboard",
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2FIndicadores_histo%CC%81ricos.webp?alt=media&token=ef8125ea-0e61-4555-ad7f-13ebd51e6e2e"
+    },
+    {
+        "id": 6,
+        "descripcion": "Cards modelo para whatssap",
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2FGroup-1000002574-1.webp?alt=media&token=d7008991-55f0-4167-a3a7-a150d4729d0b",
+        "captura" : true
+    },
+    {
+        "id": 7,
+        "descripcion": "Detalles de crédito",
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2FHome-15.webp?alt=media&token=b710c6b7-170c-4f2d-ba5a-54ede8822fee",
+        "captura" : true
+    },
+    {
+        "id": 8,
+        "descripcion": "Detalles de pago",
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2FCaja-Detalles.webp?alt=media&token=2eb52ee0-097f-45fe-8291-7521ccd40611",
+        "captura" : true
+    }
+]

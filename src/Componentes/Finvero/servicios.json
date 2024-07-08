@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FServicio1.svg?alt=media&token=48fd2f61-8924-4455-9429-4510848973b4",
+        "servicio": "Marketing as a Service",
+        "descripcion": "Crea campañas de marketing altamente efectivas y mide su impacto en tiempo real."
+    },
+    {
+        "id": 2,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FFrame%20427320639.svg?alt=media&token=cdfa066b-5cac-4a77-825a-e2ba94aab282",
+        "servicio": "Loan servicing",
+        "descripcion": "Reduce la morosidad con soluciones eficaces y personalizadas para tu cartera."
+    },
+    {
+        "id": 3,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2Fservicio%203.svg?alt=media&token=baf68f2b-d09a-439b-89f9-8efdb480c0de",
+        "servicio": "Originación dinámica",
+        "descripcion": "Agiliza, mejora y adapta la experiencia del usuario a sus necesidades de crédito."
+    },
+    {
+        "id": 4,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2Fservico4.svg?alt=media&token=fd411216-c41a-47bd-843b-ebcb8b547534",
+        "servicio": "Decision engine",
+        "descripcion": "Automatiza los procesos de toma de decisión reduciendo el riesgo."
+    }
+]
