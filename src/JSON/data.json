@@ -33,7 +33,7 @@
     "tagName" : "Desarrollo Frontend",
     "descripcion" :"Como <b>diseñador y desarrollador</b> independiente, he sido responsable de todo el proceso de creación de la plataforma, asegurando una <b>experiencia de usuario fluida</b> y una <b>interfaz atractiva</b>. El resultado es una tienda en línea elegante que también refuerza la marca con un diseño visual atractivo.",
     "reverse" : true,
-    "path" : "meblostyle"
+    "path" : "/meblostyle"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "LogoSmall" : true,
     "tagName" : "Diseño UX/UI",
     "descripcion" :"Como diseñador UX/UI, tuve el placer de colaborar con Sushi Zen, un restaurante de sushi emergente que busca ofrecer una experiencia auténtica y moderna a sus clientes. Mi participación en este proyecto abarcó desde el <b>branding</b> hasta el <b>diseño detallado del menú</b> y los posters promocionales.",
-    "path" : "sushizen"
+    "path" : "/sushizen"
   
   },
   {
@@ -52,6 +52,7 @@
     "tagName" : "Diseño UX/UI",
     "descripcion" :"Diseñé una elegante página web para una boda, el sitio incluía fotos, historia de los novios, itinerario y un registro de invitados, y una sección de información sobre la ceremonia y la recepción. Utilicé un <b>diseño responsivo para asegurar que la página se viera impecable en todos los dispositivos.</b> ",
     "reverse" : true,
-    "path" : "boda"
+    "path" : "",
+    "link" : "https://boda.asgerath.com"
   }
 ]

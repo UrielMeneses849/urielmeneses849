@@ -1,5 +1,5 @@
 // estados
-import React, { useEffect,useState, Suspense } from "react"
+import React, { useEffect,useState, Suspense, useContext } from "react"
 import { motion } from "framer-motion"
 // Componentes
 import Home from "./Componentes/Home"
@@ -8,7 +8,7 @@ import Menu from "./Componentes/Menu"
 const Trabajo = React.lazy(() => import("./Componentes/Trabajo"))
 const About = React.lazy(() => import("./Componentes/About"))
 const Footer = React.lazy(() => import("./Componentes/Footer"))
-
+import {DarkModeContext} from './Componentes/DarkModeContext';
 
 
 // Variables globales
@@ -16,12 +16,14 @@ import './Estilos/VariablesGlobales.css'
 
 
 function App() {
-  // Const de estado para el darkMode
-  const [darkMode, setDarkMode] = useState(false)
-  // Cambio de estado logico
-function toggleDarkMode(){
-   setDarkMode(darkMode => !darkMode)
-}
+
+  const { darkMode, setDarkMode } = useContext(DarkModeContext);
+
+  // const [darkMode, setDarkMode] = useState(false)
+ 
+    function toggleDarkMode(){
+      setDarkMode(darkMode => !darkMode)
+    }
 
 
 let colortexto = darkMode ? "#e0e0e0" : "#0b0b0c"
@@ -87,10 +89,10 @@ function textLeave(){
   setCursorText("")
 } 
 
-function textEnterVisitar (){
-  setCursorVariant("link");
-  setCursorText("Abrir");
-}
+// function textEnterVisitar (){
+//   setCursorVariant("link");
+//   setCursorText("Abrir");
+// }
 
 
 // Cursor
@@ -99,14 +101,12 @@ function textEnterVisitar (){
     
     {/* Pasar props textenter y textleave */}
       <Menu
-      darkMode = {darkMode} 
       colortexto = {colortexto}
       textEnter = {textEnter}
       textLeave = {textLeave}
       toggleDarkMode = {toggleDarkMode}/>
 
       <Home 
-      darkMode = {darkMode}
       colortexto = {colortexto}
       colortextoSub = {colortextoSub}
       textEnter = {textEnter}
@@ -115,33 +115,21 @@ function textEnterVisitar (){
 
       <Suspense fallback={<div>Loading...</div>}>
       <Habilidades 
-      darkMode = {darkMode}
       colortexto = {colortexto}
       textEnter = {textEnter}
       textLeave = {textLeave}/> 
       </Suspense>
       
       <Suspense fallback={<div>Loading...</div>}>
-      <Trabajo 
-      darkMode = {darkMode}
-      colortexto = {colortexto}
-      textEnter = {textEnter}
-      textLeave = {textLeave}
-      textEnterVisitar = {textEnterVisitar}/>
+      <Trabajo colortexto = {colortexto}/>
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
-      <About 
-      darkMode = {darkMode}
-      colortexto = {colortexto}
-      textEnter = {textEnter}
-      textLeave = {textLeave}
-      />
+      <About colortexto = {colortexto} />
       </Suspense>
      
       <Suspense fallback={<div>Loading...</div>}>
       <Footer 
-      darkMode = {darkMode}
       colortexto = {colortexto}
       textEnter = {textEnter}
       textLeave = {textLeave}

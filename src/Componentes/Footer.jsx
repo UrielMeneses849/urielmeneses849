@@ -1,13 +1,15 @@
 /* eslint-disable react/prop-types */
 import "../Estilos/Footer/Footer.css"
+import { useDarkMode } from "../Hooks/useDarkMode";
 
 export default function Footer(props){
-    const bordeCard = props.darkMode ? `3px solid #f9f9f9` : `3px solid #121212`
+    const {darkMode} = useDarkMode();
+    const bordeCard = darkMode ? `3px solid #f9f9f9` : `3px solid #121212`
 
-    const gmail = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Footer%2Fgmailblanco.svg?alt=media&token=600226f4-f2a4-42b1-94c7-cc0c758b0b4a" : 
+    const gmail = darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Footer%2Fgmailblanco.svg?alt=media&token=600226f4-f2a4-42b1-94c7-cc0c758b0b4a" : 
     "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Footer%2Fgmail.svg?alt=media&token=ee9fff60-1c47-4a1d-b359-3861c51d528f"
 
-    const git = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Footer%2FGithubblanco.svg?alt=media&token=49036cd2-8744-4e2e-9ef4-d7f83e369894" :
+    const git = darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Footer%2FGithubblanco.svg?alt=media&token=49036cd2-8744-4e2e-9ef4-d7f83e369894" :
      "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Footer%2FGithub.svg?alt=media&token=e3e6a581-48df-467c-b0fd-710283a924e9"
 
     const Linkdin = "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Footer%2FlinkdinNegro.svg?alt=media&token=33c38206-5317-4638-b6a7-c9434d6b22d5"

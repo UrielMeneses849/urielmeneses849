@@ -10,9 +10,10 @@ import trabajos from "../../JSON/trabajos.json"
 import './Finvero.css'
 
 import { Link } from 'react-router-dom';
+import { useDarkMode } from '../../Hooks/useDarkMode';
 
-export default function Finvero(props){
-
+export default function Finvero(){
+    const {darkMode} = useDarkMode();
     // Scroll to the top of the page on mount
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -45,16 +46,16 @@ export default function Finvero(props){
         navigate(-1); // Navega una página atrás en el historial
     };
 
-    const fondoCard = props.darkMode ? `#494949` : `#F5FFFF`
-    const colortexto = props.darkMode ? `#e0e0e0` : `#0b0b0c`
-    let color = props.darkMode ? `#FFB828` : `#092D5D`
-    let finvero = props.darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FFV%202.svg?alt=media&token=6d032902-cf95-4ba2-9350-dec7b4ca4ffa` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FFV.svg?alt=media&token=b8a704cc-d456-4847-8ac5-40b6912f082d`
+    const fondoCard = darkMode ? `#494949` : `#F5FFFF`
+    const colortexto = darkMode ? `#e0e0e0` : `#0b0b0c`
+    let color = darkMode ? `#FFB828` : `#092D5D`
+    let finvero = darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FFV%202.svg?alt=media&token=6d032902-cf95-4ba2-9350-dec7b4ca4ffa` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FFV.svg?alt=media&token=b8a704cc-d456-4847-8ac5-40b6912f082d`
 
     return (
         <div className="container-finvero">
             <LazyLoad offset={600} once style={{ display: "flex", gap: "24px", alignItems: "center" }}>
                 <Link to="/">
-                    <i className="uil uil-arrow-circle-left ArrowBack" onClick={handleBackClick} style={{ textDecoration: "none", color: "black" }}></i>
+                    <i className="uil uil-arrow-circle-left ArrowBack" onClick={handleBackClick} style={{ textDecoration: "none", color: `${color}`}}></i>
                 </Link>
                 <img src={finvero} alt="" className="finvero" />
             </LazyLoad>
@@ -95,7 +96,7 @@ export default function Finvero(props){
                     </div>
                 </div>
                 <div className="DescripcionTrabajoFinvero">
-                    <h3>¿Mi trabajo?</h3>
+                    <h3 style={{color: `${colortexto}`}}>¿Mi trabajo?</h3>
                     <div className="tagTrabajo">
                         <div className="tagT">
                             <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2Ficono1.svg?alt=media&token=9040f5c3-974b-47fd-b9f3-e9fed763b282" alt="" />
@@ -117,7 +118,7 @@ export default function Finvero(props){
 
                 {trabajos.map(item => (
                     <div className="cardTrabajo column" key={item.id}>
-                        <h3>{item.descripcion}</h3>
+                        <h3 style={{color: `${colortexto}`}}>{item.descripcion}</h3>
                         <LazyLoad offset={500} height={500} style={{ display: "flex", justifyContent: "center" }}>
                             <img src={item.imagen} alt="" className= {item.captura ? "captura" : "imagenUI"} />
                         </LazyLoad>
@@ -125,8 +126,8 @@ export default function Finvero(props){
 
             </div>
 
-            <h2 className="Titulo_trabajo masT" style={{textAlign:"center", margin: "12px auto", padding: 0,  lineHeight: "1.15"}}>¡Tengo mucho más trabajo para mostrar!</h2>
-            <span className="textos" style={{textAlign:"center", margin: "0 auto"}}>Ponte en contacto conmigo y conoce más de mi pasion por crear productos digitales y del increible mundo de las fintech</span>
+            <h2 className="Titulo_trabajo masT" style={{textAlign:"center", margin: "12px auto", padding: 0,  lineHeight: "1.15", color: `${colortexto}`}}>¡Tengo mucho más trabajo para mostrar!</h2>
+            <span className="textos" style={{textAlign:"center", margin: "0 auto", color: `${colortexto}`}}>Ponte en contacto conmigo y conoce más de mi pasion por crear productos digitales y del increible mundo de las fintech</span>
         </div>
     );
 }

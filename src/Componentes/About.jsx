@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 import "../Estilos/Acerca/Acerca.css"
 import LazyLoad from 'react-lazyload';
+import { useDarkMode } from "../Hooks/useDarkMode";
 export default function About(props){
 
-
-    let foto = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/PersonaD.png?alt=media&token=de5e09b4-089b-4117-8b47-2651da6f31f8" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/PersonaL.png?alt=media&token=1abc60a5-b469-46c3-8868-7afa2acd9a16"
+    const {darkMode} = useDarkMode();
+    let foto = darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/PersonaD.png?alt=media&token=de5e09b4-089b-4117-8b47-2651da6f31f8" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/PersonaL.png?alt=media&token=1abc60a5-b469-46c3-8868-7afa2acd9a16"
     return(
         <div className="container-about" id="acerca">
 

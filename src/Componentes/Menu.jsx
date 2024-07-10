@@ -2,16 +2,19 @@
 import { useState } from 'react'
 import '../Estilos/Menu/Menu.css'
 import "../Estilos/Home/Toggle.css"
+import { useDarkMode } from '../Hooks/useDarkMode';
 
 
 export default function Menu(props){
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const {darkMode} = useDarkMode();
+
     const toggleMenu = () => { setMenuOpen(!menuOpen);};
 
-    const pulpo = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2Fpulpoblanco.svg?alt=media&token=7227427d-9f19-490a-a4c7-350357b1f404" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2Fpulponegro.svg?alt=media&token=ef27da5f-61a3-4bb2-9a52-45704a605336"
+    const pulpo = darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2Fpulpoblanco.svg?alt=media&token=7227427d-9f19-490a-a4c7-350357b1f404" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2Fpulponegro.svg?alt=media&token=ef27da5f-61a3-4bb2-9a52-45704a605336"
     
-    const colorMenuMovil = props.darkMode ? "#202020" : "#fafafa"
+    const colorMenuMovil = darkMode ? "#202020" : "#fafafa"
     return(
        <>
         <nav id="menu" className="nav_menu" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>

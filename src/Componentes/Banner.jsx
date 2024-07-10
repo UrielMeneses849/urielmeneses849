@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-key */
 import  { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useDarkMode } from "../Hooks/useDarkMode";
 
 const banner = {
   animate: {
@@ -23,8 +24,8 @@ const letterAni = {
   },
 };
 
-export default function Banner(props) {
-  
+export default function Banner() {
+  const {darkMode} = useDarkMode();
   
   // * Web worker
   useEffect(() => {
@@ -47,10 +48,10 @@ export default function Banner(props) {
 }, []);
 // * Web worker
 
-  const color = props.darkMode ? "#fafafa" : "#15171C";
+  const color = darkMode ? "#fafafa" : "#15171C";
   const [playMarquee, setPlayMarquee] = useState(false);
 
-  const FlechaScroll = props.darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2FFlecha%20Negra.svg?alt=media&token=3bfae33d-f8ce-432f-88fa-1d4cdecae8c8" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2FFlechaBlanca.svg?alt=media&token=d1da3034-64db-4edf-a518-a2e591f997e0";
+  const FlechaScroll = darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2FFlecha%20Negra.svg?alt=media&token=3bfae33d-f8ce-432f-88fa-1d4cdecae8c8" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2FFlechaBlanca.svg?alt=media&token=d1da3034-64db-4edf-a518-a2e591f997e0";
   
   useEffect(() => {
     setTimeout(() => {
