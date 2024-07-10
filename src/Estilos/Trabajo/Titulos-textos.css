@@ -42,7 +42,7 @@
 .LogoimgTsmall{ width: 20%; }
 
 .contenedorTrabajos img{ max-width: 90%; filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.2)); transition: 0.8s;}
-.loaderTrabajos{display: flex; justify-content: start;}
+.loaderTrabajos{display: flex; justify-content: start; }
 .loaderTrabajosReverse{display: flex; justify-content: end;}
 
 .tituloCardTrabajo{ font-size: 2.5625vw; font-weight: 500; }

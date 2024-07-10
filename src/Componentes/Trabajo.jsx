@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
-
 import "../Estilos/Trabajo/Titulos-textos.css"
 import { Link } from "react-router-dom"
 import data from "../JSON/data.json"
-import LazyLoad from 'react-lazyload';
+// import LazyLoad from 'react-lazyload';
 
 // import MaquetasUI from "./Card-Trabajo/MaquetasUI";
 // import ProyectosUX from "./Card-Trabajo/ProyectosUX"
@@ -36,9 +35,9 @@ export default function Trabajo(props){
            
             <div className={item.reverse ? "contenedorTrabajos reverse" : "contenedorTrabajos"} key={item.id}> 
             
-            <LazyLoad offset={600} className={item.reverse ? "loaderTrabajosReverse" : "LoaderTrabajos"}>
+            <div offset={900} className={item.reverse ? "loaderTrabajosReverse" : "LoaderTrabajos"}>
             <img src={item.CardArte} alt="Tarjeta" className="CardTrabajo"/>
-            </LazyLoad>
+            </div>
             <div className="textosCardTrabajo">
 
             <div className="tituloTrabajoCard">
