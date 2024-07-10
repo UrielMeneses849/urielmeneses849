@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "../Estilos/Trabajo/Trabajo-cards.css"
+
 import "../Estilos/Trabajo/Titulos-textos.css"
 import { Link } from "react-router-dom"
 import data from "../JSON/data.json"

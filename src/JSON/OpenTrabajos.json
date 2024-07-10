@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "title": "Galeria de fotos",
+      "video" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FGaleria-OpenFinance-2020-Google-Chrome-2024-02-13-23-26-48.webm?alt=media&token=2f283750-92e2-43ce-bfeb-9e426c0c683a",
+      "videoMobile" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FWhatsApp%20Video%202024-02-26%20at%204.39.56%20PM.mp4?alt=media&token=77eb05fd-853a-4f05-8f69-ec066dcb5fdd",
+      "description": "Realice una sección de galería de fotos acomodando todo con flex-box, me resulto más comodo de trabajar que grid."
+    },
+    {
+      "id": 2,
+      "title": "Sección de prensa",
+      "video" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FPrensa.webm?alt=media&token=a05d32c1-12a2-4501-a9d1-1f728281fe8c",
+      "videoMobile" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FWhatsApp%20Video%202024-02-26%20at%204.41.13%20PM.mp4?alt=media&token=00a46cbe-d9a8-46bc-ac23-f0b510d01fe5",
+      "description": "Elabore una sección de prensa creando los componentes de las card, agregandole animaciones y use flex-box para el acomodo de todo."
+    },
+    {
+      "id": 3,
+      "title": "Agenda del evento",
+      "video" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FAgenda%202024.webm?alt=media&token=4f80675e-64a6-48f3-8ccb-96c30e3de720",
+      "videoMobile" : "NoVideo",
+      "description": "Actualice los estilos y agregue la lógica de los filtros de búsqueda para poder mejorar la navegación,  el componente de los horarios esta mapeado de un JSON y se creo el componente modelo."
+    },
+    {
+      "id": 4,
+      "title": "Navbar",
+      "video" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FNavBar.webm?alt=media&token=d449b532-295e-48f3-85bd-7c4f0c83dcdc",
+      "videoMobile" : "NoVideo",
+      "description": "Cree un navbar solo con css, se activa con hover, el acomodado lo hice con flex-box."
+    },
+    {
+        "id": 5,
+        "title": "Pagina de evento",
+        "video" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FEvento.webm?alt=media&token=eb379d12-d2ab-4dc0-ac82-4341dea0637f",
+        "videoMobile" : "NoVideo",
+        "description": "En esta sección combine sliders de diferentes tipos, agregue la dirección del evento y diferentes componentes informativos."
+    },
+    {
+        "id": 6,
+        "title": "Ecosistema",
+        "video" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FEcosistema.webm?alt=media&token=facc4fbc-7ce6-4bf6-8bf6-38f6e39d3386",
+        "videoMobile" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FWhatsApp%20Video%202024-04-07%20at%2012.08.11%20AM.mp4?alt=media&token=89c0feec-f8b0-4bc1-afd0-1c96c281d677",
+        "description": "Mi mayor reto fue crear el componente que muestre el ecosistema fintech, la primera versión la hice con grid, y la segunda versión con javascript hago que los textos queden al rededor de un circulo y al hacer clic se muevan al lado derecho y tengan una rotación y que muestre una imagen."
+      }
+  ]
+  

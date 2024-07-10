@@ -4,8 +4,8 @@ import LazyLoad from 'react-lazyload';
 
 import { useNavigate } from 'react-router-dom';
 
-import data from "./servicios.json"
-import trabajos from "./trabajos.json"
+import data from "../../JSON/servicios.json"
+import trabajos from "../../JSON/trabajos.json"
 
 import './Finvero.css'
 

@@ -1,117 +1,131 @@
 /* eslint-disable react/prop-types */
 import LazyLoad from 'react-lazyload';
+import '../../Estilos/Trabajo/Titulos-textos.css'
 import './OpenFinance.css'
 import { useEffect } from 'react';
+import { Link, Navigate } from 'react-router-dom';
+import data from "../../JSON/OpenTrabajos.json"
+
 
 export default function OpenFinance(props){
-    // *Web worker
-    useEffect(() => {
-        const worker = new Worker(new URL('../../animationWorker.js', import.meta.url));
-      
-        // Enviar un mensaje al Web Worker para iniciar la animación
-        worker.postMessage('startAnimation');
-      
-        // Escuchar mensajes del Web Worker
-        worker.addEventListener('message', (event) => {
-          if (event.data === 'Animation complete') {
-            console.log('Animation completed in OF2050');
-            // Puedes realizar acciones adicionales aquí después de que la animación haya finalizado
-          }
-        });
-      
-        return () => {
-          worker.terminate(); // Terminar el Web Worker cuando el componente se desmonte
-        };
-      }, []);
-    // *Web Worker
+    // Scroll to the top of the page on mount
+    useEffect(() => { window.scrollTo(0, 0); }, []);
+
+    const handleBackClick = () => {
+      Navigate(-1); // Navega una página atrás en el historial
+  };
 
     let OpenFinanceImg ='https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FLogo_OF2050%404x%202.svg?alt=media&token=1e8e8921-7245-4ea1-a135-c252c13d1a2c'
     
     return(
 
 <div className="container-finvero Open">
-<LazyLoad height={200} once>
+
+
+<LazyLoad height={200} once style={{ display: "flex", gap: "24px", alignItems: "center" }}>
+<Link to="/">
+<i className="uil uil-arrow-circle-left ArrowBack" onClick={handleBackClick} style={{ textDecoration: "none", color: "black" }}></i>
+</Link>
 <img src={OpenFinanceImg} alt="" className="finvero"/>
 </LazyLoad>
 
-<span  style={{ color: `${props.colortexto}` }} className='spanFinvero'>Estuve involucrado en el <b  className='textoDestacar'>Desarrollo FrontEnd</b> de la plataforma <b >Open Finance</b>, 
-    un evento organizado por Finvero, en el cual se presentan distintas personalidades lideres del sector fintech. En este proyecto, desarrollé <b>interfaces</b> de manera responsiva y colaborando con diseñadoras UX/UI.
+<span  style={{ color: `${props.colortexto}` }} className='spanFinvero'>Estuve involucrado en el <b  className='textoDestacar'>Desarrollo FrontEnd</b> del evento Open Finance en el que se presentan
+ distintas personalidades lideres del sector fintech, hay paneles y masterclass de temas de tecnología y finansas. En este proyecto, desarrollé interfaces de manera responsiva colaborando con un equipo
+  de diseñadoras graficas, una diseñadora UX/UI y otro desarrollador.
     </span>
 
 <div className="contenedor2largo">
+
+    {data.slice(0, 2).map(item => (  
+    <div className="VideoOpen" key={item.index}>
+    <h3>{item.title}</h3>
     <LazyLoad height={900} className='Desk'>
     <video autoPlay loop muted >
-    <source  src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FPresencia%20en%20medios%20-%20Google%20Chrome%202024-02-13%2023-25-48.mp4?alt=media&token=732f4971-7771-46db-a1cd-51e7b6f8cb0d"  />
+    <source src={item.video} type="video/webm" />
     </video>
     </LazyLoad>
+    <span>{item.description}</span>
+    </div> 
+    ))}
 
-    <LazyLoad height={900} >
-    <video autoPlay loop muted className='Mobile'  style={{margin: '0 auto', width: '100%', maxWidth:'110%'}}>
-    <source src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FWhatsApp%20Video%202024-02-26%20at%204.41.13%20PM.mp4?alt=media&token=00a46cbe-d9a8-46bc-ac23-f0b510d01fe5"  />
-    </video>
-    </LazyLoad>
-
-    <LazyLoad height={900} className='Desk'>
+{data.slice(0, 2).map(item => (  
+    <div className="VideoOpenMobile" key={item.index}>
+    <h3>{item.title}</h3>
+    <LazyLoad height={900}>
     <video autoPlay loop muted >
-    <source src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FGaleria%20OpenFinance%202020%20-%20Google%20Chrome%202024-02-13%2023-26-48.mp4?alt=media&token=895bcc3d-af3c-4cbd-ad80-2d6163011e7a" />
+    <source src={item.videoMobile } type="video/webm" />
     </video>
     </LazyLoad>
+    <span>{item.description}</span>
+    </div> 
+    ))}
 
-    <LazyLoad height={900} >
-    <video autoPlay loop muted className='Mobile'  style={{margin: '0 auto', width: '100%', maxWidth:'110%'}}>
-    <source src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FWhatsApp%20Video%202024-02-26%20at%204.39.56%20PM.mp4?alt=media&token=77eb05fd-853a-4f05-8f69-ec066dcb5fdd" />
-    </video>
-    </LazyLoad>
-    </div>
-    
-    <div className="Contenedor4fotos">
-    <LazyLoad height={900} className="cont1">
-    <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FWhatsApp%20Image%202024-02-13%20at%206.57.31%20PM%20(1).jpeg?alt=media&token=743372a2-8234-4aa8-a798-afe2d9ed1155" />
-    </LazyLoad>
-
-    <div className="cont"><a href="https://www.openfinance2050.com/" target='blank'className='botonOpen'> Visitar OpenFinance2050 </a> 
-    <LazyLoad offset={900} style={{display:"flex", justifyContent: "center"}}>
-    <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FOpenDark.webp?alt=media&token=a49ba0ff-949c-4a74-b0fa-f94dbde5b391" alt="" className='imgOpen'/>
-    </LazyLoad></div>
-
-    <div className="cont3">
-    <LazyLoad offset={1000}>
-    <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FGroup%20254.png?alt=media&token=8d1f2fc4-a5c3-44ce-9993-3bdaa84f404d"  />
-    </LazyLoad> 
-    </div>
-
-    <div className="cont4">
-
-    <LazyLoad offset={900} className="cont4">
-    <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FWhatsApp%20Image%202024-02-13%20at%206.57.28%20PM.jpeg?alt=media&token=af420edd-c5bb-46aa-96e3-a514f46a5b13" />
-    </LazyLoad>
-    
-    </div>
 </div>
+    <div className="flex wrap EventoInf"> 
+    <h2>He participado en 2 eventos.</h2>
+    <span>Fui parte del staff, estuve presente en el diseño de las presentaciones de los servicios que se mostrarón en el evento, elabore reconocimientos para los speakers presentes en el evento y más actividades fisicas y digitales en pro del evento</span>
+    <LazyLoad height={900} className='imgfinal'>
+    <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2Fstaff-1.webp?alt=media&token=38ef8f12-c377-46bd-ac0c-17213dfc4471" className='imgfinal' />
+    </LazyLoad>
+
+    <LazyLoad height={900} className='imgfinal'>
+    <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FStaff%202.webp?alt=media&token=0d773301-b7ed-4d1b-b512-a22e8c521818" className='imgfinal' />
+    </LazyLoad>
+
+    <LazyLoad height={900} className='imgfinal'>
+    <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FYo.webp?alt=media&token=8bc9363d-c1d7-426d-af6c-f24d504575d5" className='imgfinal' />
+    </LazyLoad>
+    <div className="DescripcionBaterista">
+      <h2>¡Conoci al baterista de <b className="pink">pink</b>!</h2> <br />
+      <span>Mark Schulman fue speaker motivacional al cierre del evento hablando de la importancia de la actitud de rockstar y ser apasionado en lo que haces te asegura el exito, <b>creo fielmente en esas palabras y que mi pasión por el diseño y desarrollo me llevara lejos.</b></span>
+    </div>
+    <a href="https://www.openfinance2050.com/" target='blank'>
+    <button className='BotonOpenFinance'>
+            <div className="svg-wrapper-1">
+            <div className="svg-wrapper">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24" >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                fill="white"
+                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                ></path>
+            </svg>
+            </div>
+            </div>
+            <span style={{ color: "#ffffff" }}>Open Finance</span>
+            </button></a>
+    </div>
 
 <div className="contenedor2largo">
-    <LazyLoad offset={900} className='Desk'>
+    {data.slice(2).map(item => (  
+    <div className="VideoOpen" key={item.index}>
+    <h3>{item.title}</h3>
+    <LazyLoad height={900} className='Desk'>
     <video autoPlay loop muted >
-    <source src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FEcosistema.mp4?alt=media&token=8936b453-e6fd-46b3-ab11-268e081bcea1"  />
+    <source src={item.video} type="video/webm"/>
     </video>
     </LazyLoad>
+    <span>{item.description}</span>
+    </div> 
+    ))}
 
-    <LazyLoad offset={900} >
-    <video autoPlay loop muted className='Mobile' style={{margin: '0 auto', width: '100%', maxWidth:'110%'}}>
-    <source src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FWhatsApp%20Video%202024-04-07%20at%2012.08.11%20AM.mp4?alt=media&token=89c0feec-f8b0-4bc1-afd0-1c96c281d677" />
+{data.slice(2).map(item => (  
+    <div className="VideoOpenMobile" key={item.index}>
+    <h3>{item.title}</h3>
+    <LazyLoad height={900} className='Desk'>
+    <video autoPlay loop muted >
+    <source src={item.videoMobile ==="NoVideo" ? item.video : item.videoMobile } type="video/webm" />
     </video>
     </LazyLoad>
+    <span>{item.description}</span>
+    </div> 
+    ))}
 
-    <LazyLoad offset={900} className='Desk'>
-    <video autoPlay loop muted >
-    <source src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2FMenu.mp4?alt=media&token=cddfdb56-3fb0-4a2f-b406-572c880a444b" />
-    </video>
-    </LazyLoad> 
 </div>
-
-<LazyLoad height={900} className='cont4'>
-<img  src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2Fultima.png?alt=media&token=b6635d6f-f0ff-4c03-8494-d3e11472b4ea" className='imgfinal' />
-</LazyLoad>
 </div>
 
 )}

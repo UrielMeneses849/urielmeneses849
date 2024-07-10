@@ -164,6 +164,8 @@ h3{
 .flex{
   display: flex;
 }
+
+.wrap{ flex-wrap: wrap; gap: 20px; justify-content: space-between;}
 .column{
     display: flex;
     flex-direction: column;
