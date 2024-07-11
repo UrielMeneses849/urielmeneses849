@@ -24,7 +24,8 @@
     "Logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2Flogo.svg?alt=media&token=fb9c06ac-804e-4675-a2a6-f21d5f76253c",
     "tagName" : "Diseño UX/UI",
     "descripcion" :"Tuve la oportunidad de crear una propuesta de diseño para la empresa OMNIBUS mejorando su web de manera responsiva  aplicando la metodología design thinking, auditoria competitiva y distintas técnicas para <b>mejorar el UI</b> de la pagina web.",
-    "path" : "/transborde"
+    "path" : "",
+    "link" : "https://www.figma.com/proto/jo6yyCJp1v8ytEjvuQcZGA/Transborde?node-id=191-54&t=uRApOu8yxLNJ5uzE-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=191%3A54"
   },
   {
     "id": 4,
@@ -33,7 +34,8 @@
     "tagName" : "Desarrollo Frontend",
     "descripcion" :"Como <b>diseñador y desarrollador</b> independiente, he sido responsable de todo el proceso de creación de la plataforma, asegurando una <b>experiencia de usuario fluida</b> y una <b>interfaz atractiva</b>. El resultado es una tienda en línea elegante que también refuerza la marca con un diseño visual atractivo.",
     "reverse" : true,
-    "path" : "/meblostyle"
+    "path" : "",
+    "link": "https://www.figma.com/proto/OEUAg55cfBxwJ71eERMcUc/Daily-Design?node-id=2190-769&t=CMoHh9fu2lQkxIvo-1&scaling=scale-down-width&content-scaling=fixed&page-id=2190%3A647"
   },
   {
     "id": 5,

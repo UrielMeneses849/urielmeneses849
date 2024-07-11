@@ -57,7 +57,8 @@ width: 32%;}
 .h3-finvero{font-size: var(--h2-font-size); font-weight: 600; margin: 15px 0;}
 
 .logoCard{max-width: 40%; }
- 
+ .process{max-width: 100%;}
+ .processMovil{display: none;}
   @media screen and (max-width: 800px){
 
     .ArrowBack{font-size: 7.5vw;}
@@ -99,4 +100,8 @@ width: 32%;}
     .cardTrabajo h3{font-size: 3.5vw; }
 
     .card span, h3{ font-size: 3.2vw;}
+
+    .process{display: none;}
+
+    .processMovil{display: block; max-width: 100%; margin: 20px auto;}
   }

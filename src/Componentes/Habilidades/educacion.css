@@ -1,8 +1,7 @@
-.Educacion_container{display: grid;  height: 80vh; max-width: 60%; grid-template-columns: 1fr 0.4fr 1fr; grid-template-rows: repeat(4, 1fr); margin: 0 auto; 
+.Educacion_container{display: grid;  height: 80vh; max-width: 70%; grid-template-columns: 1fr 0.4fr 1fr; grid-template-rows: repeat(4, 1fr); margin: 0 auto; 
     background-image: url("https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2FLinea.svg?alt=media&token=36af0ccf-5d5f-411c-a9ef-f04ca3ccbc39"); 
     background-repeat: no-repeat; background-position: center; background-size: contain; align-items: center; justify-items: center; gap: 5% 5%;}
 
-.TextoEducacion{ color: #121212;  font-size: var(--normal-font-size); }
 
 .iconoE{ display: flex; justify-content: center; align-items: center;}
 
@@ -17,9 +16,9 @@
 .contenedorEducacionResponsivo{ display: none;}
 
 .skills{width: 85%; margin: 0 auto;}
-@media screen and (min-width: 2500px){ .Educacion_container{ height: 55vh;} .TextoEducacion{ font-size: 23px; }}
+@media screen and (min-width: 2500px){ .Educacion_container{ height: 55vh;}}
 
-@media screen and (min-width: 3200px){  .TextoEducacion{ font-size: 27px; } }
+
 
 /* * Escritorios más pequeños */
 @media screen and (max-width: 1900px){  .imgizquierda img{ width: 20%;} .ipn{ max-width: 16%;} }

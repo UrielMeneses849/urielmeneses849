@@ -233,7 +233,7 @@ export default function Habilidades(props){
 
         
         <div className="texto imgizquierda">
-        <span className="TextoEducacion" style={{ color: `${props.colortexto}` }}><b>Ingeniería en computación</b> <br /> <h4 className="SubtituloTextosEducación">IPN - ESIME <br /> <br /><i className="uil uil-calendar-alt" /> 2019 - 2024</h4></span>
+        <span className="TextoEducacion" style={{ color: `${props.colortexto}` }}><b style={{fontSize: "1.5vw", lineHeight: 1.15, fontWeight: 500}}>Ingeniería en computación</b> <br /> <h4 className="SubtituloTextosEducación">IPN - ESIME <br /> <br /><i className="uil uil-calendar-alt" /> 2019 - 2024</h4></span>
         </div>
         
         <LazyLoad height={500} offset={100} className="iconoE">
@@ -253,11 +253,11 @@ export default function Habilidades(props){
         </LazyLoad>
 
         <div className="imgizquierda" >
-        <span className="TextoEducacion" style={{ color: `${props.colortexto}` }} ><b>Desarrollo Front-End</b> <br /> <h4 className="SubtituloTextosEducación">Oracle Next Education <br /> <br /> <i className="uil uil-calendar-alt" /> 2023</h4></span>
+        <span className="TextoEducacion" style={{ color: `${props.colortexto}` }} ><b style={{fontSize: "1.5vw", lineHeight: 1.15, fontWeight: 500}}>Desarrollo Front-End</b> <br /> <h4 className="SubtituloTextosEducación">Oracle Next Education <br /> <br /> <i className="uil uil-calendar-alt" /> 2023</h4></span>
         </div>
         
         <div className="texto imgizquierda">
-        <span className="TextoEducacion" style={{ color: `${props.colortexto}` }}><b>Diseño de experiencia de usuario</b> <br /> <h4 className="SubtituloTextosEducación">Google <br /> <br /><i className="uil uil-calendar-alt" /> 2022 - 2023</h4></span>
+        <span className="TextoEducacion" style={{ color: `${props.colortexto}` }}><b style={{fontSize: "1.5vw", lineHeight: 1.15, fontWeight: 500}}>Diseño de experiencia de usuario</b> <br /> <h4 className="SubtituloTextosEducación">Google <br /> <br /><i className="uil uil-calendar-alt" /> 2022 - 2023</h4></span>
         </div>
 
         <LazyLoad offset={200} className="iconoE">
@@ -277,7 +277,7 @@ export default function Habilidades(props){
         </LazyLoad>
 
         <div className="imgizquierda">
-        <span className="TextoEducacion" style={{ color: `${props.colortexto}`}}><b>Soporte y mantenimiento a equipos de computo</b> <br /> <h4 className="SubtituloTextosEducación">CECyTEM <br /> <br /> <i className="uil uil-calendar-alt" /> 2015 - 2018</h4></span>
+        <span className="TextoEducacion" style={{ color: `${props.colortexto}`}}><b style={{fontSize: "1.5vw", lineHeight: 1.15, fontWeight: 500}}>Soporte y mantenimiento a equipos de computo</b> <br /> <h4 className="SubtituloTextosEducación">CECyTEM <br /> <br /> <i className="uil uil-calendar-alt" /> 2015 - 2018</h4></span>
         </div>
 
         </section>
@@ -288,7 +288,7 @@ export default function Habilidades(props){
         <LazyLoad offset={200} >
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2Fingeniero%20L.png?alt=media&token=c60c7de8-73bb-48b1-ad82-a000d7b9441c" loading="lazy"/>
         </LazyLoad>
-        <span className="TextoEducacion" style={{ textAlign: "center", color: `${props.colortexto}` }}><b>Ingeniería en computación</b> <br /> <h4 className="SubtituloTextosEducación">IPN - ESIME <br /> 
+        <span className="TextoEducacion" style={{ textAlign: "center", color: `${props.colortexto}` }}><b style={{fontSize: "4.5vw", fontWeight: 500}}>Ingeniería en computación</b> <br /> <h4 className="SubtituloTextosEducación">IPN - ESIME <br /> 
         <i className="uil uil-calendar-alt" /> 2019 - 2024</h4></span>
         </div>
 
@@ -296,7 +296,7 @@ export default function Habilidades(props){
         <LazyLoad offset={200} >
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2Fweb%20D.svg?alt=media&token=ce126c58-000b-4519-87d3-2966bc206811" loading="lazy"/>
         </LazyLoad>
-        <span className="TextoEducacion" style={{textAlign: "center", color: `${props.colortexto}` }} ><b>Desarrollo Front-End</b> <br /> <h4 className="SubtituloTextosEducación">Oracle Next Education <br /> 
+        <span className="TextoEducacion" style={{textAlign: "center", color: `${props.colortexto}` }} ><b style={{fontSize: "4.5vw", fontWeight: 500}}>Desarrollo Front-End</b> <br /> <h4 className="SubtituloTextosEducación">Oracle Next Education <br /> 
         <i className="uil uil-calendar-alt" /> 2023</h4></span>    
         </div>
 
@@ -304,7 +304,7 @@ export default function Habilidades(props){
         <LazyLoad offset={200} >
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2FDise%C3%B1ador.svg?alt=media&token=f0eb4553-5304-45b4-8065-63af43a81749" loading="lazy"/>
         </LazyLoad>
-        <span className="TextoEducacion" style={{ textAlign: "center", color: `${props.colortexto}` }}><b>Diseño de experiencia de usuario</b> <br /> <h4 className="SubtituloTextosEducación">Google <br />  
+        <span className="TextoEducacion" style={{ textAlign: "center", color: `${props.colortexto}` }}><b style={{fontSize: "4.5vw", fontWeight: 500}}>Diseño de experiencia de usuario</b> <br /> <h4 className="SubtituloTextosEducación">Google <br />  
         <i className="uil uil-calendar-alt" /> 2022 - 2023</h4></span>
         </div>
 
@@ -312,7 +312,7 @@ export default function Habilidades(props){
         <LazyLoad offset={200} >
         <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Educacion%2Ftec.svg?alt=media&token=5647141a-7cf0-493e-b19b-f077ee780f52" loading="lazy"/>
         </LazyLoad>
-        <span className="TextoEducacion" style={{textAlign: "center", color: `${props.colortexto}`}}><b>Soporte y mantenimiento de computo</b> <br /> <h4 className="SubtituloTextosEducación">CECyTEM <br />  
+        <span className="TextoEducacion" style={{textAlign: "center", color: `${props.colortexto}`}}><b style={{fontSize: "4.5vw", lineHeight: 1.15, fontWeight: 500}}>Soporte y mantenimiento de computo</b> <br /> <h4 className="SubtituloTextosEducación">CECyTEM <br />  
         <i className="uil uil-calendar-alt" /> 2015 - 2018</h4></span>
         </div>
 
