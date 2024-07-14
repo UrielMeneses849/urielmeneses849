@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react"
+import { useState, Suspense } from "react"
 import "./Habilidades-card.css"
 import "./Tecnologias-cont.css"
 import "./educacion.css"
@@ -190,7 +190,9 @@ export default function Habilidades(props){
 
         <Modal open={open} onClose={handleClose}>
         <Box className="modal-contenedor">
+        <Suspense fallback={<div>Loading...</div>}>
         <Diseñador fondoCard = {fondoCard} colortexto = {props.colortexto} handleClose = {handleClose}/>
+        </Suspense>  
         </Box>
         </Modal>
 
@@ -206,7 +208,9 @@ export default function Habilidades(props){
 
         <Modal open={open2} onClose={handleClose2}>
         <Box className="modal-contenedor">
+        <Suspense fallback={<div>Loading...</div>}>
         <Desarrollador fondoCard = {fondoCard} colortexto = {props.colortexto} handleClose2 = {handleClose2}/>
+        </Suspense>  
         </Box>
         </Modal>
 
@@ -221,7 +225,9 @@ export default function Habilidades(props){
         </section>
         <Modal open={open3} onClose={handleClose3}>
         <Box className="modal-contenedor">
+        <Suspense fallback={<div>Loading...</div>}>
         <Ingeniero fondoCard = {fondoCard} colortexto = {props.colortexto} handleClose3 = {handleClose3}/>
+        </Suspense>  
         </Box>
         </Modal>
         </div>

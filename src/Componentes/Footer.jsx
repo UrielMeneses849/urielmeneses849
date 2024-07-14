@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import LazyLoad from "react-lazyload";
 import "../Estilos/Footer/Footer.css"
 import { useDarkMode } from "../Hooks/useDarkMode";
 
@@ -26,22 +27,30 @@ export default function Footer(props){
         <div className="contacto" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
 
            <a href="https://www.linkedin.com/in/esaul-uriel-meneses-torres-83475a2a0/" className="enlace" target="blank"><div className="contacto1" style={{border: `${bordeCard}`}}>
+            <LazyLoad offset={500} height={500} >
             <img src={Linkdin} alt="linkdn" className="linkdn" />
+            </LazyLoad>
             <span className="texto_abajo" style={{ color: `${props.colortexto}` }}> <img src={arrow} alt="arrow" className="arrow" /> <b>UrielMen</b> </span>
             </div></a> 
 
             <a href="mailto:urielmeneses849@gmail.com" className="enlace" target="blank"><div className="contacto1" style={{border: `${bordeCard}`}}>
+            <LazyLoad offset={500} height={500}>
             <img src={gmail} alt="linkdn" className="linkdn"/>
+            </LazyLoad>
             <span className="texto_abajo" style={{ color: `${props.colortexto}` }}> <img src={arrow} alt="arrow" className="arrow" /> <b id="gmail_correo">urielmeneses849@gmail.com</b> </span>
             </div></a>
 
             <a href="https://github.com/UrielMeneses849" className="enlace" target="blank"><div className="contacto1" style={{border: `${bordeCard}`}}>
+            <LazyLoad offset={500} height={500} >
             <img src={git} alt="linkdn" className="linkdn" />
+            </LazyLoad>
             <span className="texto_abajo" style={{ color: `${props.colortexto}`  }}> <img src={arrow} alt="arrow" className="arrow" /> <b>urielmeneses849.github.io</b> </span>
             </div></a>
 
             <a href="https://www.behance.net/urielmeneses" className="enlace" target="blank"><div className="contacto1" style={{border: `${bordeCard}`}}>
+            <LazyLoad offset={500} height={500} >
             <img src={Behance} alt="linkdn" className="linkdn" />
+            </LazyLoad>
             <span className="texto_abajo" style={{ color: `${props.colortexto}` }}> <img src={arrow} alt="arrow" className="arrow" /> <b>urielmeneses</b> </span>
             </div></a>
 

@@ -3,6 +3,7 @@
 import  { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useDarkMode } from "../Hooks/useDarkMode";
+import LazyLoad from "react-lazyload";
 
 const banner = {
   animate: {
@@ -152,7 +153,9 @@ const BannerRowBottom = ({ title, color, FlechaScroll}) => {
         }}
         className='row-col'>
       <a href="#trabajo" style={{width:"100%"}}>
+      <LazyLoad offset={500} height={500}> 
       <img src={FlechaScroll} alt="Flecha para scroll" className='row-img' style={{color: `${color}`}} />
+      </LazyLoad>
       </a>
   
       </motion.div>

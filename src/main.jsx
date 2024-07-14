@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import {DarkModeProvider} from './Componentes/DarkModeContext';
@@ -16,15 +16,24 @@ const router = createBrowserRouter([
   },
   {
     path: '/finvero',
-    element: <Finvero /> ,
+    element: 
+    <Suspense fallback={<div>Loading...</div>}>
+    <Finvero />
+    </Suspense> ,
   },
   {
     path: '/open-finance',
-    element: <OpenFinance />,
+    element: 
+    <Suspense fallback={<div>Loading...</div>}>
+    <OpenFinance />
+    </Suspense>,
   },
   {
     path: '/meblostyle',
-    element: <MebloStyle />,
+    element: 
+    <Suspense fallback={<div>Loading...</div>}>
+    <MebloStyle />
+    </Suspense>,
   }
 ])
 

@@ -1,5 +1,5 @@
 // estados
-import React, { useEffect,useState, Suspense, useContext } from "react"
+import React, { useEffect, useState, Suspense, useContext } from "react"
 import { motion } from "framer-motion"
 // Componentes
 import Home from "./Componentes/Home"
@@ -19,16 +19,11 @@ function App() {
 
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
 
-  // const [darkMode, setDarkMode] = useState(false)
- 
-    function toggleDarkMode(){
-      setDarkMode(darkMode => !darkMode)
-    }
+  function toggleDarkMode(){ setDarkMode(darkMode => !darkMode) }
 
+  let colortexto = darkMode ? "#e0e0e0" : "#0b0b0c"
 
-let colortexto = darkMode ? "#e0e0e0" : "#0b0b0c"
-
-let colortextoSub =  darkMode ? "#F0f0f0" : "#3f3f3f"
+  let colortextoSub =  darkMode ? "#F0f0f0" : "#3f3f3f"
 
 // Cursor
 

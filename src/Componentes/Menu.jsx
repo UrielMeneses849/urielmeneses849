@@ -3,6 +3,7 @@ import { useState } from 'react'
 import '../Estilos/Menu/Menu.css'
 import "../Estilos/Home/Toggle.css"
 import { useDarkMode } from '../Hooks/useDarkMode';
+import LazyLoad from 'react-lazyload';
 
 
 export default function Menu(props){
@@ -18,7 +19,9 @@ export default function Menu(props){
     return(
        <>
         <nav id="menu" className="nav_menu" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+        <LazyLoad offset={500} height={500}> 
         <img src={pulpo} alt="" />
+        </LazyLoad>
 
         <div className="menuNav">
         <a href="#habilidades" style={{ color: `${props.colortexto}` }} className='nav_link'>Habilidades</a>
@@ -56,7 +59,9 @@ export default function Menu(props){
           </ul>
           </div>
           <div className="pulpoycontact">
+          <LazyLoad offset={500} height={500}> 
             <img src={pulpo} alt="" />
+          </LazyLoad>
             <h3>@urielmeneses849 | 2022</h3>
         </div>
 

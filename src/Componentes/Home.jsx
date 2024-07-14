@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import LazyLoad from "react-lazyload";
 import "../Estilos/Home/HomePage.css"
 import { useDarkMode } from "../Hooks/useDarkMode";
 
@@ -17,7 +18,9 @@ export default function Home(){
 
         <Banner />
         <a href="#trabajo">
+        <LazyLoad offset={500} height={500}>
         <img src={FlechaScroll} alt="" className="imagenFlechaMovil" />
+        </LazyLoad>
         </a>
         </div>
     )

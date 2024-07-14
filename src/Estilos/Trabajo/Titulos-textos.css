@@ -37,9 +37,11 @@
 
 .descripcionCardTrabajo{ font-size: 1.2666666666667vw; font-weight: 400; color: #121212; margin: 20px 0;}
 
-.LogoimgT{ width: 35%; }
+.CardTrabajo{width: 100%; height: 100%;}
 
-.LogoimgTsmall{ width: 20%; }
+.LogoimgT{ width: 70%; }
+
+.LogoimgTsmall{ width: 50%; }
 
 .contenedorTrabajos img{ max-width: 90%; filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.2)); transition: 0.8s;}
 .loaderTrabajos{display: flex; justify-content: start; }

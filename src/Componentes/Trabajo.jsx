@@ -3,6 +3,9 @@ import "../Estilos/Trabajo/Titulos-textos.css"
 import { Link } from "react-router-dom"
 import data from "../JSON/data.json"
 import { useDarkMode } from "../Hooks/useDarkMode"
+import LazyLoad from "react-lazyload";
+import Skeleton from '@mui/material/Skeleton';
+import { useState } from "react";
 // import LazyLoad from 'react-lazyload';
 
 export default function Trabajo(props){
@@ -11,8 +14,7 @@ export default function Trabajo(props){
     const colorTag = darkMode ? `#949494` : `#454545`
     const colorBoton = darkMode ? `#fafafa` : `#121212`
     const colortextoBoton = darkMode ? `#121212` : `#fafafa`
-
-    // const pdf = "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Curriculum%20espa%C3%B1ol.pdf?alt=media&token=d248ec36-4dff-4c4a-9597-e43ae9ab015b";
+    const [imageLoaded, setImageLoaded] = useState(false);
     
     return(
         <div className="Trabajo" id="trabajo">
@@ -28,18 +30,30 @@ export default function Trabajo(props){
            
             <div className={item.reverse ? "contenedorTrabajos reverse" : "contenedorTrabajos"} key={item.id}> 
             
-            <div offset={900} className={item.reverse ? "loaderTrabajosReverse" : "LoaderTrabajos"}>
-            <img src={item.CardArte} alt="Tarjeta" className="CardTrabajo"/>
-            </div>
+            {!imageLoaded && (
+            <Skeleton variant="rectangular" animation="wave" width={"100%"} height={"100%"}/>
+            )}
+
+            <LazyLoad offset={1000} height={1000} className={item.reverse ? "loaderTrabajosReverse" : "LoaderTrabajos"}>
+            <img
+            src={item.CardArte}
+            alt="Tarjeta"
+            className="CardTrabajo"
+            onLoad={() => setImageLoaded(true)}
+            style={imageLoaded ? {} : { display: 'none' }}
+            />
+            </LazyLoad>
+           
             <div className="textosCardTrabajo">
 
             <div className="tituloTrabajoCard">
+            <LazyLoad offset={500} height={500}>
             { darkMode ? ( item.LogoDark ? <img src={item.LogoDark} alt="logo" className="LogoimgT"/>  : 
              
             ( item.Logo ? <img src={item.Logo} alt="logo" className={item.LogoSmall ? "LogoimgTsmall" : "LogoimgT"}/> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{item.tituloCard}</h3> )) : 
             
             (item.Logo ? <img src={item.Logo} alt="logo" className={item.LogoSmall ? "LogoimgTsmall" : "LogoimgT"}/> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{item.tituloCard}</h3>)}
-            
+            </LazyLoad>
             <div className="tag" >
                 {item.tagName === "Diseño UX/UI" ? <i className="uil uil-web-grid nav_icon" style={{ color: "#FCCA3F"}}></i> : <i className="uil uil-brackets-curly nav_icon" style={{ color: "#8A97FF"}}></i>}
                 <h4 style={{ color: `${colorTag}` }}>{item.tagName}</h4>
@@ -95,4 +109,4 @@ export default function Trabajo(props){
         </div>
     </div>
     )
-}
+    }
