@@ -30,11 +30,11 @@ export default function Trabajo(props){
            
             <div className={item.reverse ? "contenedorTrabajos reverse" : "contenedorTrabajos"} key={item.id}> 
             
+
+            <LazyLoad offset={1000} height={1000} className={item.reverse ? "loaderTrabajosReverse" : "LoaderTrabajos"}>
             {!imageLoaded && (
             <Skeleton variant="rectangular" animation="wave" width={"100%"} height={"100%"}/>
             )}
-
-            <LazyLoad offset={1000} height={1000} className={item.reverse ? "loaderTrabajosReverse" : "LoaderTrabajos"}>
             <img
             src={item.CardArte}
             alt="Tarjeta"
