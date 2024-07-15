@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import data from "../../JSON/OpenTrabajos.json"
 import { useDarkMode } from '../../Hooks/useDarkMode';
-
+import Siguiente from "../NextProject";
 export default function OpenFinance(){
     // Scroll to the top of the page on mount
     useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -128,6 +128,7 @@ export default function OpenFinance(){
     ))}
 
 </div>
+<Siguiente id={3}/>
 </div>
 
 )}
