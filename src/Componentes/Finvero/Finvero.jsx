@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useEffect } from 'react';
 import LazyLoad from 'react-lazyload';
-
 import { useNavigate } from 'react-router-dom';
+import Siguiente from "../NextProject";
 
 import data from "../../JSON/servicios.json"
 import trabajos from "../../JSON/trabajos.json"
@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom';
 import { useDarkMode } from '../../Hooks/useDarkMode';
 
 export default function Finvero(){
+
     const {darkMode} = useDarkMode();
     // Scroll to the top of the page on mount
     useEffect(() => {
@@ -138,6 +139,8 @@ export default function Finvero(){
 
             <h2 className="Titulo_trabajo masT" style={{textAlign:"center", margin: "12px auto", padding: 0,  lineHeight: "1.15", color: `${colortexto}`}}>¡Tengo mucho más trabajo para mostrar!</h2>
             <span className="textos" style={{textAlign:"center", margin: "0 auto", color: `${colortexto}`}}>Ponte en contacto conmigo y conoce más de mi pasion por crear productos digitales y del increible mundo de las fintech</span>
+            
+            <Siguiente id={2}/>
         </div>
     );
 }

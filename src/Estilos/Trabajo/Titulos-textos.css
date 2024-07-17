@@ -105,6 +105,43 @@ button {
   
   .svgIcon{transform: rotate(45deg); }
 /* * Boton de Ver proyecto */
+
+.verMasBoton{
+    cursor: pointer;
+    font-weight: 600;
+    font-family: var(--poppins);
+    transition: all .2s;
+    padding: 8px 20px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    margin: 0 auto;
+}
+
+.verMasBoton:hover {
+  background: #c4e201;
+}
+
+.verMasBoton > svg {
+  rotate: 90deg;
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+.verMasBoton:hover svg {
+  transform: translatex(3px);
+}
+
+.verMasBoton:active {
+  transform: scale(0.95);
+}
+
+.verMasBoton:hover span {
+  transform: translateX(0.05em);
+}
 /* ? Estilos de las cards de trabajos */
 
 .Sub{
