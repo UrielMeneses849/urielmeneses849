@@ -18,7 +18,7 @@ export default function OpenFinance(){
     const {darkMode} = useDarkMode();
     const colortexto = darkMode ? `#e0e0e0` : `#0b0b0c`
     let OpenFinanceImg ='https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FLogo_OF2050%404x%202.svg?alt=media&token=1e8e8921-7245-4ea1-a135-c252c13d1a2c'
-    
+
     return(
 
 <div className="container-finvero Open">
@@ -42,6 +42,7 @@ export default function OpenFinance(){
     <div className="VideoOpen" key={item.index}>
     <h3 style={{ color: `${colortexto}` }}>{item.title}</h3>
     <LazyLoad height={900} className='Desk'>
+   
     <video autoPlay loop muted >
     <source src={item.video} type="video/webm" />
     </video>
