@@ -213,9 +213,13 @@ h3,h2{
 @media screen and (max-width: 768px){ }
 
 /* ? Movil */
+.LogoimgT2{max-width: 40%;}
 @media screen and (max-width: 480px){ 
 .Titulo_trabajo{ padding-top: 5px; }
 .Acerca_de{ padding-top: 85px; }
+.siguienteP{ font-size: 3.8vw; }
+.BotonSiguiente{display: flex; flex-direction: column; gap: 0;}
+.LogoimgT2{max-width: 80%;}
 }
 /* * Movil pequeño*/
 @media screen and (max-width: 375px){  }

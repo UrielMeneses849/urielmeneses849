@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { useDarkMode } from "../Hooks/useDarkMode"
 import Logo from "../JSON/data.json"
-import LazyLoad from "react-lazyload"
+// import LazyLoad from "react-lazyload"
 export default function Siguiente(props){
 
     const {darkMode} = useDarkMode();
@@ -11,7 +11,7 @@ export default function Siguiente(props){
     const trabajo = Logo.find(item => item.id === props.id);
 
 return(
-<div className="flex between" style={{margin: "5% 0", borderTop: "2px dotted", padding: "3%"}}> 
+<div className="flex between" style={{margin: "2% 0", borderTop: "2px dotted", padding: "2%"}}> 
 
     <Link to="/" style={{textDecoration: "none"}}>
     <button className="verMasBoton" style={{ background: `${colorBoton}` }}>
@@ -26,22 +26,19 @@ return(
 
     {trabajo.path == "" ?  <a href={trabajo.link} target="_blank" rel="noreferrer"> 
     <div className="BotonSiguiente flex center" style={{cursor: "pointer", margin: 0}}>
-    <h2 className="" > Siguiente proyecto:</h2>
+    <h2 className="siguienteP" > Siguiente proyecto:</h2>
     { darkMode ? ( trabajo.LogoDark ? <img src={trabajo.LogoDark} alt="logo" className="LogoimgT"/>  :   
-    ( trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={trabajo.logoSmall ? "LogoimgTsmall" : "LogoimgT"} style={{maxWidth: "30%"}}/> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3> )) : 
-    (trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={trabajo.logoSmall ? "LogoimgTsmall" : "LogoimgT"} style={{maxWidth: "30%"}}/> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3>)}
+    ( trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={ trabajo.LogoSmall ? "LogoimgTsmall" : "LogoimgT2"} /> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3> )) : 
+    ( trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={ trabajo.LogoSmall ? "LogoimgTsmall" : "LogoimgT2"} /> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3>)} 
     </div>
     </a> 
     :
     <Link to={trabajo.path} style={{textDecoration: "none", color:{colorBoton}}}>
-    <div className="BotonSiguiente flex center" style={{cursor: "pointer"}}>
-    <h2 className="" > Siguiente proyecto:</h2>
-
-    <LazyLoad offset={500} height={300} style={{display: "contents"}}>
+    <div className="BotonSiguiente flex center" style={{cursor: "pointer", margin: 0}}>
+    <h2 className="siguienteP" > Siguiente proyecto:</h2>
     { darkMode ? ( trabajo.LogoDark ?  <img src={trabajo.LogoDark} alt="logo" className="LogoimgT"/>  :   
-    ( trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={trabajo.logoSmall ? "LogoimgTsmall" : "LogoimgT"} style={{maxWidth: "30%"}}/> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3> )) : 
-    (trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={trabajo.logoSmall ? "LogoimgTsmall" : "LogoimgT"} style={{maxWidth: "30%"}}/> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3>)}
-    </LazyLoad> 
+    ( trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={trabajo.logoSmall ? "LogoimgTsmall" : "LogoimgT2"} /> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3> )) : 
+    (trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={trabajo.logoSmall ? "LogoimgTsmall" : "LogoimgT2"} /> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3>)}
     </div>
     </Link> }
 
