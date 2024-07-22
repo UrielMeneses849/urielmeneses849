@@ -26,7 +26,7 @@ return(
 
     {trabajo.path == "" ?  <a href={trabajo.link} target="_blank" rel="noreferrer"> 
     <div className="BotonSiguiente flex center" style={{cursor: "pointer", margin: 0}}>
-    <h2 className="siguienteP" > Siguiente proyecto:</h2>
+    <h2 className="siguienteP" style={{textDecoration: "none", color:`${props.colortexto}`}}> Siguiente proyecto:</h2>
     { darkMode ? ( trabajo.LogoDark ? <img src={trabajo.LogoDark} alt="logo" className="LogoimgT"/>  :   
     ( trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={ trabajo.LogoSmall ? "LogoimgTsmall" : "LogoimgT2"} /> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3> )) : 
     ( trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={ trabajo.LogoSmall ? "LogoimgTsmall" : "LogoimgT2"} /> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3>)} 
@@ -35,7 +35,7 @@ return(
     :
     <Link to={trabajo.path} style={{textDecoration: "none", color:{colorBoton}}}>
     <div className="BotonSiguiente flex center" style={{cursor: "pointer", margin: 0}}>
-    <h2 className="siguienteP" > Siguiente proyecto:</h2>
+    <h2 className="siguienteP"  style={{textDecoration: "none", color:`${props.colortexto}`}}> Siguiente proyecto:</h2>
     { darkMode ? ( trabajo.LogoDark ?  <img src={trabajo.LogoDark} alt="logo" className="LogoimgT"/>  :   
     ( trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={trabajo.logoSmall ? "LogoimgTsmall" : "LogoimgT2"} /> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3> )) : 
     (trabajo.Logo ? <img src={trabajo.Logo} alt="logo" className={trabajo.logoSmall ? "LogoimgTsmall" : "LogoimgT2"} /> : <h3 className="tituloCardTrabajo" style={{ color: `${props.colortexto}` }}>{trabajo.tituloCard}</h3>)}

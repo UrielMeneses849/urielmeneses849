@@ -1,0 +1,69 @@
+.Presentacion{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 32px 32px;
+    margin: 32px auto 64px;
+    box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.30);
+    gap: 32px;
+    max-height: 90vh;
+   }
+.Presentacion--titulo{font-size: 2.5vw; font-weight: 500;}
+
+.Descripciones{font-size: 1.1vw;}
+
+.Presentacion__imagenes{ max-width: 100%; }
+
+.Presentacion-imagen img{ max-width: 100%; }
+
+.Proceso{ margin: 32px auto;}
+
+.Proceso__items{justify-content: space-between;}
+
+.Proceso--numero{ font-size: 3vw; font-weight: 700;}
+
+.Proceso--titulo{ 
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 22px;
+    background: #FFF;
+    box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.30);
+}
+
+.Proceso--descripcion{ font-size: 1.1vw; font-weight: 300; margin-top: 24px;}
+
+.Analisis img, .investigacion img, .Diseño img, .Resultados img{ max-width: 100%; margin: 32px auto;}
+
+.AnalisisMovil{ display: none;}
+
+.Personas img{max-width: 65%; margin: 0 auto;}
+
+
+@media screen and (max-width: 768px){
+    .Presentacion{ max-height: 90vh;}
+
+    .Presentacion--titulo{font-size: 5vw;}
+
+    .Presentacion__imagenes{ flex-direction: column;}
+
+    .Proceso__items{ flex-direction: column;}
+
+    .Proceso--numero{ font-size: 7vw;}
+
+    .Proceso--titulo{ font-size: 5vw; padding: 16px;}
+
+    .Proceso--descripcion{ font-size: 3.666667vw; margin-top: 12px;}
+
+    .AnalisisDesk{ display: none;}
+
+    .AnalisisMovil{ display: block;}
+
+    .Descripciones{font-size: 3.666667vw; }
+
+    .Analisis img, .investigacion img, .Diseño img, .Resultados img{ margin: 12px auto;}
+
+    .Personas img{max-width: 100%;}
+
+}

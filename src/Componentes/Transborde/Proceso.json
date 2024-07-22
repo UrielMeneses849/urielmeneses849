@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "numero": "01",
+        "descripcion": "Arquitectura de la información.",
+        "titulo": "Análisis",
+        "color" : "#FFF"
+    },
+    {
+        "id": 2,
+        "numero": "02",
+        "descripcion": "Auditoria competitiva. <br> Propuestas de valor. User personas",
+        "titulo": "Investigación",
+        "color" : "#F3CA52"
+    },
+    {
+        "id": 3,
+        "numero": "03",
+        "descripcion": "Tipografía y colores.<br>  Componentes. <br> Reestructurar información.",
+        "titulo": "Diseño",
+        "color" : "#FFF"
+    },
+    {
+        "id": 4,
+        "numero": "04",
+        "descripcion": "Mockups y artes. <br> Resultados.",
+        "titulo": "Presentación",
+        "color" : "#F3CA52"
+    }
+]
+

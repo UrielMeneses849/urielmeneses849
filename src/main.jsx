@@ -5,6 +5,7 @@ import {DarkModeProvider} from './Componentes/DarkModeContext';
 import Finvero from "./Componentes/Finvero/Finvero.jsx";
 import OpenFinance from "./Componentes/OpenFinance/OpenFinance.jsx";  
 import MebloStyle from './Componentes/MebloStyle/MebloStyle.jsx';
+import Transborde from './Componentes/Transborde/Transborde.jsx';
 
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -33,6 +34,13 @@ const router = createBrowserRouter([
     element: 
     <Suspense fallback={<div>Loading...</div>}>
     <MebloStyle />
+    </Suspense>,
+  },
+  {
+    path: '/transborde',
+    element: 
+    <Suspense fallback={<div>Loading...</div>}>
+    <Transborde />
     </Suspense>,
   }
 ])
