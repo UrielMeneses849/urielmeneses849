@@ -66,7 +66,7 @@ export default function OpenFinance(){
 </div>
     <div className="flex wrap EventoInf"> 
     <h2 style={{ color: `${colortexto}` }}>He participado en 2 eventos.</h2>
-    <span style={{ color: `${colortexto}` }}>Fui parte del staff, estuve presente en el diseño de las presentaciones de los servicios que se mostrarón en el evento, elabore reconocimientos para los speakers presentes en el evento y más actividades fisicas y digitales en pro del evento</span>
+    <span style={{ color: `${colortexto}` }}>Fui parte del staff, estuve presente en el diseño de las presentaciones de los servicios que se mostrarón, elabore reconocimientos para los speakers presentes y más actividades fisicas y digitales en pro del evento</span>
     <LazyLoad height={900} className='imgfinal'>
     <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/OpenFinance%2Fstaff-1.webp?alt=media&token=38ef8f12-c377-46bd-ac0c-17213dfc4471" className='imgfinal' />
     </LazyLoad>

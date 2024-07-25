@@ -42,7 +42,7 @@
 
 
 @media screen and (max-width: 768px){
-    .Presentacion{ max-height: 90vh;}
+    .Presentacion{ max-height: 90vh; border-radius: 25px;}
 
     .Presentacion--titulo{font-size: 5vw;}
 

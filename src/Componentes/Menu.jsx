@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import '../Estilos/Menu/Menu.css'
 import "../Estilos/Home/Toggle.css"
 import { useDarkMode } from '../Hooks/useDarkMode';
@@ -8,10 +8,27 @@ import LazyLoad from 'react-lazyload';
 
 export default function Menu(props){
     const [menuOpen, setMenuOpen] = useState(false);
+    const menuRef = useRef(null);
+    const toggleMenu = () => { setMenuOpen(!menuOpen);}
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+  
+    useEffect(() => {
+      if (menuOpen) {
+        document.addEventListener('mousedown', handleClickOutside);
+      } else {
+        document.removeEventListener('mousedown', handleClickOutside);
+      }
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+    }, [menuOpen]);
 
     const {darkMode} = useDarkMode();
 
-    const toggleMenu = () => { setMenuOpen(!menuOpen);};
 
     const pulpo = darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2Fpulpoblanco.svg?alt=media&token=7227427d-9f19-490a-a4c7-350357b1f404" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/HomePage%2Fpulponegro.svg?alt=media&token=ef27da5f-61a3-4bb2-9a52-45704a605336"
     
@@ -41,7 +58,7 @@ export default function Menu(props){
         </div>
 	</nav>
     
-    <nav className="menuMovil">
+    <nav className="menuMovil" ref={menuRef}>
 
       <button className="open-button" onClick={toggleMenu} style={{ color: `${props.colortexto}` }}>
         &#9776;
