@@ -8,8 +8,8 @@ import Menu from "./Componentes/Menu"
 const Trabajo = React.lazy(() => import("./Componentes/Trabajo"))
 const About = React.lazy(() => import("./Componentes/About"))
 const Footer = React.lazy(() => import("./Componentes/Footer"))
+const BBVA = React.lazy(() => import("./Componentes/BBVA/BBVA")) 
 import {DarkModeContext} from './Componentes/DarkModeContext';
-
 
 // Variables globales
 import './Estilos/VariablesGlobales.css'
@@ -117,6 +117,10 @@ function textLeave(){
       
       <Suspense fallback={<div>Loading...</div>}>
       <Trabajo colortexto = {colortexto}/>
+      </Suspense>
+
+      <Suspense fallback={<div>Loading...</div>}>
+      <BBVA />
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>

@@ -23,6 +23,5 @@ export default function About(props){
         </>
         </LazyLoad>
         </div>
-      
     )
 }

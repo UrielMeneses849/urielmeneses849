@@ -26,7 +26,7 @@ export default function Footer(props){
         <div className="container_footer_formulario">
         <div className="contacto" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
 
-           <a href="https://www.linkedin.com/in/esaul-uriel-meneses-torres-83475a2a0/" className="enlace" target="blank"><div className="contacto1" style={{border: `${bordeCard}`}}>
+           <a href="https://www.linkedin.com/in/uriel-meneses-83475a2a0/" className="enlace" target="blank"><div className="contacto1" style={{border: `${bordeCard}`}}>
             <LazyLoad offset={500} height={500} >
             <img src={Linkdin} alt="linkdn" className="linkdn" />
             </LazyLoad>

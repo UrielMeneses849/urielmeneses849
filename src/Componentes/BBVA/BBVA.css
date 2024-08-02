@@ -1,0 +1,179 @@
+.ContainerBBVA{
+    background-color: #133160;
+    width: 100%;
+    margin: 32px 0;
+}
+
+.ContainerBBVA__Contenido{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    
+}
+/* * Seccion de logo y titulo */
+
+.BBVALogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    }  
+
+.ContainerBBVA--Textos{
+    width: 48%;
+    padding: 5% 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    
+}
+
+.BBVALogo img{
+    max-width: 50%;
+    transition: 0.8s;
+}
+
+.BBVALogo img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.BBVALogo h2{align-self: stretch;}
+
+/* * Seccion de logo y titulo */
+
+/* ? Cuadro informarivo */
+.ContainerBBVA--Info{
+    background: #1A437D;
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.ContainerBBVA__Logo-Inf{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+align-self: stretch; }
+
+/* ? Cuadro informarivo */
+
+/* * Contenedor del arte con un texto */
+.ContainerBBVA__Arte-Texto{
+display: flex;
+align-items: center;
+gap: 32px;
+align-self: stretch;}
+
+.ContainerBBVA__Arte-Texto img{
+    max-width: 20%;    
+}
+
+.separadorIMG{
+    width: 10px; /* Thickness of the line */
+    height: 100px; /* Height of the line, adjust as needed */
+    background-color: #7ED1EF; /* Color of the line */
+    border-radius: 10px; 
+}
+/* * Contenedor del arte con un texto */
+
+.ContainerBBVA__Carrera{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.ContainerBBVA__Carrera img{
+    max-width: 15%;
+}
+
+/* ? Footer de la sección BBVA */
+
+.ContainerBBVA--footer{
+    width: 100%;
+    display: flex;
+    padding: 32px 32px;
+    justify-content: space-between;
+    background: #EDF8FA;
+    align-items: flex-start;
+}
+
+/* ! Slider BBVA */
+
+.ContainerBBVA--Slider{
+    display: flex;
+    padding: 32px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 48%;
+}
+.ContainerBBVA__TituloDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.BBVA__Slider{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.BBVA__Slider-Contenido img{
+    max-width: 90%;
+    border-radius: 10px;
+}
+.BBVA__Slider-Contenido{
+    display: flex;
+    justify-content: center;
+}
+
+/*  ! Slider BBVA */
+
+@media screen and (max-width: 768px){
+    .ContainerBBVA__Contenido{
+        flex-direction: column;}
+
+    .ContainerBBVA--Textos{ width: 100%; padding: 0;}
+
+    .ContainerBBVA--Info{ gap: 16px; align-items: self-start;}
+
+    .ContainerBBVA__Logo-Inf{ flex-direction: column; }
+
+    .separadorIMG{ display: none; }
+
+    .ContainerBBVA__Arte-Texto{ flex-direction: column; margin: 32px auto; }
+
+    .ContainerBBVA__Arte-Texto img{ max-width: 40%; }
+
+    #carrera img{max-width: 32%;}
+
+    .ContainerBBVA__Carrera{ gap: 1px; }
+
+    .ContainerBBVA--Slider{ width: 100%; padding: 0; }
+
+    .ContainerBBVA__TituloDesc{ gap: 16px; }
+
+    .ContainerBBVA--footer{
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 32px;
+    }
+}

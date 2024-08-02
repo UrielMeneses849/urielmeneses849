@@ -47,8 +47,9 @@ export default function Finvero(){
         navigate(-1); // Navega una página atrás en el historial
     };
 
-    const fondoCard = darkMode ? `#494949` : `#F5FFFF`
+        
     const colortexto = darkMode ? `#e0e0e0` : `#0b0b0c`
+    const fondoCard = darkMode ? `#444549` : `#F0F0F0`
     let color = darkMode ? `#FFB828` : `#092D5D`
     let finvero = darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FFV%202.svg?alt=media&token=6d032902-cf95-4ba2-9350-dec7b4ca4ffa` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FFV.svg?alt=media&token=b8a704cc-d456-4847-8ac5-40b6912f082d`
     const process = darkMode ? "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2FProcess%20DarkMode.svg?alt=media&token=573a50e4-1f1a-4352-97e2-ffa04b3655f1" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FPagina1Slider%2FProcess%20Light.svg?alt=media&token=9e3e5197-2285-4ffc-b25a-66a4c07bad17"
