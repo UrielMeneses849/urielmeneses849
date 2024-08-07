@@ -7,8 +7,8 @@ const Habilidades = React.lazy(() => import("./Componentes/Habilidades/Habilidad
 import Menu from "./Componentes/Menu"
 const Trabajo = React.lazy(() => import("./Componentes/Trabajo"))
 const About = React.lazy(() => import("./Componentes/About"))
-const Footer = React.lazy(() => import("./Componentes/Footer"))
-const BBVA = React.lazy(() => import("./Componentes/BBVA/BBVA")) 
+// const Footer = React.lazy(() => import("./Componentes/Footer"))
+const BBVA = React.lazy(() => import("./Componentes/BBVA/BBVA"))
 import {DarkModeContext} from './Componentes/DarkModeContext';
 
 // Variables globales
@@ -33,7 +33,7 @@ const[mousePosition, setMousePosition] = useState({
 });
 
 const [cursorVariant, setCursorVariant] = useState("default")
- 
+
 useEffect(() => {
 
 const mouseMove = e => {
@@ -63,7 +63,7 @@ const variants = {
     y: mousePosition.y - 50,
     backgroundColor: "white",
     mixBlendMode: "difference",
-    
+
   },
   link:{
     height: 100,
@@ -77,12 +77,12 @@ const variants = {
 const[cursorText, setCursorText] = useState("");
 
 function textEnter (){
-  setCursorVariant("text");  
-}  
+  setCursorVariant("text");
+}
 function textLeave(){
   setCursorVariant("default")
   setCursorText("")
-} 
+}
 
 // function textEnterVisitar (){
 //   setCursorVariant("link");
@@ -93,7 +93,7 @@ function textLeave(){
 // Cursor
   return (
     <>
-    
+
     {/* Pasar props textenter y textleave */}
       <Menu
       colortexto = {colortexto}
@@ -101,7 +101,7 @@ function textLeave(){
       textLeave = {textLeave}
       toggleDarkMode = {toggleDarkMode}/>
 
-      <Home 
+      <Home
       colortexto = {colortexto}
       colortextoSub = {colortextoSub}
       textEnter = {textEnter}
@@ -109,12 +109,12 @@ function textLeave(){
       />
 
       <Suspense fallback={<div>Loading...</div>}>
-      <Habilidades 
+      <Habilidades
       colortexto = {colortexto}
       textEnter = {textEnter}
-      textLeave = {textLeave}/> 
+      textLeave = {textLeave}/>
       </Suspense>
-      
+
       <Suspense fallback={<div>Loading...</div>}>
       <Trabajo colortexto = {colortexto}/>
       </Suspense>
@@ -126,16 +126,16 @@ function textLeave(){
       <Suspense fallback={<div>Loading...</div>}>
       <About colortexto = {colortexto} />
       </Suspense>
-     
-      <Suspense fallback={<div>Loading...</div>}>
-      <Footer 
+
+      {/* <Suspense fallback={<div>Loading...</div>}>
+      <Footer
       colortexto = {colortexto}
       textEnter = {textEnter}
       textLeave = {textLeave}
       />
-      </Suspense>
+      </Suspense> */}
 
-      <motion.div 
+      <motion.div
       className="cursor"
       variants={variants}
       animate={cursorVariant}
