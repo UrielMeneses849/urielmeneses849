@@ -5,6 +5,7 @@ import data from "../JSON/data.json"
 import { useDarkMode } from "../Hooks/useDarkMode"
 import LazyLoad from "react-lazyload";
 import { useState } from "react";
+import Dashboard from '../Componentes/Dashboard/Dashboard'
 // import LazyLoad from 'react-lazyload';
 
 export default function Trabajo(props){
@@ -17,7 +18,7 @@ export default function Trabajo(props){
 
     return(
         <div className="Trabajo" id="trabajo">
-
+        <Dashboard />
         <h2 className="Titulo_trabajo" style={{ color: `${props.colortexto}` }}>Mi trabajo</h2>
         <div className="Content-Trabajo">
 
@@ -51,8 +52,8 @@ export default function Trabajo(props){
             <span className="descripcionCardTrabajo" dangerouslySetInnerHTML={{ __html: item.descripcion }} style={{ color: `${props.colortexto}` }}/>
 
             {/* * Boton */}
-            { item.path == "" ?  <a href={item.link} target="_blank" rel="noreferrer"> 
-            <button style={{ background: `${colorBoton}` }}>
+            { item.path == "" ?  <a href={item.link} target="_blank" rel="noreferrer" > 
+            <button style={{ background: `${colorBoton}` }} className="VerProyectoBoton" >
             <div className="svg-wrapper-1">
             <div className="svg-wrapper">
             <svg
@@ -72,7 +73,7 @@ export default function Trabajo(props){
             </button> </a> 
             :
             <Link key={item.id} to={`${item.path}`}>
-            <button style={{ background: `${colorBoton}` }}>
+            <button style={{ background: `${colorBoton}` }} className="VerProyectoBoton">
             <div className="svg-wrapper-1">
             <div className="svg-wrapper">
             <svg

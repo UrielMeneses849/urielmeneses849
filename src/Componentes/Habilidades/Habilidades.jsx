@@ -1,22 +1,31 @@
 /* eslint-disable react/prop-types */
-import { useState, Suspense } from "react"
+import {  Suspense } from "react"
+import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Tooltip, useDisclosure } from "@chakra-ui/react";
 import "./Habilidades-card.css"
 import "./Tecnologias-cont.css"
 import "./educacion.css"
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
 
 import LazyLoad from 'react-lazyload';
 // Cards de contenido oculto
 import Diseñador from "./Cards_skills/Diseñador"
 import Desarrollador from "./Cards_skills/Desarrollador"
 import Ingeniero from "./Cards_skills/Ingeniero"
+
 import { useDarkMode } from "../../Hooks/useDarkMode";
 
 export default function Habilidades(props){
     const {darkMode} = useDarkMode();
 
-    const fondoCard = darkMode ? `#494949` : `#eeeeee`
+    const frontendDisclosure = useDisclosure();
+
+    const uxUiDisclosure = useDisclosure();
+    
+    const projectDisclosure = useDisclosure();
+    // Disclosure for the second modal
+
+    // Disclosure for the third modal
+
+    const fondoCard = darkMode ? `#494949` : `#f8f8f8`
 
     const bordeCard = darkMode ? `` : `1px solid #121212`
 
@@ -25,17 +34,6 @@ export default function Habilidades(props){
     const sql = darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FsqlD.svg?alt=media&token=64780816-23e0-48b9-a1a7-95eebc25d190` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FsqlL.svg?alt=media&token=f8e6c1c1-ac54-44bc-bb44-61103e8bbd1c`
     
     // modal
-    const [open, setOpen] = useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
-
-    const [open2, setOpen2] = useState(false);
-    const handleOpen2 = () => setOpen2(true);
-    const handleClose2 = () => setOpen2(false);
-
-    const [open3, setOpen3] = useState(false);
-    const handleOpen3 = () => setOpen3(true);
-    const handleClose3 = () => setOpen3(false);
 
     return(
     <section className="skills" id="habilidades">
@@ -48,30 +46,40 @@ export default function Habilidades(props){
 
             <div className="contenedorSkillText">
                 <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Frontend</h2>
-                <div className="skills__content" style={{backgroundColor: `${fondoCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                <div className="skills__content" style={{backgroundColor: `${fondoCard}`}} >
                
                     <div className="div1"> 
                     <LazyLoad offset={200} >
+                    <Tooltip label='React JS' fontSize='md'>
                     <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Freact.svg?alt=media&token=93f30986-31eb-4454-bc49-f1c34d9f9a05"/>
+                    </Tooltip>
                     </LazyLoad></div>
                     <div className="div2"> 
                     <LazyLoad offset={200} >
+                    <Tooltip label='CSS 3' fontSize='md'>
                     <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FCSS%20(2).svg?alt=media&token=9b87d4c8-8dde-459a-b1d2-2d941add9190"  />
+                    </Tooltip>
                     </LazyLoad>
                     </div>
                     <div className="div3"> 
                     <LazyLoad offset={200} >
+                    <Tooltip label='Material UI' fontSize='md'>
                     <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FMUI.svg?alt=media&token=42e05fca-4ea1-4b8e-98a4-d6662a4dd703"  />
+                    </Tooltip>
                     </LazyLoad>
                     </div>
                     <div className="div4"> 
                     <LazyLoad offset={200} >
+                    <Tooltip label='Framer Motion' fontSize='md'>
                     <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FFM.png?alt=media&token=7fb4bf3c-f8de-42a3-bf07-8649de7c9e94"  />
+                    </Tooltip>
                     </LazyLoad>
                     </div>
                     <div className="div5"> 
                     <LazyLoad offset={200} >
-                    <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Ftailwindcss-icon-svgrepo-com%201.png?alt=media&token=dd4391a3-4bfd-486b-a960-371be12183b0"  />
+                    <Tooltip label='Chakra UI' fontSize='md'>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Proyectos%20Front%2Fdescarga.svg?alt=media&token=aeb85205-57e7-44fe-8583-c86758181c26"  />
+                    </Tooltip>
                     </LazyLoad>
                     </div>
 
@@ -81,21 +89,27 @@ export default function Habilidades(props){
 
             <div className="contenedorSkillText">
                 <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Herramientas</h2> 
-                <div className="skills__content Herramientas" style={{backgroundColor: `${fondoCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                <div className="skills__content Herramientas" style={{backgroundColor: `${fondoCard}`}} >
 
                 <div className="div1"> 
                 <LazyLoad offset={200} >
+                <Tooltip label="Git" fontSize="medium"> 
                 <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fgit.svg?alt=media&token=be1eac56-0c13-4a24-afec-d09cec6349d9"  />
+                </Tooltip>
                 </LazyLoad>
                 </div>
                 <div className="div2"> 
                 <LazyLoad offset={200} >
+                <Tooltip label="DevTools" fontSize="medium"> 
                 <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FDev%20tools.svg?alt=media&token=5e38b6e0-a347-425e-b653-7f74ebae6506"  />
+                </Tooltip> 
                 </LazyLoad>
                 </div>
                 <div className="div3"> 
                 <LazyLoad offset={200} >
-                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fmjml.svg?alt=media&token=a47ec1ad-b337-4edb-8b23-851dbce471e0"  />
+                <Tooltip label="Analytics" fontSize="medium"> 
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FAnalytics.svg?alt=media&token=51d95724-6002-4bde-89cf-809872116145"/>
+                </Tooltip> 
                 </LazyLoad>
                 </div>
 
@@ -104,16 +118,20 @@ export default function Habilidades(props){
             
             <div className="contenedorSkillText">
                 <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Diseño UX</h2> 
-                <div className="skills__content UX-Content" style={{backgroundColor: `${fondoCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                <div className="skills__content UX-Content" style={{backgroundColor: `${fondoCard}`}} >
 
                 <div className="div1"> 
                 <LazyLoad offset={200} >
+                <Tooltip label="Figma" fontSize="medium"> 
                 <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Ffigma.svg?alt=media&token=dfddd449-5bb2-482c-ad4c-37dce58c0f99"  />
+                </Tooltip> 
                 </LazyLoad>
                 </div>
                 <div className="div2"> 
                 <LazyLoad offset={200} >
+                <Tooltip label="Notion" fontSize="medium"> 
                 <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fnotion-svgrepo-com.svg?alt=media&token=1bb052c7-6351-41b5-919b-32fe69d70fa0"  />
+                </Tooltip> 
                 </LazyLoad>
                 </div>
                 <div className="div3"> 
@@ -126,18 +144,22 @@ export default function Habilidades(props){
             </div>
             
             <div className="contenedorSkillText">
-                <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Desarrollo y metricas</h2> 
-                <div className="skills__content FW" style={{backgroundColor: `${fondoCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Desarrollo y pruebas</h2> 
+                <div className="skills__content FW" style={{backgroundColor: `${fondoCard}`}} >
 
                 <div className="div1"> 
                 <LazyLoad offset={200} >
+                <Tooltip label="Vite" fontSize="medium"> 
                 <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fvite.svg?alt=media&token=7556ec6d-a92d-4f0c-a5b0-5588150346ca"  />
+                </Tooltip> 
                 </LazyLoad>
                 </div>
                 {/*  */}
                 <div className="div2"> 
                 <LazyLoad offset={200} >
-                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FAnalytics.svg?alt=media&token=51d95724-6002-4bde-89cf-809872116145"/>
+                <Tooltip label="Jest" fontSize="medium"> 
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fjest-js-icon.webp?alt=media&token=a0c43727-2dc0-40fb-8ee6-df19f0aca68c" alt="" />
+                </Tooltip> 
                 </LazyLoad>
                 </div>
 
@@ -146,7 +168,7 @@ export default function Habilidades(props){
             
             <div className="contenedorSkillText">
                 <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Base de datos</h2> 
-                <div className="skills__content BD" style={{backgroundColor: `${fondoCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                <div className="skills__content BD" style={{backgroundColor: `${fondoCard}`}} >
 
                 <div className="div1"> 
                 <LazyLoad offset={200} >
@@ -160,7 +182,9 @@ export default function Habilidades(props){
                 </div>
                 <div className="div3"> 
                 <LazyLoad offset={200} >
+                <Tooltip label="Firebase" fontSize="medium"> 
                 <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Ffirebase-1-logo-svgrepo-com%20(1).svg?alt=media&token=9aedcee5-fd8a-4322-8f54-aafe840c6cfb"  />
+                </Tooltip> 
                 </LazyLoad>
                 </div>
 
@@ -179,57 +203,84 @@ export default function Habilidades(props){
             {/* Contenedor 1 */}
         <div className="services__content" style={{backgroundColor: `${fondoCard}` , border: `${bordeCard}`}} onMouseEnter={props.textEnter} 
         onMouseLeave={props.textLeave} >
-                <div>
+
+        <div>
         {/* Parte visible de la card  */}
-            <i className="uil uil-web-grid services__icon" style={{ color: `${props.colortexto}`}}></i>
-            <h3 className="services__title" style={{ color: `${props.colortexto}` }}>UX <br /> Designer</h3>
-            </div> 
-            <span className="services__button" onClick={handleOpen} style={{ color: `${props.colortexto}` }}>Ver más
-            <i className="uil uil-arrow-right services__button-icon"></i></span>
+        <i className="uil uil-web-grid services__icon" style={{ color: `${props.colortexto}`}}></i>
+        <h3 className="services__title" style={{ color: `${props.colortexto}` }}>UX <br /> Designer</h3>
+        </div> 
+        <span className="services__button" onClick={uxUiDisclosure.onOpen} style={{ color: `${props.colortexto}` }}>Ver más
+        <i className="uil uil-arrow-right services__button-icon"></i></span>
         </div>
 
-        <Modal open={open} onClose={handleClose}>
-        <Box className="modal-contenedor">
-        <Suspense fallback={<div>Loading...</div>}>
-        <Diseñador fondoCard = {fondoCard} colortexto = {props.colortexto} handleClose = {handleClose}/>
-        </Suspense>  
-        </Box>
+
+        <Modal onClose={uxUiDisclosure.onClose} isOpen={uxUiDisclosure.isOpen} isCentered size="xl">
+        <ModalOverlay />
+        <ModalContent borderRadius="30px" p="3% 2% 1%" >
+        <ModalHeader fontSize={{base: "6vw", lg: "1.5vw"}} fontFamily="poppins">Diseño UX/UI</ModalHeader>
+        <ModalCloseButton />
+        <ModalBody>
+        <Diseñador  /> 
+        </ModalBody>
+        <ModalFooter>
+        <Button onClick={uxUiDisclosure.onClose}>Close</Button>
+        </ModalFooter>
+        </ModalContent>
         </Modal>
+  
 
             {/* Contenedor 2 */}
         <div className="services__content" style={{backgroundColor: `${fondoCard}`,  border: `${bordeCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
-                <div>
-            <i className="uil uil-arrow services__icon" style={{ color: `${props.colortexto}`}}></i>
-            <h3 className="services__title" style={{ color: `${props.colortexto}`}}>Web <br /> Developer</h3>
-            </div> 
-            <span className="services__button" onClick={handleOpen2} style={{ color: `${props.colortexto}`}}>Ver más 
-            <i className="uil uil-arrow-right services__button-icon"></i></span>
+        <div>
+        <i className="uil uil-arrow services__icon" style={{ color: `${props.colortexto}`}}></i>
+        <h3 className="services__title" style={{ color: `${props.colortexto}`}}>Web <br /> Developer</h3>
+        </div> 
+        <span className="services__button" onClick={frontendDisclosure.onOpen} style={{ color: `${props.colortexto}`}}>Ver más 
+        <i className="uil uil-arrow-right services__button-icon"></i></span>
         </div>
 
-        <Modal open={open2} onClose={handleClose2}>
-        <Box className="modal-contenedor">
+        <Modal onClose={frontendDisclosure.onClose} isOpen={frontendDisclosure.isOpen} isCentered size="xl" motionPreset='slideInBottom'>
+        <ModalOverlay />
+        <ModalContent borderRadius="30px" p="3% 2% 1%" >
+        <ModalHeader fontSize={{base: "6vw", lg: "1.5vw"}} fontFamily="poppins">Desarrollador Web</ModalHeader>
+        <ModalCloseButton />
+        <ModalBody>
         <Suspense fallback={<div>Loading...</div>}>
-        <Desarrollador fondoCard = {fondoCard} colortexto = {props.colortexto} handleClose2 = {handleClose2}/>
-        </Suspense>  
-        </Box>
+        <Desarrollador  />
+        </Suspense> 
+        </ModalBody>
+        <ModalFooter>
+        <Button onClick={frontendDisclosure.onClose}>Close</Button>
+        </ModalFooter>
+        </ModalContent>
         </Modal>
 
             {/* Contenedor 3 */}
-            <div className="services__content" style={{backgroundColor: `${fondoCard}`, border: `${bordeCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
-            <div>
-            <i className="uil uil-graduation-cap services__icon" style={{color: `${props.colortexto}`}}></i>
-            <h3 className="services__title" style={{color: `${props.colortexto}`}}>Ingeniero en <br /> Computación</h3>
-            </div> 
-            <span className="services__button" onClick={handleOpen3} style={{color: `${props.colortexto}`}}>Ver más <i className="uil uil-arrow-right services__button-icon"></i></span>
+        <div className="services__content" style={{backgroundColor: `${fondoCard}`, border: `${bordeCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+        <div>
+        <i className="uil uil-graduation-cap services__icon" style={{color: `${props.colortexto}`}}></i>
+        <h3 className="services__title" style={{color: `${props.colortexto}`}}>Ingeniero en <br /> Computación</h3>
+        </div> 
+        <span className="services__button" onClick={projectDisclosure.onOpen} style={{color: `${props.colortexto}`}}>Ver más <i className="uil uil-arrow-right services__button-icon"></i></span>
         </div>
         </section>
-        <Modal open={open3} onClose={handleClose3}>
-        <Box className="modal-contenedor">
+    
+        <Modal onClose={projectDisclosure.onClose} isOpen={projectDisclosure.isOpen} isCentered size="xl">
+        <ModalOverlay />
+        <ModalContent borderRadius="30px" p="3% 2% 1%" >
+        <ModalHeader fontSize={{base: "6vw", lg: "1.5vw"}} fontFamily="poppins">Ingeniero en computación</ModalHeader>
+        <ModalCloseButton />
+        <ModalBody>
         <Suspense fallback={<div>Loading...</div>}>
-        <Ingeniero fondoCard = {fondoCard} colortexto = {props.colortexto} handleClose3 = {handleClose3}/>
-        </Suspense>  
-        </Box>
+        <Ingeniero  />
+        </Suspense> 
+        </ModalBody>
+        <ModalFooter>
+        <Button onClick={projectDisclosure.onClose}>Close</Button>
+        </ModalFooter>
+        </ModalContent>
         </Modal>
+
         </div>
 
         <div className="c3">

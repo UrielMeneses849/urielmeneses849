@@ -13,7 +13,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     border-radius: 15px;
-    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.15), 0px 30px 30px 0px rgba(0, 0, 0, 0.13), 0px 68px 41px 0px rgba(0, 0, 0, 0.08), 0px 121px 48px 0px rgba(0, 0, 0, 0.02), 0px 189px 53px 0px rgba(0, 0, 0, 0.00);
+    box-shadow: 0px 157px 44px 0px rgba(0, 0, 0, 0.00), 0px 101px 40px 0px rgba(0, 0, 0, 0.02), 0px 57px 34px 0px rgba(0, 0, 0, 0.08), 0px 25px 25px 0px rgba(0, 0, 0, 0.13), 0px 6px 14px 0px rgba(0, 0, 0, 0.15);    
 }
     
     .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -22,7 +22,7 @@
     .div4 { grid-area: 3 / 1 / 4 / 2; }
     .div5 { grid-area: 3 / 2 / 4 / 3; }
 
-    .div1 img, .div2 img, .div3 img, .div4 img, .div5 img{ width: 50%; filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.10)) drop-shadow(0px 9px 9px rgba(0, 0, 0, 0.09)) drop-shadow(0px 20px 12px rgba(0, 0, 0, 0.05)) drop-shadow(0px 35px 14px rgba(0, 0, 0, 0.01)) drop-shadow(0px 55px 15px rgba(0, 0, 0, 0.00));}
+    .div1 img, .div2 img, .div3 img, .div4 img, .div5 img{ width: 50%; }
     .div2 img { width: 40%; }
     .div3 img { width: 30%; }
 
@@ -46,7 +46,7 @@
 
 .BD{height: 60%; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr);}
 
-
+.skills__content img {margin: 0 auto;}
 @media screen and (max-width: 1440px){
     .div1 img, .div4 img, .div5 img{ width: 55%; }
 

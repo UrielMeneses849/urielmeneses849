@@ -6,7 +6,7 @@ import Finvero from "./Componentes/Finvero/Finvero.jsx";
 import OpenFinance from "./Componentes/OpenFinance/OpenFinance.jsx";  
 import MebloStyle from './Componentes/MebloStyle/MebloStyle.jsx';
 import Transborde from './Componentes/Transborde/Transborde.jsx';
-
+import { ChakraProvider } from '@chakra-ui/react'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -47,8 +47,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <ChakraProvider>
     <DarkModeProvider>
     <RouterProvider router={router} />
     </DarkModeProvider> 
+    </ChakraProvider>
   </React.StrictMode>,
 )

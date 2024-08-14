@@ -17,63 +17,25 @@
 
 
 /* Color y dimensiones del card*/
-.modal-contenedor{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    background-color: 'none';
-    border: 'none';
-    box-Shadow: 24px 24px 48px rgba(0, 0, 0, 0.5);
-    border-Radius: 1.4rem;
-}
 
 .contenedor2{
     width: 80%;
 }
+
 .services__modal-content{
     width: 100%;
     position: relative;
-    padding: 4rem 2rem 2.5rem;
+  
     border-radius: 1.4rem;
     box-sizing: border-box;
 }
 
-/* Posicion del boton de cerrar */
-.services__modal-close{
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.services__modal-title,
-.services__modal-description,
-.services__modal-title2
-{
-    text-align: center;
- }
-
  .services__modal-description{
-    color: #686868;
-    font-size: var(--normal-font-size);
-    padding: 0 3.5rem;
+    color: #121212;
+    font-size: 1.33337vw;
     margin-bottom: var(--mb-2);
  }
 
- .services__modal-title{
-    font-size: var(--h1-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-1-5);
- }
-
- .services__modal-title2{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-1-5);
- }
  .services__modal-services{
     row-gap: 0.75rem;
  }
@@ -90,7 +52,7 @@
  }
 
  .services__modal-info{
-    font-size: var(--normal-font-size);
+    color: black;
  }
 
 
@@ -145,9 +107,7 @@
     font-size: 1.1rem;
  }
 
- .services__modal-info{
-    font-size: var(--small-font-size);
- }
+
 }
 
 @media screen and (max-width: 480px){
@@ -156,8 +116,7 @@
     }
     
     .services__modal-description{
-        padding: 0;
-        margin-bottom: var(--mb-0-5);
+            font-size: 3.9vw;
     }
     .services__modal-services{
         width: 100%;
