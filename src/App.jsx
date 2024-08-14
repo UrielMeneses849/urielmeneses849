@@ -7,7 +7,7 @@ const Habilidades = React.lazy(() => import("./Componentes/Habilidades/Habilidad
 import Menu from "./Componentes/Menu"
 const Trabajo = React.lazy(() => import("./Componentes/Trabajo"))
 const About = React.lazy(() => import("./Componentes/About"))
-// const Footer = React.lazy(() => import("./Componentes/Footer"))
+const Footer = React.lazy(() => import("./Componentes/Footer"))
 const BBVA = React.lazy(() => import("./Componentes/BBVA/BBVA"))
 import {DarkModeContext} from './Componentes/DarkModeContext';
 
@@ -127,13 +127,13 @@ function textLeave(){
       <About colortexto = {colortexto} />
       </Suspense>
 
-      {/* <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
       <Footer
       colortexto = {colortexto}
       textEnter = {textEnter}
       textLeave = {textLeave}
       />
-      </Suspense> */}
+      </Suspense>
 
       <motion.div
       className="cursor"

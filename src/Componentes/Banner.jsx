@@ -71,7 +71,7 @@ export default function Banner() {
     animate="visible" // Establece la variante para la animación visible
     exit="exit">
       <BannerRowTop title={"Web Developer"} color={color}/>
-      <BannerRowCenter title={"Hola, Soy Uriel"} playMarquee={playMarquee} color={color}/>
+      <BannerRowCenter titles={["Hola, soy Uriel", "Product Designer", "Frontend", "Computación"]} playMarquee={playMarquee} color={color} />
       <BannerRowBottom title={"Diseñador UX/UI"} color={color} FlechaScroll={FlechaScroll} />
     </motion.div>
     </AnimatePresence>
@@ -85,7 +85,7 @@ export default function Banner() {
     exit="exit">
     <BannerRowTop title={"Web "} color={color}/>
     <BannerRowTop title={"Developer"} color={color}/>
-      <BannerRowCenter title={"Hola, soy Uriel"} playMarquee={playMarquee} color={color}/>
+    <BannerRowCenter titles={["Hola, soy Uriel", "Product Designer", "Frontend", "Computación"]} playMarquee={playMarquee} color={color} />
       <BannerRowBottom title={"Diseñador"} color={color} FlechaScroll={FlechaScroll}/>
       <BannerRowBottom title={"UX/UI"} color={color} FlechaScroll={FlechaScroll}/>
       </motion.div>
@@ -168,18 +168,19 @@ const BannerRowBottom = ({ title, color, FlechaScroll}) => {
 };
 
 
-const BannerRowCenter = ({ title, playMarquee, color }) => {
+const BannerRowCenter = ({ titles, playMarquee, color }) => {
+  const duplicatedTitles = [...titles, ...titles, ...titles, ...titles];
   return (
-    <div className={`banner-row marquee  ${playMarquee && "animate"}`} style={{color: `${color}`}} translate="no"> 
+    <div className={`banner-row marquee ${playMarquee && "animate"}`} style={{ color: `${color}` }} translate="no">
       <motion.div
         initial={{ y: 310 }}
         animate={{ y: 0 }}
-        transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1}}
-        className='marquee__inner'>
-        <AnimatedLetters title={title} disabled />
-        <AnimatedLetters title={title} />
-        <AnimatedLetters title={title} disabled/>
-        <AnimatedLetters title={title} disabled />
+        transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 3 }}
+        className="marquee__inner"
+      >
+        {duplicatedTitles.map((title, index) => (
+          <AnimatedLetters key={index} title={title} />
+        ))}
       </motion.div>
     </div>
   );
