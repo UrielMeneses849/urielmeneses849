@@ -128,6 +128,7 @@ function textLeave(){
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
+      
       <Footer
       colortexto = {colortexto}
       textEnter = {textEnter}

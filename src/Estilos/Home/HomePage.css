@@ -48,7 +48,7 @@ body{ transition: 1.2s; box-sizing: border-box;}
 
   .imagenFlechaMovil{ display: block; max-width: 30%; bottom: 0; position: absolute; left: 50%; transform: translateX(-50%);} 
 
-  .Home{ display: flex; flex-direction: column; }
+  .Home{ display: flex; flex-direction: column; position: relative;}
   
   h1{ font-size: 5rem; line-height: 5.5rem; margin: 0 auto;}
 

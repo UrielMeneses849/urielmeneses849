@@ -31,9 +31,11 @@ transition: 0.8s;
 
 .arrow{ width: 20px; height: 20px; }
 
-.linkdn{ padding: 25px; width: 55px; height: 55px; }
+.linkdn{ width: 30%; height: 55px; }
 
 .enlace{ text-decoration: none; width: 35%; }
+
+.contacto1{padding: 5% 0 0;}
 
 
 @media screen and (max-width: 1024px){
