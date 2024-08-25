@@ -5,7 +5,6 @@ import data from "../JSON/data.json"
 import { useDarkMode } from "../Hooks/useDarkMode"
 import LazyLoad from "react-lazyload";
 import { useState } from "react";
-import Dashboard from '../Componentes/Dashboard/Dashboard'
 // import LazyLoad from 'react-lazyload';
 
 export default function Trabajo(props){
@@ -18,7 +17,7 @@ export default function Trabajo(props){
 
     return(
         <div className="Trabajo" id="trabajo">
-        <Dashboard />
+   
         <h2 className="Titulo_trabajo" style={{ color: `${props.colortexto}` }}>Mi trabajo</h2>
         <div className="Content-Trabajo">
 
