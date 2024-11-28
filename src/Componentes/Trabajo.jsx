@@ -184,19 +184,40 @@ export default function Trabajo(props){
             ) : null}
 
 
-        <button onClick={() => setTrabajos(!trabajos)} className="verMasBoton" style={{ background: `${colorBoton}` }}>
-        {trabajos ? <span style={{ color: `${colortextoBoton}` }}>Ver menos</span> : <span style={{ color: `${colortextoBoton}` }}>Ver más</span>}
-            <svg width="34" height="34" viewBox="0 0 74 74" fill={colortextoBoton} xmlns="http://www.w3.org/2000/svg">
-                <circle cx="37" cy="37" r="35.5" stroke="black" strokeWidth="3"></circle>
-                <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" 
-                fill={colorBoton}></path>
-            </svg>
-        </button>
-            
-           
-            
-            
         </div>
     </div>
     )
     }
+
+    // json
+    // {
+    //     "id": 4,
+    //     "CardArte": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FMebloStyleCard.svg?alt=media&token=ed277368-8839-4c9d-b6d3-d5c4ed7e614f" ,
+    //     "tituloCard": "MebloStyle",
+    //     "tagName" : "Desarrollo Frontend",
+    //     "descripcion" :"Como <b>diseñador y desarrollador</b> independiente, he sido responsable de todo el proceso de creación de la plataforma, asegurando una <b>experiencia de usuario fluida</b> y una <b>interfaz atractiva</b>. El resultado es una tienda en línea elegante que también refuerza la marca con un diseño visual atractivo.",
+    //     "reverse" : true,
+    //     "path" : "",
+    //     "link": "https://www.figma.com/proto/OEUAg55cfBxwJ71eERMcUc/Daily-Design?node-id=2190-769&t=CMoHh9fu2lQkxIvo-1&scaling=scale-down-width&content-scaling=fixed&page-id=2190%3A647"
+    //   },
+    //   {
+    //     "id": 5,
+    //     "CardArte": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FFrame%20224.svg?alt=media&token=d0847321-cc49-48f7-9d16-194bf3b09784" ,
+    //     "Logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FGroup%2025.svg?alt=media&token=7582774f-26f5-4c07-9e86-408341bc062e",
+    //     "LogoSmall" : true,
+    //     "tagName" : "Diseño UX/UI",
+    //     "descripcion" :"Como diseñador UX/UI, tuve el placer de colaborar con Sushi Zen, un restaurante de sushi emergente que busca ofrecer una experiencia auténtica y moderna a sus clientes. Mi participación en este proyecto abarcó desde el <b>branding</b> hasta el <b>diseño detallado del menú</b> y los posters promocionales.",
+    //     "path" : "",
+    //     "link" : "https://www.figma.com/proto/fZTUgmsjuaQ096Ik3SFyE5/Sushi-Zen?node-id=63-334&t=kfkg8s9qQ7iPMhpY-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=63%3A334"
+      
+    //   },
+    //   {
+    //     "id": 6,
+    //     "CardArte": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FBodaCard.svg?alt=media&token=8a6a0d67-c7be-414f-9183-1dd32cbc599a" ,
+    //     "tituloCard": "Boda",
+    //     "tagName" : "Diseño UX/UI",
+    //     "descripcion" :"Diseñé una elegante página web para una boda, el sitio incluía fotos, historia de los novios, itinerario y un registro de invitados, y una sección de información sobre la ceremonia y la recepción. Utilicé un <b>diseño responsivo para asegurar que la página se viera impecable en todos los dispositivos.</b> ",
+    //     "reverse" : true,
+    //     "path" : "",
+    //     "link" : "https://boda.asgerath.com"
+    //   }
