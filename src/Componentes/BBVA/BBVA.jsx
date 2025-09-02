@@ -48,7 +48,7 @@ return(
         <div className="ContainerBBVA__Arte-Texto">
              <img src={Arte1} alt="" />
             <div className="separadorIMG"></div>
-            <span style={{color: "#fff"}} >Tuve el honor de ser <b>uno de los 60 profesionales seleccionados de entre 300 solicitantes</b> para participar en un prestigioso 
+            <span style={{color: "#fff"}} >Tuve el honor de ser <b>uno de los 50 profesionales seleccionados de entre 300 solicitantes</b> para participar en un prestigioso 
             evento organizado por BBVA Bancomer.</span>
             </div>
 
