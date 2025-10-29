@@ -1,29 +1,41 @@
 [
   {
     "id": 1,
+    "CardArte": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FNaroll.svg?alt=media&token=adfe4b2a-fbe1-4aa1-a7c2-0fff72e15ce8" ,
+    "Logo": "https://firebasestorage.googleapis.com/v0/b/prueba2-8b44d.appspot.com/o/g14.svg?alt=media&token=99743a1c-f398-4401-9229-5842dff5dcb0",
+    "LogoDark" : "https://firebasestorage.googleapis.com/v0/b/prueba2-8b44d.appspot.com/o/g14.svg?alt=media&token=99743a1c-f398-4401-9229-5842dff5dcb0",
+    "tagName" : "Diseño UX/UI",
+    "descripcion" :"<b>Asumí el rol híbrido de Diseñador UX/UI y Desarrollador Frontend </b>para el sitio web de Naroll. Traduje el requisito del cliente de un <b>diseño limpio y agradable</b> en un prototipo de alta fidelidad y, posteriormente, lo implementé como un sitio web responsivo y optimizado, desde el <b>prototipado en Figma hasta la implementación con React y CSS</b>, dando como resultado un aumento del 20% en las solicitudes de cotización.",
+    "path" : "",
+    "link" : "https://naroll.com.mx/"
+  
+  },
+  {
+    "id": 2,
     "CardArte": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FFinveroCard.svg?alt=media&token=4076fd17-e087-432f-a933-106fb20389cc" ,
     "Logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FMask%20group.svg?alt=media&token=ecc5033e-1c50-44e9-b9e7-caa818c6bfe2",
     "LogoDark" : "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Finvero%2FFV%202.svg?alt=media&token=6d032902-cf95-4ba2-9350-dec7b4ca4ffa",
     "tagName" : "Diseño UX/UI",
+    "reverse" : true,
     "descripcion" :"Como <b>Diseñador UX/UI</b> en el equipo de CX (Customer Experience) de Finvero, participe en el diseño, investigación, análisis y pruebas de usabilidad para distintas <b>interfaces</b>, flujos de <b>originación de crédito</b>, dashboards y aplicaciones en el <b>sector fintech.</b>",
     "path" : "/finvero"
   
   },
   {
-    "id": 2,
+    "id": 3,
     "CardArte": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FOpen%20Finance%20Card.svg?alt=media&token=68e8dcdb-4399-4d5d-9f0f-0db14b288d68" ,
     "Logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FLogo_OF2050%404x%202.svg?alt=media&token=1e8e8921-7245-4ea1-a135-c252c13d1a2c",
     "tagName" : "Desarrollo Frontend",
     "descripcion" :"Trabajé en el <b> Desarrollo Frontend </b>para el evento Open Finance, creando componentes e interfaces responsivas junto a más desarrolladores y diseñadores UX/UI. El evento reune personas <b>lideres del mundo fintech</b> y se lleva a cabo en el hotel ST. REGIS en CDMX cada año.",
-    "reverse" : true,
     "path" : "/open-finance"
   },
   {
-    "id": 3,
+    "id": 4,
     "CardArte": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2FTransbordeCard.svg?alt=media&token=5f653cb7-bea2-48c7-88b3-257166f195b9" ,
     "Logo": "https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Trabajos%2Flogo.svg?alt=media&token=fb9c06ac-804e-4675-a2a6-f21d5f76253c",
     "tagName" : "Diseño UX/UI",
     "descripcion" :"Tuve la oportunidad de crear una propuesta de diseño para la empresa OMNIBUS mejorando su web de manera responsiva  aplicando la metodología design thinking, auditoria competitiva y distintas técnicas para <b>mejorar el UI</b> de la pagina web.",
-    "path" : "/transborde"
+    "path" : "/transborde",
+    "reverse" : true
   }
 ]

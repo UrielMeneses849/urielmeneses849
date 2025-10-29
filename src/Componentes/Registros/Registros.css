@@ -1,0 +1,319 @@
+/* --- Importar Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@700;800;900&display=swap');
+
+/*
+  font-family: 'Poppins', sans-serif;       <-- Para Títulos (como pediste)
+  font-family: 'Montserrat', sans-serif;   <-- Para Cuerpo (como en BBVA)
+*/
+
+/* --- Contenedor Principal --- */
+.registros-section {
+  width: 90%;
+  max-width: 1200px; /* Ancho máximo para legibilidad */
+  margin: 4rem auto;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* --- 1. Estilos del Encabezado --- */
+.registros-header {
+  text-align: center;
+  margin-bottom: 3.5rem; /* Espacio después del título */
+}
+
+.registros-title,
+.registros-subtitle,
+.registros-subtitle-bottom {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; /* Un peso muy notorio */
+  margin: 0;
+  line-height: 1.2;
+}
+
+.registros-title {
+  font-size: 3.75rem; /* "De 2 Semanas a 4 Días" */
+}
+
+.registros-subtitle-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; /* Espacio entre "Automatización" y el logo */
+}
+
+.registros-subtitle {
+  font-size: 3.75rem; /* "Automatización" */
+}
+
+.registros-colibri-logo {
+  height: 60px; /* Ajusta el tamaño de tu logo */
+  width: auto;
+  /* Un pequeño margen negativo para alinearlo verticalmente */
+  margin-top: -10px; 
+}
+
+.registros-subtitle-bottom {
+  font-size: 4.5rem; /* El más grande, como en tu imagen */
+  font-weight: 900;
+}
+
+/* --- 2. Descripción --- */
+.registros-intro {
+  font-size: 1.5rem; /* Grande, como el intro de BBVA */
+  line-height: 1.7;
+  max-width: 80ch; /* Limita el ancho para mejor lectura */
+  margin: 0 auto 4rem auto; /* Centrado y con buen margen inferior */
+  text-align: center;
+  font-weight: 400;
+}
+
+.registros-intro strong {
+  font-weight: 700;
+  font-size: 1.6rem;
+  /* El color se aplica inline desde React */
+}
+
+/* --- 3. Métricas (KPIs) --- */
+.registros-kpi-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  /* Separador elegante, como en tu referencia */
+  border-bottom: 1px solid #e0e0e0; 
+}
+
+/* Separador en modo oscuro */
+.registros-section.dark-mode .registros-kpi-container {
+  border-bottom-color: #444;
+}
+
+.kpi-card {
+  flex-basis: 25%; /* 4 columnas */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alineado a la izquierda como en la imagen */
+  text-align: left;
+}
+
+.kpi-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.75rem; /* Números grandes e impactantes */
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+  width: max-content;
+}
+
+.kpi-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555; /* Color de texto secundario */
+}
+
+.registros-section.dark-mode .kpi-label {
+  color: #aaa; /* Etiqueta más clara en modo oscuro */
+}
+
+.registros-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centrar verticalmente por defecto */
+  gap: 3rem; /* Espacio entre columnas */
+  margin-bottom: 4rem; /* Espacio entre secciones */
+}
+
+.registros-text-col {
+  flex: 1; /* Por defecto, toma la mitad del espacio */
+}
+
+.registros-image-col {
+  flex: 1; /* Por defecto, toma la mitad del espacio */
+  display: flex;
+  flex-direction: column; /* Para apilar imágenes si es necesario */
+  align-items: center; /* Centrar imagen */
+  gap: 1.5rem; /* Espacio si hay varias imágenes */
+}
+
+.registros-section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem; /* Título de sección más pequeño que el principal */
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.registros-section-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #555; /* Texto secundario */
+}
+
+.registros-section.dark-mode .registros-section-text {
+  color: #ccc; /* Texto secundario en modo oscuro */
+}
+
+.registros-solution-list {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  padding-left: 1.5rem; /* Indentación estándar */
+  margin-top: 1rem;
+}
+
+.registros-solution-list li {
+  margin-bottom: 0.75rem;
+}
+
+.registros-solution-list strong {
+  font-weight: 700;
+}
+
+/* --- Placeholders Temporales (Puedes borrarlos después) --- */
+.placeholder-image {
+  width: 100%;
+  max-width: 450px; /* Tamaño máximo para diagramas */
+  height: 250px; /* Altura fija para que ocupen espacio */
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+.registros-section.dark-mode .placeholder-image {
+  background-color: #333;
+  color: #777;
+  border-color: #555;
+}
+.placeholder-image.screenshot {
+   max-width: 400px; /* Screenshot un poco más pequeño */
+   height: 220px;
+}
+.placeholder-image.graph {
+   max-width: 100%; /* El gráfico ocupa todo el ancho */
+   height: 400px;
+}
+/* --- Fin Placeholders --- */
+
+/* --- Imágenes Reales (Cuando las pongas) --- */
+.registros-diagram-image,
+.registros-screenshot-image,
+.registros-graph-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Bordes suaves */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.registros-diagram-image {
+  max-width: 450px; /* Limitar tamaño diagramas */
+}
+.registros-screenshot-image {
+  max-width: 400px; /* Limitar tamaño screenshot */
+}
+
+
+/* --- Estilos específicos para la sección Resultado --- */
+.resultado-row .registros-text-col.full-width {
+  flex-basis: 100%; /* Ocupa todo el ancho */
+  text-align: center; /* Centrar el texto del resultado */
+  margin-bottom: 2rem; /* Espacio antes del gráfico */
+}
+.resultado-row .registros-image-col.full-width {
+  flex-basis: 100%; /* Ocupa todo el ancho */
+}
+
+/* --- Diseño Responsive (Móvil) --- */
+@media screen and (max-width: 768px) {
+  .registros-section {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .registros-title,
+  .registros-subtitle {
+    font-size: 2.25rem; /* Títulos más pequeños */
+  }
+
+  .registros-subtitle-bottom {
+    font-size: 2.75rem; /* Sigue siendo el más grande */
+  }
+
+  .registros-colibri-logo {
+    height: 35px;
+    margin-top: -5px;
+  }
+
+  .registros-intro {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+  }
+
+  .registros-kpi-container {
+    flex-wrap: wrap; /* Pasa a 2x2 */
+    justify-content:space-around;
+    gap: 2rem 1rem; /* Más espacio vertical que horizontal */
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .kpi-card {
+    flex-basis: calc(50% - 0.5rem); /* Dos tarjetas por fila, restando el gap */
+    align-items: flex-start; /* Mantenemos alineación */
+    text-align: left;
+  }
+
+  .kpi-number {
+    font-size: 2.5rem; /* Más pequeño pero impactante */
+  }
+
+  .kpi-label {
+    font-size: 1rem;
+  }
+
+  .registros-row {
+    flex-direction: column; /* Apilar columnas */
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Invertir orden visual para la fila de Solución en móvil */
+  .solucion-row {
+    flex-direction: column-reverse; 
+  }
+
+  .registros-text-col,
+  .registros-image-col {
+    flex-basis: 100%; /* Ocupan todo el ancho */
+  }
+
+  .registros-section-title {
+    font-size: 2rem;
+    text-align: center; /* Centrar títulos en móvil */
+  }
+
+  .registros-section-text,
+  .registros-solution-list {
+    font-size: 1rem;
+    text-align: left; /* Mantener texto justificado a la izquierda */
+  }
+
+  .placeholder-image,
+  .registros-diagram-image,
+  .registros-screenshot-image {
+    max-width: 90%; /* Imágenes un poco más pequeñas */
+  }
+   .placeholder-image.graph {
+     height: 300px; /* Gráfico más bajo */
+   }
+  
+  .resultado-row .registros-text-col.full-width {
+     margin-bottom: 1.5rem;
+  }
+}

@@ -6,7 +6,7 @@ export default function Desarrollador(props){
     return(
         <div className="services__modal-content" style={{backgroundColor: `${props.fondoCard}`, color: `${props.colortexto}`}}>
        
-                    <p className="services__modal-description">2 años de experiencia con trabajos de calidad</p>
+                    <p className="services__modal-description">3 años de experiencia con trabajos de calidad</p>
                     <ul className="services__modal-services grid">
 
                         <li className="services__modal-service" style={{ color: `${props.colortexto}` }}>

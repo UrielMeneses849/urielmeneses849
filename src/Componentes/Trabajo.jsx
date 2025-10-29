@@ -25,7 +25,7 @@ export default function Trabajo(props){
         <br /> <br />
             Mi trayectoria profesional en el campo del <b>diseño UX/UI y el desarrollo frontend </b>en el <b>sector fintech ha sido una verdadera fuente de aprendizaje y crecimiento</b> en el ámbito financiero y tecnológico.</span>
         
-            {data.slice(0,3).map(item => (
+            {data.slice(0,4).map(item => (
            
             <div className={item.reverse ? "contenedorTrabajos reverse" : "contenedorTrabajos"} key={item.id}> 
             

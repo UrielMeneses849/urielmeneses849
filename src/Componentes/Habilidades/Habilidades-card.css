@@ -1,4 +1,7 @@
-.services__container{ grid-template-columns: repeat(3, 1fr); justify-content:center; margin: 15px auto; max-width: 70vw; }
+.services__container{  grid-template-columns: repeat(4, 25%);
+        justify-content:center;
+        column-gap: 1rem;
+         margin: 15px auto; max-width: 70vw;}
 
 /* Cambiar el borde dependiendo del fondo / aplicar color visto en figma */
 .services__content{ padding: 6rem 0 2.5rem 2.5rem; border-radius: 12px; }
@@ -64,9 +67,9 @@
 
  @media screen and (max-width: 1600px){
     .services__container{
-        grid-template-columns: repeat(3, 350px);
+        grid-template-columns: repeat(4, 25%);
         justify-content:center;
-        column-gap: 1.8rem;
+        column-gap: 1rem;
     }
  }
  @media screen and (max-width: 1440px){
@@ -87,7 +90,6 @@
 @media screen and (max-width: 834px){
 .services__container{
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 20px 20px 20px;
 }
 .services__content{
     padding: 3.5rem 0.5rem 1.25rem 1.5rem;
@@ -128,10 +130,9 @@
      }
 
     .services__container{
-        height: 870px;
         grid-template-columns: repeat(1, .9fr); 
         margin-top: 0; 
-        
+        max-width: 95%;
     }
     .services__modal-info{
         width: 80%;

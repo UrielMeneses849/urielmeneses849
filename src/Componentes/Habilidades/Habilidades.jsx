@@ -10,6 +10,7 @@ import LazyLoad from 'react-lazyload';
 import Diseñador from "./Cards_skills/Diseñador"
 import Desarrollador from "./Cards_skills/Desarrollador"
 import Ingeniero from "./Cards_skills/Ingeniero"
+import Data from "./Cards_skills/Data"
 
 import { useDarkMode } from "../../Hooks/useDarkMode";
 
@@ -19,6 +20,8 @@ export default function Habilidades(props){
     const frontendDisclosure = useDisclosure();
 
     const uxUiDisclosure = useDisclosure();
+
+    const dataDisclosure = useDisclosure();
     
     const projectDisclosure = useDisclosure();
     // Disclosure for the second modal
@@ -33,6 +36,13 @@ export default function Habilidades(props){
 
     const sql = darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FsqlD.svg?alt=media&token=64780816-23e0-48b9-a1a7-95eebc25d190` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FsqlL.svg?alt=media&token=f8e6c1c1-ac54-44bc-bb44-61103e8bbd1c`
     
+    const jupyter = darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fjupyter-seeklogo%202.svg?alt=media&token=55b4e2e0-e376-4cc2-bb00-1d3ec4c69f08` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fjupyter-seeklogo%201.svg?alt=media&token=e81abff8-ab8a-40cb-8868-6e94a35e273c`
+
+    const aws = darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FAmazon_Web_Services_Logo%202.svg?alt=media&token=ebcf4b1c-3f36-45a9-bbb2-bd0a2f54736a` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FAmazon_Web_Services_Logo.svg?alt=media&token=38104fc4-864f-4092-be5f-c3d76f3b886e`
+
+    const hotjar = darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fhotjar%202.svg?alt=media&token=b2e808ed-b4c4-4f65-a704-7d4ff927ee5f` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fhotjar.svg?alt=media&token=5016c2a3-0bc0-4659-9bc1-e554a2480a1d`
+
+    const astro = darkMode ? `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fastrojs%202.svg?alt=media&token=175f809a-7e21-40d9-ac46-0b44d303f811` : `https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fastrojs%201.svg?alt=media&token=05e1d848-b839-48cf-99d8-3bcde9d10e6a`
     // modal
 
     return(
@@ -63,8 +73,8 @@ export default function Habilidades(props){
                     </div>
                     <div className="div3"> 
                     <LazyLoad offset={200} >
-                    <Tooltip label='Material UI' fontSize='md'>
-                    <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FMUI.svg?alt=media&token=42e05fca-4ea1-4b8e-98a4-d6662a4dd703"  />
+                    <Tooltip label='Astro' fontSize='md'>
+                    <img src={astro}  />
                     </Tooltip>
                     </LazyLoad>
                     </div>
@@ -92,9 +102,9 @@ export default function Habilidades(props){
                 <div className="skills__content Herramientas" style={{backgroundColor: `${fondoCard}`}} >
 
                 <div className="div1"> 
-                <LazyLoad offset={200} >
-                <Tooltip label="Git" fontSize="medium"> 
-                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fgit.svg?alt=media&token=be1eac56-0c13-4a24-afec-d09cec6349d9"  />
+                <LazyLoad offset={200} className="Git">
+                <Tooltip label="Git" fontSize="medium" className="GitLogo"> 
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fgit.svg?alt=media&token=be1eac56-0c13-4a24-afec-d09cec6349d9" className="Icono80"/>
                 </Tooltip>
                 </LazyLoad>
                 </div>
@@ -118,25 +128,20 @@ export default function Habilidades(props){
             
             <div className="contenedorSkillText">
                 <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Diseño UX</h2> 
-                <div className="skills__content UX-Content" style={{backgroundColor: `${fondoCard}`}} >
+                <div className="skills__content FW" style={{backgroundColor: `${fondoCard}`}} >
 
                 <div className="div1"> 
                 <LazyLoad offset={200} >
                 <Tooltip label="Figma" fontSize="medium"> 
-                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Ffigma.svg?alt=media&token=dfddd449-5bb2-482c-ad4c-37dce58c0f99"  />
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Ffigma.svg?alt=media&token=dfddd449-5bb2-482c-ad4c-37dce58c0f99"
+                />
                 </Tooltip> 
                 </LazyLoad>
                 </div>
+
                 <div className="div2"> 
                 <LazyLoad offset={200} >
-                <Tooltip label="Notion" fontSize="medium"> 
-                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fnotion-svgrepo-com.svg?alt=media&token=1bb052c7-6351-41b5-919b-32fe69d70fa0"  />
-                </Tooltip> 
-                </LazyLoad>
-                </div>
-                <div className="div3"> 
-                <LazyLoad offset={200} >
-                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fhotjar.svg?alt=media&token=5016c2a3-0bc0-4659-9bc1-e554a2480a1d"  />
+                <img src={hotjar}  />
                 </LazyLoad>
                 </div>
                     
@@ -144,8 +149,8 @@ export default function Habilidades(props){
             </div>
             
             <div className="contenedorSkillText">
-                <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Desarrollo y pruebas</h2> 
-                <div className="skills__content FW" style={{backgroundColor: `${fondoCard}`}} >
+                <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Desarrollo y Gestión</h2> 
+                <div className="skills__content UX-Content" style={{backgroundColor: `${fondoCard}`}} >
 
                 <div className="div1"> 
                 <LazyLoad offset={200} >
@@ -157,9 +162,31 @@ export default function Habilidades(props){
                 {/*  */}
                 <div className="div2"> 
                 <LazyLoad offset={200} >
-                <Tooltip label="Jest" fontSize="medium"> 
-                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fjest-js-icon.webp?alt=media&token=a0c43727-2dc0-40fb-8ee6-df19f0aca68c" alt="" />
+                <Tooltip label="IntelliJ" fontSize="medium"> 
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FIntelliJ_IDEA_Icon.svg?alt=media&token=32fa3490-1146-453a-9398-a17b45088c13" alt="" />
                 </Tooltip> 
+                </LazyLoad>
+                </div>
+
+                <div className="div3"> 
+                <LazyLoad offset={200} >
+                <Tooltip label='PyCharm' fontSize='md'>
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2FPyCharm_Icon.svg?alt=media&token=e3162fb3-ca76-495f-8fa4-fc8fbf9da4e4"  />
+                </Tooltip>
+                </LazyLoad>
+                </div>
+                <div className="div4"> 
+                <LazyLoad offset={200} >
+                <Tooltip label='JIRA' fontSize='md'>
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fjira-1.svg?alt=media&token=e2c89d7d-6ead-4e06-a315-7df5ffdc03b7"  />
+                </Tooltip>
+                </LazyLoad>
+                </div>
+                <div className="div5"> 
+                <LazyLoad offset={200} >
+                <Tooltip label='Notion' fontSize='md'>
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fnotion-svgrepo-com.svg?alt=media&token=1bb052c7-6351-41b5-919b-32fe69d70fa0"  />
+                </Tooltip>
                 </LazyLoad>
                 </div>
 
@@ -167,7 +194,7 @@ export default function Habilidades(props){
             </div>
             
             <div className="contenedorSkillText">
-                <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Base de datos</h2> 
+                <h2 className="tituloCard" style={{ color: `${props.colortexto}` }}>Data</h2> 
                 <div className="skills__content BD" style={{backgroundColor: `${fondoCard}`}} >
 
                 <div className="div1"> 
@@ -177,14 +204,30 @@ export default function Habilidades(props){
                 </div>
                 <div className="div2"> 
                 <LazyLoad offset={200} >
-                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fmysql-logo-svgrepo-com.svg?alt=media&token=8e461e0e-100c-4748-a2a2-ee459955799c"  />
+                <Tooltip label="Amazon Web Services" fontSize="medium"> 
+                <img src={aws}  />
+                </Tooltip> 
                 </LazyLoad>
                 </div>
                 <div className="div3"> 
                 <LazyLoad offset={200} >
-                <Tooltip label="Firebase" fontSize="medium"> 
-                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Ffirebase-1-logo-svgrepo-com%20(1).svg?alt=media&token=9aedcee5-fd8a-4322-8f54-aafe840c6cfb"  />
+                <Tooltip label="PySpark" fontSize="medium"> 
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Fpyspark-lang.png?alt=media&token=bda42d5a-5cdc-4bac-a39f-af684ed0f44c"  />
                 </Tooltip> 
+                </LazyLoad>
+                </div>
+                <div className="div4"> 
+                <LazyLoad offset={200} >
+                <Tooltip label='Jupyter' fontSize='md'>
+                <img src={jupyter}  />
+                </Tooltip>
+                </LazyLoad>
+                </div>
+                <div className="div5"> 
+                <LazyLoad offset={200} >
+                <Tooltip label='Firebase' fontSize='md'>
+                <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-3302a.appspot.com/o/Iconos%2Ffirebase-1-logo-svgrepo-com%20(1).svg?alt=media&token=9aedcee5-fd8a-4322-8f54-aafe840c6cfb"  />
+                </Tooltip>
                 </LazyLoad>
                 </div>
 
@@ -195,12 +238,12 @@ export default function Habilidades(props){
         </div>
 
         <div className="c2">
-        <h3 className="subtitulo">Mi nivel técnico</h3>
+        <h3 className="subtitulo">Mi experiencia</h3>
 
         {/* ? Cards informativas */}
         <section className="services__container grid" >
 
-            {/* Contenedor 1 */}
+                                            {/* Contenedor Diseño UX */}
         <div className="services__content" style={{backgroundColor: `${fondoCard}` , border: `${bordeCard}`}} onMouseEnter={props.textEnter} 
         onMouseLeave={props.textLeave} >
 
@@ -228,8 +271,37 @@ export default function Habilidades(props){
         </ModalContent>
         </Modal>
   
+                                        {/* Contenedor DataScientist */}
+        <div className="services__content" style={{backgroundColor: `${fondoCard}` , border: `${bordeCard}`}} onMouseEnter={props.textEnter} 
+        onMouseLeave={props.textLeave} >
 
-            {/* Contenedor 2 */}
+        <div>
+        {/* Parte visible de la card  */}
+        
+        <i className="uil uil-cloud-share services__icon" style={{ color: `${props.colortexto}`}}></i>
+        <h3 className="services__title" style={{ color: `${props.colortexto}` }}>Data <br /> Scientist</h3>
+        </div> 
+        <span className="services__button" onClick={dataDisclosure.onOpen} style={{ color: `${props.colortexto}` }}>Ver más
+        <i className="uil uil-arrow-right services__button-icon"></i></span>
+        
+        </div>
+
+
+        <Modal onClose={dataDisclosure.onClose} isOpen={dataDisclosure.isOpen} isCentered size="xl">
+        <ModalOverlay />
+        <ModalContent borderRadius="30px" p="3% 2% 1%" >
+        <ModalHeader fontSize={{base: "6vw", lg: "1.5vw"}} fontFamily="poppins">Data Scientist</ModalHeader>
+        <ModalCloseButton />
+        <ModalBody>
+        <Data /> 
+        </ModalBody>
+        <ModalFooter>
+        <Button onClick={dataDisclosure.onClose}>Close</Button>
+        </ModalFooter>
+        </ModalContent>
+        </Modal>
+
+                                            {/* Contenedor 2 */}
         <div className="services__content" style={{backgroundColor: `${fondoCard}`,  border: `${bordeCard}`}} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
         <div>
         <i className="uil uil-arrow services__icon" style={{ color: `${props.colortexto}`}}></i>

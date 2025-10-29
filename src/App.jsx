@@ -1,6 +1,7 @@
 // estados
 import React, { useEffect, useState, Suspense, useContext } from "react"
 import { motion } from "framer-motion"
+
 // Componentes
 import Home from "./Componentes/Home"
 const Habilidades = React.lazy(() => import("./Componentes/Habilidades/Habilidades"))
@@ -9,6 +10,7 @@ const Trabajo = React.lazy(() => import("./Componentes/Trabajo"))
 const About = React.lazy(() => import("./Componentes/About"))
 const Footer = React.lazy(() => import("./Componentes/Footer"))
 const BBVA = React.lazy(() => import("./Componentes/BBVA/BBVA"))
+const Registros = React.lazy(() => import("./Componentes/Registros/Registros"))
 import {DarkModeContext} from './Componentes/DarkModeContext';
 
 // Variables globales
@@ -116,11 +118,17 @@ function textLeave(){
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
-      <Trabajo colortexto = {colortexto}/>
+      <BBVA 
+      colortexto = {colortexto}
+      />
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>
-      <BBVA />
+      <Registros />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading...</div>}>
+      <Trabajo colortexto = {colortexto}/>
       </Suspense>
 
       <Suspense fallback={<div>Loading...</div>}>

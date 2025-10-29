@@ -71,7 +71,7 @@ export default function Banner() {
     animate="visible" // Establece la variante para la animación visible
     exit="exit">
       <BannerRowTop title={"Web Developer"} color={color}/>
-      <BannerRowCenter titles={["Hola, soy Uriel", "Product Designer", "Frontend", "Computación", "Data Scient", "Software Solution Development"]} playMarquee={playMarquee} color={color} />
+      <BannerRowCenter titles={["Hola, soy Uriel", "Product Designer", "FrontendDeveloper", "IngComputación", "Data Scientist", "Software Solution Development"]} playMarquee={playMarquee} color={color} />
       <BannerRowBottom title={"Diseñador UX/UI"} color={color} FlechaScroll={FlechaScroll} />
     </motion.div>
     </AnimatePresence>
@@ -85,7 +85,7 @@ export default function Banner() {
     exit="exit">
     <BannerRowTop title={"Web "} color={color}/>
     <BannerRowTop title={"Developer"} color={color}/>
-    <BannerRowCenter titles={["Hola, soy Uriel", "Product Designer", "Frontend", "Computación", "Data Scient", "Software Solution Development"]} playMarquee={playMarquee} color={color} />
+    <BannerRowCenter titles={["Hola, soy Uriel", "Product Designer", "FrontendDeveloper", "IngComputación", "Data Scientist", "Software Solution Development"]} playMarquee={playMarquee} color={color} />
       <BannerRowBottom title={"Diseñador"} color={color} FlechaScroll={FlechaScroll}/>
       <BannerRowBottom title={"UX/UI"} color={color} FlechaScroll={FlechaScroll}/>
       </motion.div>
@@ -130,7 +130,7 @@ const BannerRowTop = ({ title, color }) => {
         }}
         className='row-col'>
         <span className='row-message' style={{color: `${color}`}} >
-          Ingeníero en <b>computación</b> del Instituto Politécnico Nacional.
+          DataScientist en <b>BBVA</b>.
         </span>
       </motion.div>
     </div>

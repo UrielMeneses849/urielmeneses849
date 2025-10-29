@@ -84,7 +84,6 @@ font-family: var(--poppins);
 /* ! Titulos de las secciónes */
 .Titulo_trabajo{
 color: #121212;
-padding-top: 85px;
 text-shadow: 12px 14px 40px 10px rgba(5, 13, 29, 0.50);
 font-family: Poppins;
 font-size: var(--big-font-size);
