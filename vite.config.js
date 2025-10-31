@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 
  export default defineConfig({
   plugins: [react()],
-  base: "/", // Ruta base de la aplicación
+  base: "https://urielmeneses.site", // Ruta base de la aplicación
 
   server: {
     port: 5173, // Puerto personalizado
